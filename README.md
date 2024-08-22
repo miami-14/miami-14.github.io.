@@ -106,6 +106,13 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 
 ![httpnego](https://github.com/user-attachments/assets/04a1eb63-25ec-4c2d-9011-178685899731)
 
+# Installation Apache & configuration 
+
+
+# CURL
+
+
+
 
   
 
