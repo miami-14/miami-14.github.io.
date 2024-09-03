@@ -193,135 +193,136 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
   
   <thead>
     <tr>
-      <th scope="col">En-tête	</th>
-      <th scope="col">Description</th>
-     <th scope="col">Exemple</th>
+      <th scope="row">En-tête	</th>
+      <th scope="row">Description</th>
+     <th scope="row">Exemple</th>
     </tr>
-  </thead>
+
   
   <tbody>
-    <tr>
- <thead>
+    
+
   <tr>
   
  <th scope="row"> Host	  </th>
  <th scope="row">Spécifie le nom de domaine du serveur (et le numéro de port, si nécessaire).	  </th>
   <th scope="row"> www.example.com  </th>
  
+</tr>
  
-
  
-  </tr>
-  </thead>
+ 
  <thead>
   <tr>
     <th scope="row">User-Agent	 </th>
     <th scope="row"> Fournit des informations sur le client utilisateur, telles que le navigateur et le système d'exploitation.  </th>
-  <th scope="row"> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
- </th>
-    </tr>
-  </thead> 
+  <th scope="row"> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) </th>
+
+  </tr>
+ 
+    
+
 
   
- <thead>
+
    <tr>
     <th scope="row"> Accept </th>
-    <th scope="row"> Indique les types de contenu que le client est capable de traiter.	    </th>
-    <th scope="row"> Accept: text/html, application/json
-    </th>
+    <th scope="row"> Indique les types de contenu que le client est capable de traiter. </th>
+    <th scope="row"> Accept: text/html, application/json </th>
  
     </tr>
-  </thead> 
+  
 
-   <thead>
+  
 
   <tr>
+   
    <th scope="row"> Accept-Encoding	 </th>
-    <th scope="row"> Spécifie les encodages de contenu que le client est capable de décompresser.		    </th>
-    <th scope="row"> Accept-Encoding: gzip, deflate, br
-
-    </th>
+    <th scope="row"> Spécifie les encodages de contenu que le client est capable de décompresser.	</th>
+    <th scope="row"> Accept-Encoding: gzip, deflate, br </th>
+    
     </tr>
-  </thead> 
+   
 
-   <thead>
+   
   <tr>
     <th scope="row"> Accept-Language	 </th>
-    <th scope="row"> Indique la langue préférée du client pour le contenu de la réponse.		    </th>
-    <th scope="row"> Accept-Language: en-US, fr-FR;q=0.8
-</th>
+    <th scope="row"> Indique la langue préférée du client pour le contenu de la réponse. </th>
+    <th scope="row"> Accept-Language: en-US, fr-FR;q=0.8 </th>
    
     </tr>
-  </thead> 
+  
 
-   <thead>
+   
   <tr>
     <th scope="row"> Authorization	 </th>
     <th scope="row"> Transmet des informations d'authentification pour accéder à une ressource protégée.	 </th>
     <th scope="row"> Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ= </th>
-    </tr>
-  </thead> 
- <thead>
+ </tr>
+  
+
+  
+ 
  <tr>
 <th scope="row"> Cookie	 </th>
-    <th scope="row"> Envoie les cookies précédemment définis par le serveur au client.	
-    <th scope="row"> Cookie: sessionId=abc123; lang=fr
+    <th scope="row"> Envoie les cookies précédemment définis par le serveur au client.	</th>
+    <th scope="row"> Cookie: sessionId=abc123; lang=fr </th>
  </tr>
- </thead> 
+ 
 
  
-<thead>
+
  <tr>
 <th scope="row"> Content-Type		 </th>
     <th scope="row"> Indique le type de média de la ressource envoyée (lorsque la requête contient un corps, comme POST).	 </th>
     <th scope="row"> Content-Type: application/json </th>
  </tr>
- </thead> 
 
- <thead>
+
+
  <tr>
 <th scope="row"> Content-Length			 </th>
     <th scope="row"> Spécifie la longueur du corps de la requête en octets.	 </th>
     <th scope="row"> Content-Length: 348</th>
 
  </tr>
- </thead> 
 
- <thead>
+
+ 
  <tr>
 <th scope="row"> Referer			 </th>
     <th scope="row"> Indique l'URL de la page précédente à partir de laquelle la requête a été faite.		 </th>
     <th scope="row"> Referer: https://www.google.com/ </th>
  </tr>
- </thead> 
+ 
 
 
- <thead>
  <tr>
 <th scope="row"> Connection			 </th>
     <th scope="row"> Indique si la connexion doit être maintenue ouverte après l'envoi de la réponse.	 </th>
-    <th scope="row"> Connection: keep-alive
- </th>
+    <th scope="row"> Connection: keep-alive </th>
  </tr>
- </thead> 
 
- <thead>
+
+
  <tr>
 <th scope="row"> Cache-Control				 </th>
     <th scope="row"> Fournit des directives de mise en cache spécifiques pour les caches en aval.	 </th>
     <th scope="row"> Cache-Control: no-cache </th>
  </tr>
- </thead> 
 
 
- <thead>
+
+
  <tr>
 <th scope="row"> Upgrade-Insecure-Requests			 </th>
     <th scope="row"> Indique au serveur que le client préfère une version sécurisée (HTTPS) de la ressource demandée.	 </th>
     <th scope="row"> Upgrade-Insecure-Requests: 1 </th>
  </tr>
+
+
  </thead> 
-  
+  </tbody>
   </table>
 </div>
 
