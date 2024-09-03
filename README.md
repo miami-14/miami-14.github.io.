@@ -193,13 +193,14 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
   
   <thead>
     <tr>
-      <th scope="row">En-tête	</th>
-      <th scope="row">Description</th>
-     <th scope="row">Exemple</th>
+      <th scope="col">En-tête	</th>
+      <th scope="col">Description</th>
+     <th scope="col">Exemple</th>
     </tr>
+  </thead>
 
   
-  <tbody>
+ 
     
 
   <tr>
@@ -321,8 +322,7 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
  </tr>
 
 
- </thead> 
-  </tbody>
+
   </table>
 </div>
 
