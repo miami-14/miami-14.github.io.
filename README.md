@@ -108,6 +108,29 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 
 # Installation Apache & configuration 
 
+## Installation XAMPP 
+### étape 1 
+![installation d'un logiciel ](https://github.com/user-attachments/assets/3414cd4f-74ab-4acd-8ea0-bacede1c0db6)
+
+
+### étape 2 
+
+![XAMPP](https://github.com/user-attachments/assets/6faaa3c5-cb7d-464e-8faa-cde833debf65)
+
+
+## Configuration un virtualhost sur votre poste local.
+
+### étape 1 
+![Virtualhost0](https://github.com/user-attachments/assets/6a540d99-dacf-40f7-8586-2af074c01f62)
+
+
+
+### étape 2
+![virtualhost](https://github.com/user-attachments/assets/70e53bbf-1b70-4e12-af29-dffdd416f926)
+
+### étape 3 
+![Virtualhost1](https://github.com/user-attachments/assets/da0166dc-09f8-43a0-80b5-c652a32a63f6)
+
 
 # CURL
 
