@@ -134,6 +134,28 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 
 # CURL
 
+## 1.1 Mettre dans la commende " http://dev.local/download/test.txt " 
+![Capture d'écran 2024-09-03 094858](https://github.com/user-attachments/assets/1ad8e1e5-f922-414f-894a-7c4004d9d75b)
+
+## 1.2 Aller dans ce pc. Puis aller dans le dossier XAMPP. Enfin dans le dossier htdoc
+![Capture d'écran 2024-09-03 102637](https://github.com/user-attachments/assets/c9fc5452-3c2e-4077-8552-c0aad7061c72)
+
+## 1.3 Crérer un dossier "dev.local"
+![Capture d'écran 2024-09-03 102714](https://github.com/user-attachments/assets/717778c6-e28c-4bc3-83a7-265e5dda5fbc)
+## 1.4 Crérer un dossier "Download"
+![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568)
+## 1.5 crérer un texte 
+![Capture d'écran 2024-09-03 102731](https://github.com/user-attachments/assets/1a9ac68f-6d38-4385-8f90-33d41e4dfdd1)
+
+## 2.1 crérer un dossier "mkdir dir C:\xampp\htdocs\dev.local"
+![Capture d'écran 2024-09-03 094921](https://github.com/user-attachments/assets/0139d73d-957c-4ade-a918-9afb936bbdcd)
+
+## 2.2 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
+![Capture d'écran 2024-09-03 094931](https://github.com/user-attachments/assets/3c33ad8a-7723-4d35-9f60-f9ec7d2c6026)
+
+
+## 3 
+
 
 
 
