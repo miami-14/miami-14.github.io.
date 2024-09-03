@@ -116,3 +116,47 @@ The background color is `#ffffff` for light mode and `#000000` for dark mode.
   </tr>
   </table>
 
+
+# Lien 
+Vous pouvez créer un lien en ligne en encapsulant le texte du lien entre crochets, puis en enveloppant l’URL entre parenthèses. Vous pouvez également utiliser le raccourci clavier + pour créer un lien. Lorsque du texte est sélectionné, vous pouvez coller une URL à partir de votre presse-papiers pour créer automatiquement un lien à partir de la sélection `.[ ]( )Command K `
+
+Vous pouvez également créer un lien hypertexte Markdown en mettant le texte en surbrillance et en utilisant le raccourci clavier +. Si vous souhaitez remplacer le texte par le lien, utilisez le raccourci clavier ++. `CommandVCommand Shift V `
+
+```
+This site was built using [GitHub Pages](https://pages.github.com/).
+```
+# Liens de section 
+Vous pouvez créer un lien direct vers une section d’un fichier rendu en survolant le titre de section à exposer .
+
+![image](https://github.com/user-attachments/assets/b693ba35-1b83-4443-a5e8-3606d7420439)
+
+# Liens relatifs
+
+Vous pouvez définir des liens relatifs et des chemins d’accès aux images dans vos fichiers rendus pour aider les lecteurs à accéder à d’autres fichiers de votre référentiel.
+
+Un lien relatif est un lien relatif au fichier actif. Par exemple, si vous avez un fichier README à la racine de votre dépôt et que vous avez un autre fichier dans docs/CONTRIBUTING.md, le lien relatif à CONTRIBUTING.md dans votre README peut ressembler à ceci :
+
+```
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+```
+
+GitHub transformera automatiquement le chemin d’accès de votre lien ou de votre image en fonction de la branche sur laquelle vous vous trouvez, afin que le lien ou le chemin d’accès fonctionne toujours. Le chemin d’accès du lien sera relatif au fichier actuel. Les liens commençant par seront relatifs à la racine du dépôt. Vous pouvez utiliser tous les opérandes de lien relatifs, tels que et `././../ `
+
+Le texte de votre lien doit être sur une seule ligne. L’exemple ci-dessous ne fonctionnera pas.
+
+```
+[Contribution 
+guidelines for this project](docs/CONTRIBUTING.md)
+```
+
+Les liens relatifs sont plus faciles pour les utilisateurs qui clonent votre dépôt. Les liens absolus peuvent ne pas fonctionner dans les clones de votre dépôt - nous vous recommandons d’utiliser des liens relatifs pour faire référence à d’autres fichiers de votre dépôt.
+
+# Images
+Vous pouvez afficher une image en ajoutant et en enveloppant le texte alternatif dans . Le texte alternatif est un texte court équivalent aux informations de l’image. Ensuite, enveloppez le lien de l’image entre parenthèses.`![ ]() `
+
+''
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
+''
+
+
