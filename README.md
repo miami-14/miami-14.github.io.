@@ -246,7 +246,7 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 
    <thead>
   <tr>
-    th scope="row"> Accept-Language	 </th>
+    <th scope="row"> Accept-Language	 </th>
     <th scope="row"> Indique la langue préférée du client pour le contenu de la réponse.		    </th>
     <th scope="row"> Accept-Language: en-US, fr-FR;q=0.8
 </th>
