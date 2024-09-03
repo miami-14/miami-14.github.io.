@@ -154,9 +154,123 @@ Les liens relatifs sont plus faciles pour les utilisateurs qui clonent votre dé
 # Images
 Vous pouvez afficher une image en ajoutant et en enveloppant le texte alternatif dans . Le texte alternatif est un texte court équivalent aux informations de l’image. Ensuite, enveloppez le lien de l’image entre parenthèses.`![ ]() `
 
-''
+
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 
-''
 
+
+# Listes
+
+Vous pouvez créer une liste non ordonnée en faisant précéder une ou plusieurs lignes de texte de `, , ou .-*+ `
+
+```
+- George Washington
+* John Adams
++ Thomas Jefferson
+```
+- george
+* John
++ Thomas
+
+Pour ordonner votre liste, faites précéder chaque ligne d’un numéro.
+
+```
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+```
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+
+# Listes de tâches 
+
+Pour créer une liste de tâches, faites précéder les éléments de la liste d’un trait d’union et d’un espace suivis de . Pour marquer une tâche comme terminée, utilisez .`[ ][x]`
+
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+Si la description d’un élément de la liste des tâches commence par une parenthèse, vous devrez l’échapper avec: `\`
+
+```
+- [ ] \(Optional) Open a followup issue
+ 
+```
+Pour plus d’informations, consultez « À propos des listes de tâches ».
+
+# Paragraphes
+Vous pouvez créer un nouveau paragraphe en laissant une ligne vide entre les lignes de texte.
+
+
+# Notes
+Vous pouvez ajouter des notes de bas de page à votre contenu à l’aide de la syntaxe de crochet suivante :
+
+```
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+
+```
+
+La note de bas de page s’affichera comme suit :
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+
+# Alertes
+
+Les alertes sont une extension Markdown basée sur la syntaxe blockquote que vous pouvez utiliser pour mettre l’accent sur les informations critiques. Sur GitHub, ils sont affichés avec des couleurs et des icônes distinctives pour indiquer l’importance du contenu.
+
+N’utilisez les alertes que lorsqu’elles sont cruciales pour le succès de l’utilisateur et limitez-les à une ou deux par article pour éviter de surcharger le lecteur. De plus, vous devez éviter de placer des alertes consécutives. Les alertes ne peuvent pas être imbriquées dans d’autres éléments.
+
+Pour ajouter une alerte, utilisez une ligne de citation spéciale spécifiant le type d’alerte, suivie des informations d’alerte dans une citation standard. Cinq types d’alertes sont disponibles :
+
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+Voici les alertes affichées :
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
