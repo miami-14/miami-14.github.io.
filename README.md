@@ -109,11 +109,11 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 # Installation Apache & configuration 
 
 ## Installation XAMPP 
-### étape 1 
+### étape 1 Installer XAMPP
 ![installation d'un logiciel ](https://github.com/user-attachments/assets/3414cd4f-74ab-4acd-8ea0-bacede1c0db6)
 
 
-### étape 2 
+### étape 2 Ouvir XAMPP
 
 ![XAMPP](https://github.com/user-attachments/assets/6faaa3c5-cb7d-464e-8faa-cde833debf65)
 
@@ -134,32 +134,196 @@ Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le s
 
 # CURL
 
-## 1.1 Mettre dans la commende " http://dev.local/download/test.txt " 
+### 1.1 Mettre dans la commende " http://dev.local/download/test.txt " 
 ![Capture d'écran 2024-09-03 094858](https://github.com/user-attachments/assets/1ad8e1e5-f922-414f-894a-7c4004d9d75b)
 
-## 1.2 Aller dans ce pc. Puis aller dans le dossier XAMPP. Enfin dans le dossier htdoc
+### 1.2 Aller dans ce pc. Puis aller dans le dossier XAMPP. Enfin dans le dossier htdoc
 ![Capture d'écran 2024-09-03 102637](https://github.com/user-attachments/assets/c9fc5452-3c2e-4077-8552-c0aad7061c72)
 
-## 1.3 Crérer un dossier "dev.local"
-![Capture d'écran 2024-09-03 102714](https://github.com/user-attachments/assets/717778c6-e28c-4bc3-83a7-265e5dda5fbc)
-## 1.4 Crérer un dossier "Download"
-![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568)
-## 1.5 crérer un texte 
-![Capture d'écran 2024-09-03 102731](https://github.com/user-attachments/assets/1a9ac68f-6d38-4385-8f90-33d41e4dfdd1)
-
-## 2.1 crérer un dossier "mkdir dir C:\xampp\htdocs\dev.local"
+### 1.2 crérer un dossier "mkdir dir C:\xampp\htdocs\dev.local"
 ![Capture d'écran 2024-09-03 094921](https://github.com/user-attachments/assets/0139d73d-957c-4ade-a918-9afb936bbdcd)
 
-## 2.2 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
+### 1.3 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
 ![Capture d'écran 2024-09-03 094931](https://github.com/user-attachments/assets/3c33ad8a-7723-4d35-9f60-f9ec7d2c6026)
 
+### 1.4 Crérer un dossier "dev.local"
+![Capture d'écran 2024-09-03 102714](https://github.com/user-attachments/assets/717778c6-e28c-4bc3-83a7-265e5dda5fbc)
 
-## 3 
+
+### 1.5 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
+![Capture d'écran 2024-09-03 094931](https://github.com/user-attachments/assets/3c33ad8a-7723-4d35-9f60-f9ec7d2c6026)
+
+### 1.6 Crérer un dossier "Download"
+![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568)
+
+
+### 1.7 crérer un texte 
+![Capture d'écran 2024-09-03 102731](https://github.com/user-attachments/assets/1a9ac68f-6d38-4385-8f90-33d41e4dfdd1)
 
 
 
+### 2 Vérifier que les créations fonctionnent
+![Capture d'écran 2024-09-03 094938](https://github.com/user-attachments/assets/005f80f1-e952-4894-8f4c-3d68fe9dd01e)
+
+
+### 3.1 Crerer un copie du texte 
+![Capture d'écran 2024-09-03 094956](https://github.com/user-attachments/assets/43890ab8-1c36-4939-8fce-1f451b244296)
+
+### 3.2 Affichier dans le dossier dev.local  
+![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568) 
+
+### 4 "curl -O https://dev.local/index.html"
+  ![Capture d'écran 2024-09-03 095038](https://github.com/user-attachments/assets/6f7b9431-88ec-4f4a-9420-adc1b8b7ccef)
+
+### 5 Effectuer une requête GET vers l’url "http://dev.local " 
+
+![Capture d'écran 2024-09-03 095106](https://github.com/user-attachments/assets/b4eaf9e9-09db-4e53-844b-11671dbbaec0)
+
+
+### 6 Effectuer une requête GET vers l’url http://dev.local/notExisting 
+![Capture d'écran 2024-09-03 095112](https://github.com/user-attachments/assets/a5aa0b86-b29d-4e6e-8d83-19e0938a94dc)
+
+
+
+# 10 – Headers
+
+
+<div>
+<table>
+  
+  <thead>
+    <tr>
+      <th scope="col">En-tête	</th>
+      <th scope="col">Description</th>
+     <th scope="col">Exemple</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+ <thead>
+  <tr>
+  
+ <th scope="row"> Host	  </th>
+ <th scope="row">Spécifie le nom de domaine du serveur (et le numéro de port, si nécessaire).	  </th>
+  <th scope="row"> www.example.com  </th>
+ 
+ 
+
+ 
+  </tr>
+  </thead>
+ <thead>
+  <tr>
+    <th scope="row">User-Agent	 </th>
+    <th scope="row"> Fournit des informations sur le client utilisateur, telles que le navigateur et le système d'exploitation.  </th>
+  <th scope="row"> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+ </th>
+    </tr>
+  </thead> 
 
   
+ <thead>
+   <tr>
+    <th scope="row"> Accept </th>
+    <th scope="row"> Indique les types de contenu que le client est capable de traiter.	    </th>
+    <th scope="row"> Accept: text/html, application/json
+    </th>
+ 
+    </tr>
+  </thead> 
+
+   <thead>
+
+  <tr>
+   <th scope="row"> Accept-Encoding	 </th>
+    <th scope="row"> Spécifie les encodages de contenu que le client est capable de décompresser.		    </th>
+    <th scope="row"> Accept-Encoding: gzip, deflate, br
+
+    </th>
+    </tr>
+  </thead> 
+
+   <thead>
+  <tr>
+    th scope="row"> Accept-Language	 </th>
+    <th scope="row"> Indique la langue préférée du client pour le contenu de la réponse.		    </th>
+    <th scope="row"> Accept-Language: en-US, fr-FR;q=0.8
+</th>
+   
+    </tr>
+  </thead> 
+
+   <thead>
+  <tr>
+    <th scope="row"> Authorization	 </th>
+    <th scope="row"> Transmet des informations d'authentification pour accéder à une ressource protégée.	 </th>
+    <th scope="row"> Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ= </th>
+    </tr>
+  </thead> 
+ <thead>
+ <tr>
+<th scope="row"> Cookie	 </th>
+    <th scope="row"> Envoie les cookies précédemment définis par le serveur au client.	
+    <th scope="row"> Cookie: sessionId=abc123; lang=fr
+ </tr>
+ </thead> 
+
+ 
+<thead>
+ <tr>
+<th scope="row"> Content-Type		 </th>
+    <th scope="row"> Indique le type de média de la ressource envoyée (lorsque la requête contient un corps, comme POST).	 </th>
+    <th scope="row"> Content-Type: application/json </th>
+ </tr>
+ </thead> 
+
+ <thead>
+ <tr>
+<th scope="row"> Content-Length			 </th>
+    <th scope="row"> Spécifie la longueur du corps de la requête en octets.	 </th>
+    <th scope="row"> Content-Length: 348</th>
+
+ </tr>
+ </thead> 
+
+ <thead>
+ <tr>
+<th scope="row"> Referer			 </th>
+    <th scope="row"> Indique l'URL de la page précédente à partir de laquelle la requête a été faite.		 </th>
+    <th scope="row"> Referer: https://www.google.com/ </th>
+ </tr>
+ </thead> 
+
+
+ <thead>
+ <tr>
+<th scope="row"> Connection			 </th>
+    <th scope="row"> Indique si la connexion doit être maintenue ouverte après l'envoi de la réponse.	 </th>
+    <th scope="row"> Connection: keep-alive
+ </th>
+ </tr>
+ </thead> 
+
+ <thead>
+ <tr>
+<th scope="row"> Cache-Control				 </th>
+    <th scope="row"> Fournit des directives de mise en cache spécifiques pour les caches en aval.	 </th>
+    <th scope="row"> Cache-Control: no-cache </th>
+ </tr>
+ </thead> 
+
+
+ <thead>
+ <tr>
+<th scope="row"> Upgrade-Insecure-Requests			 </th>
+    <th scope="row"> Indique au serveur que le client préfère une version sécurisée (HTTPS) de la ressource demandée.	 </th>
+    <th scope="row"> Upgrade-Insecure-Requests: 1 </th>
+ </tr>
+ </thead> 
+  
+  </table>
+</div>
 
 
 
