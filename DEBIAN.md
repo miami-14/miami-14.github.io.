@@ -17,8 +17,9 @@ Aller sur install
 
 ## 2) Installation du logiciel afin d'arriver sur un serveur 
 
+
 ```
-Choiri Le français ensuite France enfin français
+Choiri Le français ensuite France enfin français.
 
 ```
 ![Capture_d’écran_2024-09-03_132136](https://github.com/user-attachments/assets/98435582-5d1b-4692-90d1-13c46e5580da)
