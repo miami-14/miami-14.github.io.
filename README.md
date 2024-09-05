@@ -62,8 +62,9 @@
 </div>
 
 #  Extensible
-
-  Le protocole HTTP est extensible à plusieurs niveaux grâce à ses fonctionnalité bien de nouvelles  capacité avecles versions antérieures. Grâce a :
+```
+  Le protocole HTTP est extensible à plusieurs niveaux grâce à ses fonctionnalité bien de nouvelles  capacité avecles versions antérieures grâce a :
+```
  - aux methodes HTTP personnalisées
  - En tête HTP personnalisés
  - Les types de contenu
@@ -73,9 +74,10 @@
  - Utilisation de cookies et d'autres mécanismes de session.
 
    # Sans état 
-
+```
 Le protocole HTTP est qualifié de "protocole sans état" car chaque requête envoyée par un client à un serveur est indépendant des autres. autrement dit, le serveur ,ne conserve aucune information concernant les interactions précédentes avec le client une fois la requête traitée. Chaque requête est donc traitée comme une nouvelle interaction, sans référence à celle qui l'ont précédée. 
-Par conséquences pour la navigation web : 
+Par conséquences pour la navigation web :
+```
 - Pas de persistance des données entre les requêtes
 - Gestion des sessions 
 - Scalabilité et simplicité ( l'absence d'état ) 
@@ -90,7 +92,9 @@ Par conséquences pour la navigation web :
 
 
 # Code Status 
-Les codes les plus courants sont : 
+```
+Les codes les plus courants sont :
+```
 - 200: succès de la requête 
 - 301 et 302: redirection, respectivement permanente et temporaire 
 - 401: utilisateur non authentifié 
@@ -100,87 +104,119 @@ Les codes les plus courants sont :
 - 504: Le serveur n'a pas repondu
 
   # Négociation de contenu
-
+```
 Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le serveur utilise alors cette URL pour choisir l'une des variantes disponibles. Chaque variante est appelée une représentation. Le serveur renvoie alors une représentation donnée au client.
-
+```
 
 ![httpnego](https://github.com/user-attachments/assets/04a1eb63-25ec-4c2d-9011-178685899731)
 
 # Installation Apache & configuration 
 
 ## Installation XAMPP 
-### étape 1 Installer XAMPP
+
+```
+étape 1 Installer XAMPP
+```
 ![installation d'un logiciel ](https://github.com/user-attachments/assets/3414cd4f-74ab-4acd-8ea0-bacede1c0db6)
 
-
-### étape 2 Ouvir XAMPP
+```
+étape 2 Ouvir XAMPP
+```
 
 ![XAMPP](https://github.com/user-attachments/assets/6faaa3c5-cb7d-464e-8faa-cde833debf65)
 
 
 ## Configuration un virtualhost sur votre poste local.
-
-### étape 1 
+```
+étape 1
+``` 
 ![Virtualhost0](https://github.com/user-attachments/assets/6a540d99-dacf-40f7-8586-2af074c01f62)
 
 
-
-### étape 2
+```
+étape 2
+```
 ![virtualhost](https://github.com/user-attachments/assets/70e53bbf-1b70-4e12-af29-dffdd416f926)
 
-### étape 3 
+```
+étape 3
+```
 ![Virtualhost1](https://github.com/user-attachments/assets/da0166dc-09f8-43a0-80b5-c652a32a63f6)
 
 
 # CURL
-
-### 1.1 Mettre dans la commende " http://dev.local/download/test.txt " 
+```
+ 1.1 Mettre dans la commende " http://dev.local/download/test.txt "
+```
 ![Capture d'écran 2024-09-03 094858](https://github.com/user-attachments/assets/1ad8e1e5-f922-414f-894a-7c4004d9d75b)
 
-### 1.2 Aller dans ce pc. Puis aller dans le dossier XAMPP. Enfin dans le dossier htdoc
+```
+1.2 Aller dans ce pc. Puis aller dans le dossier XAMPP. Enfin dans le dossier htdoc
+```
 ![Capture d'écran 2024-09-03 102637](https://github.com/user-attachments/assets/c9fc5452-3c2e-4077-8552-c0aad7061c72)
 
-### 1.2 crérer un dossier "mkdir dir C:\xampp\htdocs\dev.local"
+```
+1.2 crérer un dossier "mkdir dir C:\xampp\htdocs\dev.local"
+```
 ![Capture d'écran 2024-09-03 094921](https://github.com/user-attachments/assets/0139d73d-957c-4ade-a918-9afb936bbdcd)
 
-### 1.3 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
+```
+ 1.3 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download"
+```
 ![Capture d'écran 2024-09-03 094931](https://github.com/user-attachments/assets/3c33ad8a-7723-4d35-9f60-f9ec7d2c6026)
 
-### 1.4 Crérer un dossier "dev.local"
+```
+ 1.4 Crérer un dossier "dev.local"
+```
 ![Capture d'écran 2024-09-03 102714](https://github.com/user-attachments/assets/717778c6-e28c-4bc3-83a7-265e5dda5fbc)
 
-
-### 1.5 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download" 
+```
+1.5 crerer un dossier "mkdir C:\xampp\htdocs\dev.local\download"
+```
 ![Capture d'écran 2024-09-03 094931](https://github.com/user-attachments/assets/3c33ad8a-7723-4d35-9f60-f9ec7d2c6026)
 
-### 1.6 Crérer un dossier "Download"
+
+```
+1.6 Crérer un dossier "Download"
+```
 ![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568)
 
 
-### 1.7 crérer un texte 
+```
+1.7 crérer un texte
+```
 ![Capture d'écran 2024-09-03 102731](https://github.com/user-attachments/assets/1a9ac68f-6d38-4385-8f90-33d41e4dfdd1)
 
 
-
-### 2 Vérifier que les créations fonctionnent
+```
+2 Vérifier que les créations fonctionnent
+```
 ![Capture d'écran 2024-09-03 094938](https://github.com/user-attachments/assets/005f80f1-e952-4894-8f4c-3d68fe9dd01e)
 
-
-### 3.1 Crerer un copie du texte 
+```
+3.1 Crerer un copie du texte
+```
 ![Capture d'écran 2024-09-03 094956](https://github.com/user-attachments/assets/43890ab8-1c36-4939-8fce-1f451b244296)
 
-### 3.2 Affichier dans le dossier dev.local  
+```
+3.2 Affichier dans le dossier dev.local
+```
 ![Capture d'écran 2024-09-03 102724](https://github.com/user-attachments/assets/d03d8c02-24fc-4324-b5c5-11276e839568) 
 
-### 4 "curl -O https://dev.local/index.html"
+
+```
+4 "curl -O https://dev.local/index.html"
+```
   ![Capture d'écran 2024-09-03 095038](https://github.com/user-attachments/assets/6f7b9431-88ec-4f4a-9420-adc1b8b7ccef)
 
-### 5 Effectuer une requête GET vers l’url "http://dev.local " 
-
+```
+5 Effectuer une requête GET vers l’url "http://dev.local " 
+```
 ![Capture d'écran 2024-09-03 095106](https://github.com/user-attachments/assets/b4eaf9e9-09db-4e53-844b-11671dbbaec0)
 
-
-### 6 Effectuer une requête GET vers l’url http://dev.local/notExisting 
+```
+6 Effectuer une requête GET vers l’url http://dev.local/notExisting
+```
 ![Capture d'écran 2024-09-03 095112](https://github.com/user-attachments/assets/a5aa0b86-b29d-4e6e-8d83-19e0938a94dc)
 
 
