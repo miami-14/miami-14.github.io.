@@ -213,8 +213,7 @@ Commende d"placez les fichiers précédement créés dans le répertoire Year.
 
 
 
-### 3 ) Entrer du texte dans un fichier nommé « Mon_fichier » que vous avez créé au 
-préalable.
+### 3 ) Entrer du texte dans un fichier nommé « Mon_fichier » que vous avez créé au préalable.
 
 ![Capture_d’écran_2024-09-16_162405_AP_2_EX3](https://github.com/user-attachments/assets/c90d4e95-3be5-4af0-9fa4-2f8eda8cfad9)
 
