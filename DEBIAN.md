@@ -48,7 +48,7 @@ Ne rien mettre dans le domaine
 ```
 Mettre un nom complet du nouvel superutilisateur et un mot de passe  
 Par exemple : Superutlisateur :root
-              Mot de passe : root
+              Mot de passe : ...
 Et le confirmier avec le mot de passe 
 
 ```
@@ -59,7 +59,7 @@ Et le confirmier avec le mot de passe
 ```
 Mettre un nom complet du nouvel utilisateur et un mot de passe  
 Par exemple : utlisateur :mia
-              Mot de passe : mia
+              Mot de passe : ...
 Et le confirmier avec le mot de passe 
 ```
 ![Capture_d’écran_2024-09-03_140742](https://github.com/user-attachments/assets/1ef7c223-7d17-4e39-8481-ebe8eb43d0c6)
