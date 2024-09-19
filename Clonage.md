@@ -15,10 +15,13 @@ Cette méthode est souvent utilisée pour migrer un système vers un nouveau dis
 Il existe plusieurs logiciels de clonage qui permettent de réaliser cette opération facilement :
 
 * ` Macrium Reflect `: Un logiciel gratuit et populaire pour le clonage de disques.
+  
 
 * ` Clonezilla ` : Un utilitaire open-source pour les utilisateurs avancés.
+  
 
 * `Acronis True Image` : Très complet, il permet aussi de créer des sauvegardes et des images système.
+
 
 * `EaseUS Todo Backup` : Offre des fonctionnalités de clonage simple pour disque et partition.
 
