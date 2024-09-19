@@ -26,3 +26,109 @@
 
 
 * Maintenant vous pouvez travailler et faire votre HTML 
+
+
+# Le codage HTML 
+
+## Le `< ! DOCTYPE>` Déclaration 
+
+La déclaration représente le type de document et aide les navigateurs à afficher correctement les pages Web.`<!DOCTYPE>`
+
+Il ne doit apparaître qu’une seule fois, en haut de la page (avant les balises HTML).
+
+Par exemple : `<!DOCTYPE html>`
+
+
+## En-têtes HTML
+
+Les en-têtes HTML sont définis à l’aide des balises to.`<h1>` `<h6>`
+
+Par exemple : `<h1>`This is heading 1`</h1>`
+              `<h2>`This is heading 2`</h2>`
+             ` <h3>`This is heading 3`</h3>`
+
+
+## Paragraphes HTML
+
+Les paragraphes HTML sont définis avec la balise :`<p>`
+
+Par exemple:
+`<p>`This is a paragraph.`</p>`
+`<p>`This is another paragraph.`</p>`
+
+
+## Liens HTML
+
+Les liens HTML sont définis avec la balise :`<a>`
+
+Par exemple: 
+`<a` href="https://www.w3schools.com">This is a link`</a>`
+
+
+## HTML Images
+
+Les images HTML sont définies avec la balise.<img>
+
+Le fichier source (), le texte alternatif (), et sont fournis en tant qu’attributs :srcaltwidthheight
+
+
+Par exemple: 
+`<img src=`"w3schools.jpg" alt="W3Schools.com" `width=`"104" `height=`"142">
+
+
+## Tableaux HTML
+
+
+
+![image](https://github.com/user-attachments/assets/29b42a1d-51d2-4d29-8780-bb0238720a07)
+
+
+
+
+![image](https://github.com/user-attachments/assets/19423fd6-41c9-4f1e-bae9-5ac06954e247)
+
+
+
+## Sauté un paragraphe 
+
+Les éléments HTML sans contenu sont appelés éléments vides.
+
+La balise définit un saut de ligne, et est un élément vide sans balise de fermeture :`<br>`
+
+
+Par exemple:
+
+![image](https://github.com/user-attachments/assets/03b4116b-2a8b-4458-937b-dc55dc92445d)
+
+
+![Capture d'écran 2024-09-19 155320](https://github.com/user-attachments/assets/6d7e43e0-3550-4c6d-9618-fee66b669cfb)
+
+
+
+
+
+## L'attribut alt 
+
+Cela donne un nom a l'image que vous avez choisi 
+
+Par exemple: 
+<img src="img_girl.jpg" `alt=`"Girl with a jacket">
+
+
+## L'attribut style 
+
+L’attribut est utilisé pour ajouter des styles à un élément, tel que la couleur, la police, la taille, etc.`style`
+
+Par exemple: 
+p style="color:red;">This is a red paragraph.</p> 
+
+
+## L'attribut lang 
+
+Vous devez toujours inclure l’attribut à l’intérieur de la balise, pour déclarer le langue de la page Web. Ceci est destiné à aider les moteurs de recherche et les navigateurs. `lang<html>`
+
+L’exemple suivant spécifie l’anglais comme langue :
+
+html lang="en"> 
+
+
