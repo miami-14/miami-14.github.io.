@@ -19,7 +19,6 @@ Welcome to my GitHub profile! I'm passionate about computers and I do a lot of p
 
 ## My Work
 
-https://github.com/miami-14/miami-14.github.io./tree/main/Codage
-
+[Codage](https://github.com/miami-14/miami-14.github.io./tree/main/Codage)
 
 
