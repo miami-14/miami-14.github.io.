@@ -27,6 +27,7 @@
 
 * Maintenant vous pouvez travailler et faire votre HTML 
 
+* ⚠️Si tu veux trier fais `format document` ⚠️
 
 # Le codage HTML 
 
