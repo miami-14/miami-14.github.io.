@@ -11,6 +11,11 @@ Welcome to my GitHub profile! I'm passionate about computers and I do a lot of p
 
 
 
-## My Projects 
+## My Projects 📅
 
-Learn all languages to put them to work for people 
+* Learn all languages to put them to work for people
+* Have my dipolome
+
+
+
+
