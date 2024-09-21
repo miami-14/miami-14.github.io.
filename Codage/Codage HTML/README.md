@@ -44,7 +44,7 @@ Par exemple : `<!DOCTYPE html>`
 
 Les en-têtes HTML sont définis à l’aide des balises to.`<h1>` `<h6>`
 
-Par exemple : `<h1>`This is heading 1`</h1>`
+Par exemple : `<h1>`...`</h1>`
               `<h2>`This is heading 2`</h2>`
              ` <h3>`This is heading 3`</h3>`
 
