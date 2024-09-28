@@ -92,3 +92,78 @@
 
 ### Affiche les informations du paquet 
 `dpkg -I paquet.deb` 
+
+
+## Le réseau 
+
+### Contient les informations de configuration des interfaces 
+`/etc/network/interfaces`
+
+### Affiche le nom de la machine dans le réseau 
+`uname -a`
+
+### Teste la connexion réseau avec une machine 
+`ping` adresseIP
+
+### Affiche toutes les interfaces réseau disponible 
+`ifconfid -a`
+
+### Attribue l'adresse ip à l'interface réseau eth0
+`ifconfig` eth adresseIP
+
+### Arrête l'interface réseau eth0
+`ifdown` eth0 `ifconfig` eth0 `down`
+
+### Démarre l'interface réseau eth0
+`ifup` eth0 `ifconfig` eth0 `up `
+
+
+### Arrête toutes les connexions Réseau 
+`poweroff-i` 
+
+### Définit une passerelle par défaut 
+`route add defaut` gw adresseIP 
+
+### Supprime la passerelle par défaut 
+`route dek defaut` 
+
+### Configuration de la carte Wifi 
+`iwconfig` 
+
+
+## Bases d'administration 
+
+
+
+### Exécute command en mode superutilisateur 
+`sudo command ` 
+
+### Idem sudo pour les applications graphique 
+`gksudo command` 
+
+### met fin au mode superutilisateur 
+
+`sudo -k`
+
+### Affiche la version du noyau 
+
+`uname -r`
+
+### Redémarrz la machine immédiatement 
+
+`shutdown -h now`
+
+### Affiche les périphérique usb ou pci présents sur la machine 
+
+`isusb`
+`ispci`
+
+### Affiche le temps d'exécution de commande 
+
+`time  command`
+
+### Redirige la sortie de commande 1 comme entrée de commande 2 
+`commend 1| command 2`
+
+### Efface l'écran du terminal 
+`clear`
