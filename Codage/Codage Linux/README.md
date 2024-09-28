@@ -167,3 +167,55 @@
 
 ### Efface l'écran du terminal 
 `clear`
+
+## Obtenir de l'aide 
+
+### Dossier contenant toutes les documentations 
+`/usr/share/doc ` 
+
+### Aide en ligne pour les commandes et de nombreux fichiers de configuration ( q pour quitter) 
+`man command `
+
+### Installation des pages d'aide en français 
+`apt-get install manpages-fr`
+
+### Récapitulatif de command 
+`command -help`
+
+
+## Se déplacer dans les dossiers 
+
+### Répertoire de travail de utilisateur 
+`/home/utilisateur `
+
+### montre le nom du dossier de travail courant 
+`pwd `
+
+### se déplacer vers le dossier /home/utilisateur 
+`cd`
+
+### Se déplacer vers le dossier /home/utilisateur 
+`cd~/Desktop`
+
+### Se déplacer vers le dossier parent 
+`cd....`
+
+### Se déplacer vers le dossier/usr/apt 
+`cd/usr/apt`  
+
+
+## Lister les fichiers et répertoires 
+
+### Liste le contenu du répertoire dossier en mode détaillé 
+`1s -1 dossier`
+`dir -1 dossier `
+
+### Liste tous les fichiers ( y compris les fichiers cachés ) 
+1s -a
+dir -a
+
+### Lister les répertoires contenu dans le dossier 
+1s -d
+dir 
+
+
