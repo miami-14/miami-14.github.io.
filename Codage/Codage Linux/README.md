@@ -4,79 +4,79 @@
 
 ### Fichier contenant la liste des dépôts 
 
-`/etc/apt/sources.list`
+* `/etc/apt/sources.list`
 
 ### Met à jour la liste des paquets disponibles à partir de sources.list 
 
-`apt-get-update`
+* `apt-get-update`
 
 ### Met à jour les paquets déjà installés 
 
-`apt-get upgrade`
+* `apt-get upgrade`
 
 ### Met à jour votre distribution Ubuntu vers la vers la version supérieure 
 
-`apt-get dist-upgrade`
+* `apt-get dist-upgrade`
 
 ### Installe le logiciel soft en gérant les dépendances 
-`apt-get install` soft
+* `apt-get install` soft
 
 
 ### Désinstallé le paquet soft et toutes ses dépendances
 
-`apt-get remove` soft
+* `apt-get remove` soft
 
 ### Supprime le paquet soft et ses fichiers de configuration 
 
-`apt-get remove -purge `soft
+* `apt-get remove -purge `soft
 
 
 ### Supprime les copies des paquets désinstallés 
 
-`apt-get autoclean`
+* `apt-get autoclean`
 
 
 ### Affiche une liste des paquets disponible 
 
-`apt-cache dumpavail`
+* `apt-cache dumpavail`
 
 ### Donne la liste des paquets dont le nom ou la description contient soft
 
-`apt-cache search `soft
+* `apt-cache search `soft
 
 ### Affiche la description du paquet soft 
 
-`apt-cache show `soft 
+* `apt-cache show `soft 
 
 ### Affiche des informations sur le paquet soft   
 
-`apt-cache showpkg `soft 
+* `apt-cache showpkg `soft 
 
 ### Liste les paquets requise par soft
 
-`apt-cache depend` soft 
+* `apt-cache depend` soft 
 
 
 ### Liste les paquets qui requièrent le paquet soft 
 
-`apt-cache rdepends` soft
+* `apt-cache rdepends` soft
 
 
 ### Met à jour les informations à partir de fichiers sources liste 
 
-`apt-file update` 
+* `apt-file update` 
 
 ### Recherche à quel paquet fichier appartient 
 
-`apt-file search` fichier
+* `apt-file search` fichier
 
 ### Liste les fichiers contenus dans le paquet soft 
 
-`apt-file list` soft
+* `apt-file list` soft
 
 ### Liste les paquets orphelins
 
-`deborplan`
+* `deborplan`
 
 ### Convertir paquet est en paquet deb (-d) et installe le paquet (-1)
 
@@ -211,11 +211,21 @@
 `dir -1 dossier `
 
 ### Liste tous les fichiers ( y compris les fichiers cachés ) 
-1s -a
-dir -a
+`1s -a`
+`dir -a`
 
 ### Lister les répertoires contenu dans le dossier 
-1s -d
-dir 
+`1s -d`
+`dir -d`
+
+### Trie les fichiers par date en débutant par les plus récents 
+`1s -t`
+`dir -d`
+
+### Trie les fichiers par taille en débutant par les plus gros 
+`1s -S`
+`dir -S`
 
 
+### liste par page grâce à more
+`1s -l| more`
