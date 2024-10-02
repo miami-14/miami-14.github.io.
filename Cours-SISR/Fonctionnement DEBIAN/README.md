@@ -129,6 +129,17 @@
 ![Capture_d’écran_2024-09-16_093525_17](https://github.com/user-attachments/assets/9f0a5018-73c4-49aa-9f70-1092ebdfb031)
 
 
+## ... 
+
+`cp Mon_fichier_2 Mon_fichier_2.old`
+
+`1s`
+
+`Mon_fichiers_2 Mon_fichier_2.old Mon_fichier.old`
+
+![Capture_d’écran_2024-09-16_164529](https://github.com/user-attachments/assets/095d47df-eb98-422e-81b6-aaec119cc534)
+
+
 ## commendes de l'utilisation 
 
 
