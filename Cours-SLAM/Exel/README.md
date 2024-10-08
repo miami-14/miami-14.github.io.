@@ -29,21 +29,18 @@
 ## Exercice 7 
 ![Capture d'écran 2024-09-17 144014](https://github.com/user-attachments/assets/45b8d8ab-5563-491d-8640-566880b23284)
 
-![Capture d'écran 2024-09-17 144014 png Jour pluvieux 1](https://github.com/user-attachments/assets/76b3e1c7-c06d-4072-b60a-2c7cfbda6756)
 
 ![Capture d'écran 2024-09-17 144033](https://github.com/user-attachments/assets/b8574e60-a4d8-42f4-9d27-2f68aeaf0542)
 
-![Capture d'écran 2024-09-17 144033 png Jour pluvieux 2](https://github.com/user-attachments/assets/43230450-cbb3-496e-80a3-82b7ee5620d6)
+
 
 ![Capture d'écran 2024-09-17 144052](https://github.com/user-attachments/assets/22b65435-2d86-442b-98b5-5cc618acb479)
 
-![Capture d'écran 2024-09-17 144052 png Jour pluvieux 3](https://github.com/user-attachments/assets/4269749b-6516-4df1-9ade-b3e1f684b221)
+
 
 
 ![Capture d'écran 2024-09-17 144115](https://github.com/user-attachments/assets/7dc3c82a-bea0-4912-8c01-950647be735c)
 
-
-![Capture d'écran 2024-09-17 144115 png Jour pluvieux 4](https://github.com/user-attachments/assets/1dc17f69-589f-434c-b7d1-bf6f335f5a5d)
 
 
 ## Exercice 8 
