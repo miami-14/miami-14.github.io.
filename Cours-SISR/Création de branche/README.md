@@ -32,9 +32,8 @@ Création de branche
 ![Capture d'écran 2024-09-19 130406 png Branche 8](https://github.com/user-attachments/assets/e530fccf-f992-4fab-8170-514003dc01ed)
 
 
-
 ### Cliqué sur "Push origin"
-![Capture_d’écran_2024-09-03_161217](https://github.com/user-attachments/assets/2d2a5db7-6c6d-4089-adf7-997b20eef782)
+
 
 
 
