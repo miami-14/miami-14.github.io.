@@ -47,29 +47,23 @@
 ![Capture d'écran 2024-09-17 144805](https://github.com/user-attachments/assets/5ebcf921-11b4-4972-9c44-3afe1d2814d6)
 
 
-![Capture d'écran 2024-09-17 144805 png Bureautique 1](https://github.com/user-attachments/assets/03056d71-6074-450f-b6ca-d4e75208b5df)
 
 
 ![Capture d'écran 2024-09-17 144827](https://github.com/user-attachments/assets/6a9fcf81-3dab-47dd-a860-6fcb1a79c0c2)
 
-![Capture d'écran 2024-09-17 144827 png Bureautique 2](https://github.com/user-attachments/assets/256dcee2-6313-445f-94a0-0a58fd1183be)
 
 ![Capture d'écran 2024-09-17 144914](https://github.com/user-attachments/assets/bddaced0-4324-4b64-9f42-68efb17ec275)
 
 
-![Capture d'écran 2024-09-17 144914 png Bureautique 3](https://github.com/user-attachments/assets/5d843ece-86c5-4b00-896d-b0439ce3a355)
+
 
 ![Capture d'écran 2024-09-17 144938](https://github.com/user-attachments/assets/5dcfb42b-8692-47b2-8088-c025d4d0de91)
 
-
-![Capture d'écran 2024-09-17 144938 png Bureautique 4](https://github.com/user-attachments/assets/98b583b5-f433-4074-a687-3e77ebfa193d)
 
 
 
 ![Capture d'écran 2024-09-17 144958](https://github.com/user-attachments/assets/21d66e97-1fd4-4e92-a3ce-8b5f80bf7627)
 
-
-![Capture d'écran 2024-09-17 144958 png Bureautique 5](https://github.com/user-attachments/assets/9c9810aa-d208-44f5-96b3-b7432bfb8d12)
 
 
 ## Exercice 9 
@@ -82,25 +76,19 @@
 
 
 
-![Capture d'écran 2024-09-17 154357](https://github.com/user-attachments/assets/cd14c909-865a-4c87-aa12-1584f5d40118)
-
 
 ![Capture d'écran 2024-09-17 154424](https://github.com/user-attachments/assets/6e0d6707-f0d2-4fa3-8858-4e3fc57444b8)
 
-
-![Capture d'écran 2024-09-17 154424 png Aviron 4](https://github.com/user-attachments/assets/7772f01a-b8a6-4375-bcc4-e43415c200fe)
 
 
 ![Capture d'écran 2024-09-17 154513 png Aviron 5](https://github.com/user-attachments/assets/63b6c4fd-25ae-4f9e-99f1-1b24e1565ea8)
 
 
-## Exercice 10 
+## Exercice 10 PRIME D'ANCIENNETE 
 
 ![Capture d'écran 2024-09-17 155628](https://github.com/user-attachments/assets/886c9b93-7c06-4810-8a26-aff2eb4459ff)
 
 
-![Capture d'écran 2024-09-17 155628 png Age](https://github.com/user-attachments/assets/817ffda1-a833-4adc-a9cb-90a2f971d5ca)
-
 ![Capture d'écran 2024-09-17 163400 png PRIME D ANCIENNETE](https://github.com/user-attachments/assets/34009eb6-dc29-41d0-8435-171ac7e12af7)
 
-
+## Exercice 11 
