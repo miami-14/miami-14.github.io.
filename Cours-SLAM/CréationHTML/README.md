@@ -1,4 +1,4 @@
-# Créer un lien pc et github 
+# Créer un lien pc et git
 
 
 # Aller dans explorateur fichier Puis ce PC et aller sur OS 
