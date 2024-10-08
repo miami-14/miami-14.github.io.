@@ -18,7 +18,6 @@
 ## Exercice 5 
 ![Capture d'écran 2024-09-17 142155](https://github.com/user-attachments/assets/dc007483-7329-4de2-9f18-03f1b660bff8)
 
-![Capture d'écran 2024-09-17 142155 png CARRIRER](https://github.com/user-attachments/assets/5d497d1b-9463-4585-a186-aa8f5af8aca8)
 
 ![Capture d'écran 2024-09-17 142239 png CARRIERE 1](https://github.com/user-attachments/assets/13dfb949-175f-4142-be83-254f0934030b)
 
