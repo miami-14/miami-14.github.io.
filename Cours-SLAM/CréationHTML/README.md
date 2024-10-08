@@ -18,3 +18,5 @@
 
 # Mettez ".gitconfig" 
 ![5](https://github.com/user-attachments/assets/495aaad7-05e5-452e-b1f0-f0ab53be7db4)
+
+![Capture d'écran 2024-10-08 095149](https://github.com/user-attachments/assets/89dd9e2a-8322-402c-8bda-36d679720439)
