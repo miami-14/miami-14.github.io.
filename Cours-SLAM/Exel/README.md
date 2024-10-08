@@ -24,7 +24,6 @@
 ## Exercice 6 
 ![Capture d'écran 2024-09-17 143208](https://github.com/user-attachments/assets/418e6517-f158-4f50-b2ac-dc81340ae9fe)
 
-![Capture d'écran 2024-09-17 143208 png SERVICE QUALITE](https://github.com/user-attachments/assets/8b92650a-9c7e-4c20-bfc6-805e80cd5435)
 
 
 ## Exercice 7 
