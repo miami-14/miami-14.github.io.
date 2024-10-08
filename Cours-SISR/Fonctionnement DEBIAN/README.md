@@ -1,12 +1,12 @@
 # Debian ( a finir) 
 
 
-## ...
+## afficher les informations sur les interfaces réseau.
 `ip a`
 
 ![Capture_d’écran_2024-09-16_081558_1](https://github.com/user-attachments/assets/a3d9d105-192f-4fbb-94b5-c9967b2406bf)
 
-## ...
+## gérer et afficher les informations relatives aux adresses IP des interfaces réseau.
 `ip addr`
 
 ![Capture_d’écran_2024-09-16_082006_2](https://github.com/user-attachments/assets/8c416b86-f54c-4e62-acc4-d5597f9e6f1f)
@@ -17,23 +17,24 @@
 
 ![Capture_d’écran_2024-09-16_082432_arrête_](https://github.com/user-attachments/assets/acb2a73e-7e48-4676-a597-9e457e604a19)
 
-## ...
+## /etc est un répertoire et non un fichier +  afficher le contenu d'un fichier spécifique dans /etc.
 `cat /etc/network/interface `
 
 ![Capture_d’écran_2024-09-16_083658_3](https://github.com/user-attachments/assets/cd988af2-ad36-43f6-9d13-8e0e06fd28dd)
 
-## ...
-`cd` / `pwd`
+## changer le répertoire de travail actuel dans le terminal + afficher le répertoire de travail actuel.
+`cd` 
+`pwd`
 
 ![Capture_d’écran_2024-09-16_083921_4_](https://github.com/user-attachments/assets/83156dd8-35aa-4167-a21e-2d6e8df50e42)
 
-## ...
+## afficher le répertoire de travail actuel.
 `pwd`
 
 ![Capture_d’écran_2024-09-16_083939_5](https://github.com/user-attachments/assets/8b03cd47-2afb-490c-b8ed-dfaee16c9ebd)
 
 ## ...
-`1s `
+`ls `
 
 ![Capture_d’écran_2024-09-16_084000_6](https://github.com/user-attachments/assets/664d5fc3-d253-435c-9ccc-c3af367c35a7)
 
@@ -62,7 +63,7 @@
 
 ## ... 
 
-`1S -s network`
+`lS -s network`
 
 ![Capture_d’écran_2024-09-16_085644_9](https://github.com/user-attachments/assets/ebd7a0c4-e5dd-4d4e-a0b7-b47c184ce2fa)
 
@@ -83,14 +84,14 @@
 
 ## ... 
 
-`1s -1 apache2/ `
+`ls -l apache2/ `
 
 
 ![Capture_d’écran_2024-09-16_091821_12](https://github.com/user-attachments/assets/d58d754e-133a-4315-889e-e5d8af3e0a1c)
 
 ## ... 
 
-` 1s -1 /etc/apache2/`
+` ls -l /etc/apache2/`
 
 
 ![Capture_d’écran_2024-09-16_091939_13](https://github.com/user-attachments/assets/be1f07a1-7b98-4d3b-8441-1ee6da3bd33e)
@@ -133,7 +134,7 @@
 
 `cp Mon_fichier_2 Mon_fichier_2.old`
 
-`1s`
+`lls`
 
 `Mon_fichiers_2 Mon_fichier_2.old Mon_fichier.old`
 
