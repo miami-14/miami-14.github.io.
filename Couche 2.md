@@ -17,8 +17,8 @@ un ensemble qu’on appelle une trame.
 
 La couche Liaison de données est divisée en `deux sous­couches` :
 
-* `La couche LLC` (Logical Link Control), IEEE 802.2.
-* `La couche MAC` (Media Access Control) dont plusieurs instances existent :
+* `La couche LLC` , IEEE 802.2.
+* `La couche MAC`  Il y a plusieurs instances existent :
 
 
          * `IEEE 802.3`  (la dénomination d’Ethernet).
@@ -33,8 +33,9 @@ Il y a d'autre protocoles, plus ou moins utilisés aujourd’hui, existent sur c
 `IEEE 802.11 Wi­Fi`, `Frame Relay` et `ATM`.
 
 
-
-
+[!NOTE]
+La couche LLC=> Logical Link Control
+La couche MAC=> Media Access Control
 
 
 ## 2- Mac 
@@ -45,6 +46,7 @@ différents médias.
 La manière dont ces différents médias fonctionnent peut être différente (synchrone, asynchrone, média partagé...)
 et utiliser différents formats pour l’adressage des équipements connectés.
 
+ > [!NOTE]
          Si il y a pas la couche MAC, les protocoles de niveaux supérieurs devraient gérer chacun de ces médias en s’adaptant aux
          différentes règles qui les régissent.
 
@@ -53,10 +55,10 @@ trame entrante, la décapsuler (séparer les données utiles au média des autre
 données nécessaires au média aux données que l’on veut transmettre), sous un nouveau format qui respecte les
 méthodes d’accès au nouveau média.
 
--         La  `méthode d’accès`  définit comment un nœud accède et communique au travers d’un média.
-         normes `IEEE 802.11 Wi­Fi`, `Frame Relay` et `ATM`.
+> [!NOTE]
+          La  méthode d’accès définit comment un nœud accède et communique au travers d’un média.
+         normes IEEE 802.11 Wi­Fi, Frame Relay et ATM.
 
--
          Pour décrire de manière plus détaillée ce que nous entendons par règle d’accès au média, par
          exemple dans le cadre d’une conversation.
 
@@ -89,8 +91,9 @@ chapitre.
 Même si Token Ring est considéré comme obsolète aujourd’hui, son principe de régulation d’accès au média reste
 toujours valable.
 
-- `MAC` => (Media Access Control)
-- `CSMA/CA` => (Carrier Sense Multiple Access/Collision Detection)
+[!NOTE]
+- `MAC` => Media Access Control
+- `CSMA/CA` => Carrier Sense Multiple Access/Collision Detection
 
 ## 3-  LLC
 La sous­couche `LLC` sert d’interface pour la couche supérieure, la couche Réseau.
@@ -124,7 +127,8 @@ Historiquement, `LLC`pouvait également fournir des services de contrôle de flu
 erreurs. Aujourd’hui, la majorité des réseaux utilisent les protocoles de `couche 4 ` pour assurer
 les transmissions ce qui ne laisse à `LLC` qu’un rôle de multiplexage.
 
-- `LLC ` =>
+[!NOTE]
+- LLC  =>Logical Link Control
 - Couche 4 => la couche Transport
 - Couche 1 => La couche Inférieur
 - Couche 3 => la couche supérieure
@@ -158,19 +162,97 @@ Comme vu précédemment, Ethernet opère à la fois sur la couche Physique et su
 modèle OSI. Ethernet utilise la sous­couche MAC dont l’une des fonctions est de fournir l’adressage aux
 équipements.
 
-Une adresse de couche 2 pour Ethernet s’appelle une adresse MAC. Elles sont aussi parfois désignées sous le nom
-de BIA (Burned In Address) ou Hardware Addresses. Elles sont assignées par le constructeur directement dans la
-carte réseau et il n’est pas possible de changer l’adresse MAC d’une carte réseau à moins de posséder le matériel
-adéquat qui permettrait de reprogrammer le chipset de ladite carte.
+Une adresse de couche 2 pour Ethernet qui se nomme une adresse MAC. Elles sont aussi sous le nom
+de BIA ou Hardware Addresses. Elles sont assignées par le constructeur directement dans la
+carte réseau et on ne peut pas changer l’adresse MAC d’une carte réseau à moins de posséder le matériel
+correspond ce qui permettrait de reprogrammer le chipset de ladite carte.
 
-Une adresse MAC a un format bien précis, elle est composée de 48 bits soit 6 octets et est divisée en deux parties
-qui sont dénommées respectivement OUI (Organizationally Unique Identifier) et NIC (Network Interface Identifier).
-L’adresse MAC utilise la représentation hexadécimale, chaque caractère vaut donc 4 bits.
+Une adresse MAC a un format précis, elle est composée de 48 bits soit 6 octets et est divisée en deux parties
+qui sont dénommées respectivement OUI  et NIC.
 
-L’illustration qui suit montre une adresse MAC et son organisation :
+[!IMPORTANT]
+L’adresse MAC utilise la représentation hexadécimale, chaque caractère vaut 4 bits.
+
+[!NOTE]
+OUI=> Organizationally Unique Identifier
+NIC=> Network Interface Identifier
+BIA=> Burned In Address
+
+Cette illustration nous montre une adresse MAC et son organisation :
 
 
+![image](https://github.com/user-attachments/assets/780d2d46-02ad-4203-803f-d51acd21df88)
 
 
 
                               Composition d’une adresse MAC
+
+
+La partie OUI il y a les trois premiers octets. Dans cette partie, on peut voir comme `un préfixe`, est assignée
+au constructeur par l’IEEE. Pour pouvoir obtenir un préfixe, un constructeur on doit faire la demande et l’acheter
+auprès de l’IEEE. Donc on peut dire que tous les constructeurs de cartes réseau Ethernet sont référencés par
+l’IEEE.
+
+Un constructeur peut disposer de plusieurs préfixes OUI s’il dépose plusieurs demandes par exemple. Vous pouvez
+trouver la liste complète des assignations de l’IEEE à l’URL qui suit : http://standards.ieee.org/develop/regauth/oui/oui.txt
+Cisco figure parmi les premiers constructeurs de la liste avec le préfixe 00­00­0C. Comme vous pourrez le constater,
+Cisco possède bien d’autres préfixes OUI.
+
+Il faut garder cette structure de l’adresse MAC à l’esprit car dans certains cas vous vous trouverez dans des
+situations où vous aurez réussi à récupérer l’adresse MAC d’un équipement sans savoir de quel équipement il s’agit.
+Utiliser le préfixe OUI permet (parfois) de récupérer le nom du constructeur et de retrouver l’équipement recherché.
+Vous pourrez trouver sur votre moteur de recherche favori une multitude de sites qui proposent de chercher dans la
+base IEEE à votre place.
+
+NIC est la seconde partie de l’adresse MAC et il y a trois derniers octets. Cette partie est appartient au 
+constructeur qui s’engage à n’assigner une adresse qu’une seule fois.
+
+[!NOTE]
+Il est également intéressant qu’un équipement réseau peut posséder plusieurs adresses MAC.
+Par exemple le cas des switches réseau.
+
+Les adresses MAC peuvent différentes, selon les
+constructeurs et les systèmes.
+
+Il y a des systèmes qui utilisent le tiret par exemple  :
+
+* 1C­6F­65­C4­C9­8E
+
+Il y a d'autre utilisent une notation avec un point. Par exemple:
+
+* 1C6F.65C4.C9­8E
+
+
+##  L’utilisation des adresses
+
+Mais comment sont utilisées ces adresses MAC ?
+
+Quand un équipement émet une trame Ethernet, l’en­tête de niveau 2 possède un certain nombre d’informations.
+
+Avec ces informations Il y a :
+
+
+- L’adresse MAC source, c’est­à­dire l’adresse MAC de la carte qui émet la trame.
+  
+- L’adresse MAC de destination, c’est­à­dire l’adresse MAC de la carte qui est censée recevoir la trame.
+
+Bien évidemment, trouver l’adresse MAC source est très simple : une machine connaît sa propre adresse et n’a donc
+aucun mal à renseigner ce champ.
+
+L’adresse MAC d’une carte sur un système de type Microsoft
+Windows avec la commande `ipconfig /all` sur une invite de commande si dessous 
+est un exemple:
+
+Ethernet :
+
+![image](https://github.com/user-attachments/assets/21d3ef80-55ed-45a8-a673-399b2d7c00c9)
+
+![image](https://github.com/user-attachments/assets/68a36d84-fc98-4616-9b0b-958a05a96815)
+
+![image](https://github.com/user-attachments/assets/1ba59011-8050-4c49-a4da-b5c441c2e55a)
+
+
+
+Adresse Physique :
+![image](https://github.com/user-attachments/assets/865fd442-b3cc-4cbc-b814-9aacfd88f964)
+
