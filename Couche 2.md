@@ -34,6 +34,7 @@ Il y a d'autre protocoles, plus ou moins utilisés aujourd’hui, existent sur c
 
 
 [!NOTE]
+
 La couche LLC=> Logical Link Control
 La couche MAC=> Media Access Control
 
