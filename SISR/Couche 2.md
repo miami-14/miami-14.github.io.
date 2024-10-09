@@ -15,7 +15,7 @@ d’erreur.
 Les protocoles de couche 2 doivent ajouter de l’information à celle déjà existante pour former
 un ensemble qu’on appelle une trame.
 
-La couche Liaison de données est divisée en `deux sous­couches` :
+La couche Liaison de données à `deux sous­couches` :
 
 * `La couche LLC` , IEEE 802.2.
 * `La couche MAC`  Il y a plusieurs instances existent :
@@ -188,21 +188,20 @@ Cette illustration nous montre une adresse MAC et son organisation :
                               Composition d’une adresse MAC
 
 
-La partie OUI il y a les trois premiers octets. Dans cette partie, on peut voir comme `un préfixe`, est assignée
+La partie OUI il y a les trois premiers octets. Dans cette partie, on peut voir comme un préfixe, est assignée
 au constructeur par l’IEEE. Pour pouvoir obtenir un préfixe, un constructeur on doit faire la demande et l’acheter
 auprès de l’IEEE. Donc on peut dire que tous les constructeurs de cartes réseau Ethernet sont référencés par
 l’IEEE.
 
-Un constructeur peut disposer de plusieurs préfixes OUI s’il dépose plusieurs demandes par exemple. Vous pouvez
-trouver la liste complète des assignations de l’IEEE à l’URL qui suit : http://standards.ieee.org/develop/regauth/oui/oui.txt
+Un constructeur peut disposer de plusieurs préfixes OUI s’il dépose plusieurs demandes par exemple. 
 Cisco figure parmi les premiers constructeurs de la liste avec le préfixe 00­00­0C. Comme vous pourrez le constater,
 Cisco possède bien d’autres préfixes OUI.
 
-Il faut garder cette structure de l’adresse MAC à l’esprit car dans certains cas vous vous trouverez dans des
+Il faut garder cette structure de l’adresse MAC à l’esprit si vous trouverez dans des
 situations où vous aurez réussi à récupérer l’adresse MAC d’un équipement sans savoir de quel équipement il s’agit.
-Utiliser le préfixe OUI permet (parfois) de récupérer le nom du constructeur et de retrouver l’équipement recherché.
+Utiliser le préfixe OUI permet de récupérer le nom du constructeur et de retrouver l’équipement recherché.
 Vous pourrez trouver sur votre moteur de recherche favori une multitude de sites qui proposent de chercher dans la
-base IEEE à votre place.
+base IEEE.
 
 NIC est la seconde partie de l’adresse MAC et il y a trois derniers octets. Cette partie est appartient au 
 constructeur qui s’engage à n’assigner une adresse qu’une seule fois.
@@ -256,3 +255,5 @@ Ethernet :
 Adresse Physique :
 ![image](https://github.com/user-attachments/assets/865fd442-b3cc-4cbc-b814-9aacfd88f964)
 
+
+# Dissection d’une trame Ethernet
