@@ -29,7 +29,7 @@ La couche Liaison de données est divisée en `deux sous­couches` :
 il existe des instances, certaines sont toujours utilisées tandis que d’autres sont frappés petit à
 petit d’obsolescence. Actuellement, le protocole prédominant en filaire sur la couche 2 est Ethernet.
 
-D’autres protocoles, plus ou moins utilisés aujourd’hui, existent sur cette couche. Parmi les protocoles qui sont moins utiliser sont
+Il y a d'autre protocoles, plus ou moins utilisés aujourd’hui, existent sur cette couche. Parmi les protocoles qui sont moins utiliser sont
 `IEEE 802.11 Wi­Fi`, `Frame Relay` et `ATM`.
 
 
@@ -37,7 +37,7 @@ D’autres protocoles, plus ou moins utilisés aujourd’hui, existent sur cette
 
 
 
-## Mac 
+## 2- Mac 
 
 Quand un navigateur demande une page Internet, la requête formulée risque très certainement de traverser
 différents médias.
@@ -48,7 +48,7 @@ et utiliser différents formats pour l’adressage des équipements connectés.
 Si il y a pas la couche MAC, les protocoles de niveaux supérieurs devraient gérer chacun de ces médias en s’adaptant aux
 différentes règles qui les régissent.
 
-Grâce à la couche MAC (Media Access Control), un équipement donné peut lire les informations contenues dans la
+Grâce à la couche MAC , un équipement donné peut lire les informations contenues dans la
 trame entrante, la décapsuler (séparer les données utiles au média des autres) puis la réencapsuler (ajouter les
 données nécessaires au média aux données que l’on veut transmettre), sous un nouveau format qui respecte les
 méthodes d’accès au nouveau média.
@@ -78,8 +78,7 @@ a pas de risque de collision et un temps de parole est garanti pour chaque inter
 
 Historiquement, Ethernet est le protocole qui utilise le mode de communication à "bâtons rompus", ce mode est
 aussi appelé "Shared Access Media" ou encore "Contention­Based Access". Deux protocoles ont été développés
-pour permettre aux réseaux de fonctionner sur ce modèle, il s’agit de CSMA/CD (Carrier Sense Multiple
-Access/Collision Detection) pour les liaisons filaires et CSMA/CA (Carrier Sense Multiple Access/Collision Avoidance) pour
+pour permettre aux réseaux de fonctionner sur ce modèle, il s’agit de CSMA/CA  pour les liaisons filaires et CSMA/CA 
 les connexions sans fil. Ces deux protocoles seront expliqués à la section Le fonctionnement d’Ethernet de ce
 chapitre.
 
@@ -87,8 +86,11 @@ Token Ring est le protocole qui utilisait le mode de communication par jeton, an
 Même si Token Ring est considéré comme obsolète aujourd’hui, son principe de régulation d’accès au média reste
 toujours valable.
 
+- `MAC` => (Media Access Control)
+- `CSMA/CA` => (Carrier Sense Multiple Access/Collision Detection)
+
 ## 3-  LLC
-La sous­couche LLC sert d’interface pour la couche supérieure, la couche Réseau.
+La sous­couche `LLC` sert d’interface pour la couche supérieure, la couche Réseau.
 
 Cette couche permet notamment d’identifier quel protocole de couche supérieure est utilisé, ce qui permet
 finalement à plusieurs protocoles différents de couche 3 d’utiliser le même protocole de couche 2.
@@ -99,7 +101,7 @@ qui domine l’industrie depuis des années, Ethernet.
 Avec Ethernet, la sous­couche LLC identifie le protocole de niveau supérieur en utilisant dans la trame un identifiant
 qui est nommé EtherType.
 
-Quelques valeurs EtherType communes sont les suivantes :
+Les valeurs EtherType communes sont :
 
 * l 0x0800 pour IPv4
 * l 0x0806 pour ARP
@@ -107,17 +109,21 @@ Quelques valeurs EtherType communes sont les suivantes :
 * l 0x891 pour FCoE
 
 
-Cette fonction de LLC est très importante car elle permet de fournir un service de multiplexage.
+La fonction de LLC est très importante car elle permet de fournir un service de multiplexage.
 
 Par exemple un hôte peut avoir activé en même temps plusieurs protocoles de niveau supérieur, la sous­couche LLC
 détermine à partir de l’EtherType à quel processus réseau (network stack) envoyer la trame pour qu’elle soit traitée
-correctement au niveau supérieur. Naturellement, le protocole utilisé sur la couche supérieure (ici la couche 3) est
-totalement transparent pour la sous­couche MAC ou la couche inférieure (la couche 1).
+correctement au niveau supérieur. Naturellement, le protocole utilisé sur la couche supérieure est
+totalement transparent pour la sous­couche MAC ou la couche inférieure .
 
 Historiquement, `LLC`pouvait également fournir des services de contrôle de flux et de gestion des
-erreurs. Aujourd’hui, la majorité des réseaux utilisent les protocoles de `couche 4 (la couche Transport)` pour assurer
+erreurs. Aujourd’hui, la majorité des réseaux utilisent les protocoles de `couche 4 ` pour assurer
 les transmissions ce qui ne laisse à `LLC` qu’un rôle de multiplexage.
 
+- `LLC ` =>
+- Couche 4 => la couche Transport
+- Couche 1 => La couche Inférieur
+- Couche 3 => la couche supérieure
 
 # Protiocole 
 
