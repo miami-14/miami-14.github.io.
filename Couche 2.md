@@ -34,8 +34,8 @@ Il y a d'autre protocoles, plus ou moins utilisés aujourd’hui, existent sur c
 
 
 > [!NOTE]
-La couche LLC=> Logical Link Control
-La couche MAC=> Media Access Control
+- La couche LLC=> Logical Link Control
+- La couche MAC=> Media Access Control
 
 
 ## 2- Mac 
@@ -92,8 +92,8 @@ Même si Token Ring est considéré comme obsolète aujourd’hui, son principe 
 toujours valable.
 
 > [!NOTE]
-- `MAC` => Media Access Control
-- `CSMA/CA` => Carrier Sense Multiple Access/Collision Detection
+- MAC => Media Access Control
+- CSMA/CA => Carrier Sense Multiple Access/Collision Detection
 
 ## 3-  LLC
 La sous­couche `LLC` sert d’interface pour la couche supérieure, la couche Réseau.
@@ -174,9 +174,9 @@ qui sont dénommées respectivement OUI  et NIC.
 L’adresse MAC utilise la représentation hexadécimale, chaque caractère vaut 4 bits.
 
 > [!NOTE]
-OUI=> Organizationally Unique Identifier
-NIC=> Network Interface Identifier
-BIA=> Burned In Address
+- OUI=> Organizationally Unique Identifier
+- NIC=> Network Interface Identifier
+- BIA=> Burned In Address
 
 Cette illustration nous montre une adresse MAC et son organisation :
 
