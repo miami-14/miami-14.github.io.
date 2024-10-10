@@ -1,6 +1,6 @@
 # codage CSS
 
-### Exemples dans chaque chapitre
+## Exemples dans chaque chapitre
 Ce tutoriel CSS contient des centaines d’exemples CSS.
 
 Avec notre éditeur en ligne, vous pouvez modifier le CSS et cliquer sur un bouton pour afficher le résultat.
@@ -19,7 +19,7 @@ Avec notre éditeur en ligne, vous pouvez modifier le CSS et cliquer sur un bout
       font-size: 20px;
     }
 
-### Le sélecteur d’élément CSS
+## Le sélecteur d’élément CSS
 Le sélecteur d’éléments sélectionne les éléments HTML en fonction du nom de l’élément.
 
 Ici, tous les éléments <p> de la page seront aligné au centre, avec une couleur de texte rouge :
@@ -29,7 +29,7 @@ Ici, tous les éléments <p> de la page seront aligné au centre, avec une coule
       color: red;
     }
 
-### Le sélecteur d’id CSS
+## Le sélecteur d’id CSS
 Le sélecteur id utilise l’attribut id d’un élément HTML pour sélectionner un élément spécifique.
 
 L’id d’un élément est unique au sein d’une page, donc le sélecteur d’id est habituel Sélectionnez un élément unique !
@@ -43,7 +43,7 @@ La règle CSS ci-dessous sera appliquée à l’élément HTML avec id="para1 »
       color: red;
     }
 
-### Le sélecteur de classe CSS
+## Le sélecteur de classe CSS
 Le sélecteur de classe sélectionne les éléments HTML avec un attribut de classe spécifique.
 
 Pour sélectionner des éléments avec une classe spécifique, écrivez un point (.), suivi de l’icône nom de la classe.
@@ -70,7 +70,7 @@ Dans cet exemple, l’élément <p> sera stylisé selon class="center » et à c
 
     <p class="center large">This paragraph refers to two classes.</p>
 
-### Le sélecteur universel CSS
+## Le sélecteur universel CSS
 Le sélecteur universel (*) sélectionne tous les fichiers HTML éléments sur la page.
 
 La règle CSS ci-dessous affectera tous les éléments HTML de la page :
@@ -80,7 +80,7 @@ La règle CSS ci-dessous affectera tous les éléments HTML de la page :
       color: blue;
     }
 
-### Le sélecteur de regroupement CSS
+## Le sélecteur de regroupement CSS
 Le sélecteur de regroupement sélectionne tous les éléments HTML avec le même style Définitions.
 
 Regardez le code CSS suivant (les éléments h1, h2 et p ont les mêmes définitions de style) :
