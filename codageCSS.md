@@ -113,7 +113,7 @@ Dans cet exemple, nous avons regroupé les sélecteurs du code ci-dessus :
       color: red;
     }
     
-## Comment ajouter du CSS
+# Comment ajouter du CSS
 
 Trois façons d’insérer du CSS :
 
