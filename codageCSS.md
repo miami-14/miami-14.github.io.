@@ -6,6 +6,8 @@ Puis cliqué sur en haut a gauche
 
 Cliqué sur `File`
 
+Donner un nom ⚠️ important de mettre .css a la fin de votre nom ⚠️
+
 
 
 
@@ -64,7 +66,7 @@ Le sélecteur de classe sélectionne les éléments HTML avec un attribut de cla
 
 Pour sélectionner des éléments avec une classe spécifique, écrivez un point (.), suivi de l’icône nom de la classe.
 
-Par Exemple :
+-Par Exemple :
 
     .center {
         text-align: center;
@@ -73,7 +75,7 @@ Par Exemple :
 
 Vous pouvez également spécifier que seuls des éléments HTML spécifiques doivent être affectés par une classe.
 
-Par Exemple : 
+-Par Exemple : 
 
     p.center {
         text-align: center;
@@ -89,7 +91,7 @@ Par Exemple :
 ### Le sélecteur universel CSS
 Le sélecteur universel (*) sélectionne tous les fichiers HTML éléments sur la page.
 
-Par Exemple : 
+-Par Exemple : 
 
     * {
       text-align: center;
@@ -101,7 +103,7 @@ Le sélecteur de regroupement sélectionne tous les éléments HTML avec le mêm
 
 Regardez le code CSS suivant (les éléments h1, h2 et p ont les mêmes définitions de style) :
 
-Par Exemple : 
+-Par Exemple : 
 
     h1 {
       text-align: center;
@@ -123,7 +125,7 @@ Il sera préférable de regrouper les sélecteurs, pour minimiser le code.
 Pour regrouper des sélecteurs, séparez chaque sélecteurs par une virgule.
 
 
-Par Exemple : 
+-Par Exemple : 
 
     h1, h2, p {
       text-align: center;
