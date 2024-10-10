@@ -1,5 +1,5 @@
 
-# Méthodes GET et POST
+# Méthodes GET et POST  
 <div>
 la méthode GET doivent uniquement être utilisées afin de récupérer des données. La méthode HEAD demande une réponse identique à une requête GET pour laquelle on aura omis le corps de la réponse (on a uniquement l'en-tête). La méthode POST est utilisée pour envoyer une entité vers la ressource indiquée. 
 (https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)/
