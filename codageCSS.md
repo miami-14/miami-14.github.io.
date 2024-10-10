@@ -1,5 +1,6 @@
 # codage CSS
 
+
 ## Exemples dans chaque chapitre
 Ce tutoriel CSS contient des centaines d’exemples CSS.
 
@@ -111,6 +112,7 @@ Dans cet exemple, nous avons regroupé les sélecteurs du code ci-dessus :
       text-align: center;
       color: red;
     }
+    
 ## Comment ajouter du CSS
 
 Trois façons d’insérer du CSS :
