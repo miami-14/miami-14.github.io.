@@ -206,18 +206,22 @@ Les styles en ligne sont définis dans l’attribut « style » de la élément:
 
 ## Plusieurs feuilles de style
 Si certaines propriétés ont été définies pour le même sélecteur (élément) dans différentes feuilles de style, La valeur de la dernière feuille de style lue sera utilisée.
+Supposons qu’une feuille de style externe ait le style 
+suivant pour l’élément <h1> :
 
-Supposons qu’une feuille de style externe ait le style suivant pour l’élément <h1> :
 
     h1 {
       color: navy;
     }
 
+
 Ensuite, supposons qu’une feuille de style interne ait également le style suivant pour l’élément <h1> :
+
 
     h1 {
       color: orange;   
     }
+
 
 Si le style interne est défini après le lien vers la feuille de style externe, les éléments <h1> seront « orange » :
 
