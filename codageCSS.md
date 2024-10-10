@@ -210,9 +210,9 @@ Supposons qu’une feuille de style externe ait le style
 suivant pour l’élément <h1> :
 
 
-    h1 {
-      color: navy;
-    }
+        h1 {
+          color: navy;
+        }
 
 
 Ensuite, supposons qu’une feuille de style interne ait également le style suivant pour l’élément <h1> :
