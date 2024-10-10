@@ -23,7 +23,8 @@ Avec notre éditeur en ligne, vous pouvez modifier le CSS et cliquer sur un bout
 ## Le sélecteur d’élément CSS
 Le sélecteur d’éléments sélectionne les éléments HTML en fonction du nom de l’élément.
 
-Ici, tous les éléments <p> de la page seront aligné au centre, avec une couleur de texte rouge :
+Ici, tous les éléments <p> de la page seront aligné au centre, avec une couleur
+de texte rouge :
 
     p {
       text-align: center;
@@ -126,8 +127,8 @@ Avec un feuille de style externe, vous pouvez changer l’apparence d’un site 
 
 Chaque page HTML doit inclure une référence au fichier de feuille de style externe à l’intérieur l’élément <lien> à l’intérieur de la section de la tête.
 
-
-Les styles externes sont définis dans l’élément <link> dans la section <head> d’une page HTML :
+Les styles externes sont définis dans l’élément <link> dans
+la section <head> d’une page HTML :
 
     <!DOCTYPE html>
     <html>
@@ -142,10 +143,11 @@ Les styles externes sont définis dans l’élément <link> dans la section <hea
     </body>
     </html>
 
+
+
 Une feuille de style externe peut être écrite dans n’importe quel éditeur de texte et doit être enregistrée avec une extension .css.
 
 Le fichier .css externe ne doit pas contenir de balises HTML.
-
 Voici à quoi ressemble le fichier « mystyle.css » :
 « mystyle.css »
 
