@@ -89,6 +89,10 @@ Par exemple:
 ![image](https://github.com/user-attachments/assets/19423fd6-41c9-4f1e-bae9-5ac06954e247)
 
 
+⚠️ `colspan ""` permet de mettre un mot dans deux zone ou on veut mettre par exemple :
+
+![image](https://github.com/user-attachments/assets/6227a5df-b799-47ab-8576-d6aefeb3fba7)
+
 
 ## Sauté un paragraphe 
 
