@@ -147,7 +147,6 @@ Une feuille de style externe peut être écrite dans n’importe quel éditeur d
 Le fichier .css externe ne doit pas contenir de balises HTML.
 
 Voici à quoi ressemble le fichier « mystyle.css » :
-
 « mystyle.css »
 
     body {
@@ -160,11 +159,9 @@ Voici à quoi ressemble le fichier « mystyle.css » :
     }
 
 ## CSS interne
-
 Une feuille de style interne peut être utilisée si une seule page HTML a un style unique.
 
 Le style interne est défini à l’intérieur de l’élément <style>, à l’intérieur de la tête section.
-
 Les styles internes sont définis dans l’élément <style> dans la section <head> d’une page HTML :
 
     <!DOCTYPE html>
@@ -193,7 +190,6 @@ Les styles internes sont définis dans l’élément <style> dans la section <he
 Un style en ligne peut être utilisé pour appliquer un style unique à un seul élément.
 
 Pour utiliser des styles en ligne, ajoutez l’attribut style à l’élément approprié. Le style peut contenir n’importe quelle propriété CSS.
-
 Les styles en ligne sont définis dans l’attribut « style » de la élément:
 
     <!DOCTYPE html>
