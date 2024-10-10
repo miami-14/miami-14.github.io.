@@ -85,7 +85,7 @@ Vous pouvez également spécifier que seuls des éléments HTML spécifiques doi
 
 Éléments HTML peut également faire référence à plus d’une classe.
 
-    <p class="center large">This paragraph refers to two classes.</p>
+    ⚠️<p class="center large">This paragraph refers to two classes.</p>⚠️
 
 
 ### Le sélecteur universel CSS
