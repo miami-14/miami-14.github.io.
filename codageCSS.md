@@ -68,7 +68,7 @@ Dans cet exemple, seuls les éléments <p> avec class="center » seront rouge et
 
 Éléments HTML peut également faire référence à plus d’une classe.
 
-Dans cet exemple, l’élément <p> sera stylisé selon class="center » et à class="large » :
+Dans cet exemple, l’élément `<p>` sera stylisé selon `class="center `» et à `class="large` » :
 
     <p class="center large">This paragraph refers to two classes.</p>
 
@@ -127,8 +127,8 @@ Avec un feuille de style externe, vous pouvez changer l’apparence d’un site 
 
 Chaque page HTML doit inclure une référence au fichier de feuille de style externe à l’intérieur l’élément <lien> à l’intérieur de la section de la tête.
 
-Les styles externes sont définis dans l’élément <link> dans
-la section <head> d’une page HTML :
+Les styles externes sont définis dans l’élément `<link>` dans
+la section `<head>` d’une page HTML :
 
     <!DOCTYPE html>
     <html>
@@ -148,8 +148,8 @@ la section <head> d’une page HTML :
 Une feuille de style externe peut être écrite dans n’importe quel éditeur de texte et doit être enregistrée avec une extension .css.
 
 Le fichier .css externe ne doit pas contenir de balises HTML.
-Voici à quoi ressemble le fichier « mystyle.css » :
-« mystyle.css »
+Voici à quoi ressemble le fichier `« mystyle.css »` :
+`« mystyle.css »`
 
     body {
         background-color: lightblue;
@@ -163,8 +163,8 @@ Voici à quoi ressemble le fichier « mystyle.css » :
 ## CSS interne
 Une feuille de style interne peut être utilisée si une seule page HTML a un style unique.
 
-Le style interne est défini à l’intérieur de l’élément <style>, à l’intérieur de la tête section.
-Les styles internes sont définis dans l’élément <style> dans la section <head> d’une page HTML :
+Le style interne est défini à l’intérieur de l’élément  `<style>`, à l’intérieur de la tête section.
+Les styles internes sont définis dans l’élément `<style>` dans la section <head> d’une page HTML :
 
     <!DOCTYPE html>
     <html>
@@ -192,7 +192,7 @@ Les styles internes sont définis dans l’élément <style> dans la section <he
 Un style en ligne peut être utilisé pour appliquer un style unique à un seul élément.
 
 Pour utiliser des styles en ligne, ajoutez l’attribut style à l’élément approprié. Le style peut contenir n’importe quelle propriété CSS.
-Les styles en ligne sont définis dans l’attribut « style » de la élément:
+Les styles en ligne sont définis dans l’attribut `« style »` de la élément:
 
     <!DOCTYPE html>
     <html>
@@ -206,8 +206,7 @@ Les styles en ligne sont définis dans l’attribut « style » de la élément:
 
 ## Plusieurs feuilles de style
 Si certaines propriétés ont été définies pour le même sélecteur (élément) dans différentes feuilles de style, La valeur de la dernière feuille de style lue sera utilisée.
-Supposons qu’une feuille de style externe ait le style 
-suivant pour l’élément `<h1>`:
+Supposons qu’une feuille de style externe ait le style suivant pour l’élément `<h1>`:
 
 
       h1 {
