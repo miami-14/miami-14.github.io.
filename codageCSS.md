@@ -288,9 +288,9 @@ Vous pouvez définir la couleur des bordures :
 
 ## Valeurs de couleur
 
-En HTML, les couleurs peuvent également être spécifiées à l’aide de valeurs RVB, de valeurs HEX, de HSL valeurs, valeurs RGBA et valeurs HSLA.
+En HTML, les couleurs peuvent également être spécifiées à l’aide de `valeurs RVB`, de `valeurs HEX`, de `HSL valeurs`, `valeurs RGBA` et `valeurs HSLA`.
 
-La couleur d’arrière-plan des trois éléments <div> suivants est définie avec RVB : Valeurs HEX et HSL :
+La couleur d’arrière-plan des trois éléments `<div>` suivants est définie avec `RVB` : Valeurs `HEX` et `HSL` :
 
     <h1 style="background-color:rgb(255, 99, 71);">...</h1>
     <h1 style="background-color:#ff6347;">...</h1>
@@ -346,7 +346,7 @@ les propriétés d’arrière-plan CSS suivantes :
 
 ## Couleur d’arrière-plan CSS
 
-La propriété spécifie la couleur d’arrière-plan d’un élément.background-color
+La propriété spécifie la couleur d’arrière-plan d’un élément.`background-color`
 
 La couleur d’arrière-plan d’une page est définie comme suit :
 
@@ -357,14 +357,14 @@ La couleur d’arrière-plan d’une page est définie comme suit :
 Avec CSS, une couleur est le plus souvent spécifiée par :
 
 un nom de couleur valide - comme « rouge »
-une valeur HEX - comme « #ff0000 »
-une valeur RVB - comme « rgb(255,0,0) »
+`une valeur HEX` - comme « #ff0000 »
+`une valeur RVB` - comme « rgb(255,0,0) »
 Regardez les valeurs de couleur CSS pour une Liste des valeurs de couleur possibles.
 
 ## Autres éléments
 Vous pouvez définir la couleur d’arrière-plan de n’importe quel élément HTML :
 
-Ici, les éléments <h1>, <p> et <div> auront des couleurs d’arrière-plan différentes :
+Ici, les éléments `<h1>`, `<p>` et `<div>` auront des couleurs d’arrière-plan différentes :
 
     h1 {
       background-color: green;
