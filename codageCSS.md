@@ -300,7 +300,7 @@ La couleur d’arrière-plan des trois éléments <div> suivants est définie av
     <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
 
 
-    ![image](https://github.com/user-attachments/assets/d1cf1b2a-e06c-40d5-a891-72fd1ac328ac)
+![image](https://github.com/user-attachments/assets/d1cf1b2a-e06c-40d5-a891-72fd1ac328ac)
 
 
 ## Valeur HEX à 3 chiffres
