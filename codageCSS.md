@@ -246,3 +246,235 @@ Cependant, si le style interne est défini avant le lien vers la feuille de styl
     </style>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
+
+
+# Couleurs CSS
+
+## Couleur d’arrière-plan CSS
+
+Vous pouvez définir la couleur d’arrière-plan des éléments HTML :
+
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+    <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+
+![image](https://github.com/user-attachments/assets/b5aa0e94-90f7-48fe-a1cd-e1d7fe5ebca1)
+
+
+## Couleur du texte CSS
+
+Vous pouvez définir la couleur du texte :
+
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+
+![image](https://github.com/user-attachments/assets/6f8cb308-aece-429a-894a-368edad10799)
+
+
+
+## Couleur de la bordure
+
+Vous pouvez définir la couleur des bordures :
+
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+
+
+![image](https://github.com/user-attachments/assets/6f91f68b-b4b5-4d98-a48f-b7ef556565d0)
+
+
+## Valeurs de couleur
+
+En HTML, les couleurs peuvent également être spécifiées à l’aide de valeurs RVB, de valeurs HEX, de HSL valeurs, valeurs RGBA et valeurs HSLA.
+
+La couleur d’arrière-plan des trois éléments <div> suivants est définie avec RVB : Valeurs HEX et HSL :
+
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+
+    ![image](https://github.com/user-attachments/assets/d1cf1b2a-e06c-40d5-a891-72fd1ac328ac)
+
+
+## Valeur HEX à 3 chiffres
+Parfois, vous verrez un code hexadécimal à 3 chiffres dans la source CSS.
+
+Le code hexadécimal à 3 chiffres est un raccourci pour certains codes hexadécimaux à 6 chiffres.
+
+Le code hexadécimal à 3 chiffres se présente sous la forme suivante :
+
+#RVB
+
+où are, g et b représentent les composantes rouge, verte et bleue avec des valeurs comprises entre 0 et f.
+
+Le code hexadécimal à 3 chiffres ne peut être utilisé que lorsque les deux valeurs (RR, GG et BB) sont identiques pour chaque composant. Donc, si nous avons #ff00cc, cela peut s’écrire comme suit : #f0c.
+
+En voici un exemple :
+
+        body {
+          background-color: #fc9; /* same as #ffcc99 */
+        }
+
+        h1 {
+          color: #f0f; /* same as #ff00ff */
+        }
+
+        p {
+          color: #b58; /* same as #bb5588 */
+        }
+
+# Arrière-plans CSS
+
+Les propriétés d’arrière-plan CSS sont utilisées pour ajouter des effets d’arrière-plan pour les éléments.
+
+
+les propriétés d’arrière-plan CSS suivantes :
+- background-color
+- background-image
+- background-repeat
+- background-attachment
+- background-position
+- background (propriété abrégée)
+
+
+## Couleur d’arrière-plan CSS
+
+La propriété spécifie la couleur d’arrière-plan d’un élément.background-color
+
+La couleur d’arrière-plan d’une page est définie comme suit :
+
+    body {
+      background-color: lightblue;
+    }
+
+Avec CSS, une couleur est le plus souvent spécifiée par :
+
+un nom de couleur valide - comme « rouge »
+une valeur HEX - comme « #ff0000 »
+une valeur RVB - comme « rgb(255,0,0) »
+Regardez les valeurs de couleur CSS pour une Liste des valeurs de couleur possibles.
+
+## Autres éléments
+Vous pouvez définir la couleur d’arrière-plan de n’importe quel élément HTML :
+
+Ici, les éléments <h1>, <p> et <div> auront des couleurs d’arrière-plan différentes :
+
+    h1 {
+      background-color: green;
+    }
+
+    div {
+      background-color: lightblue;
+    }
+
+    p {
+      background-color: yellow;
+    }
+
+# Opacité / Transparence
+La propriété spécifie l’opacité/transparence d’un élément. Il peut prendre une valeur comprise entre 0,0 et 1,0. Plus la valeur est faible, plus la transparence est grande :opacity
+
+    div {
+      background-color: green;
+      opacity: 0.3;
+    }
+
+# Bordures CSS
+Les propriétés CSS border vous permettent de spécifier le style, largeur et couleur de la bordure d’un élément.
+
+## Style de bordure CSS
+
+La propriété spécifie le type de bordure à afficher.border-style
+
+Les valeurs suivantes sont autorisées :
+
+- dotted - Définit une bordure en pointillés
+- dashed - Définit une bordure en pointillés
+- solid - Définit une bordure unie
+- double - Définit une double bordure
+- groove - Définit une bordure rainurée en 3D. L’effet dépend de la valeur de la couleur de la bordure
+- ridge - Définit une bordure striée 3D. L’effet dépend de la valeur de la couleur de la bordure
+- inset - Définit une bordure en encart 3D. L’effet dépend de la valeur de la couleur de la bordure
+- outset - Définit une bordure de départ 3D. L’effet dépend de la valeur de la couleur de la bordure
+- none - Ne définit aucune bordure
+- hidden - Définit une bordure cachée
+
+La propriété peut avoir de une à quatre valeurs (pour la bordure supérieure, la bordure droite, la bordure inférieure et la bordure gauche).border-style.
+
+Démonstration des différents styles de bordure :
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+![image](https://github.com/user-attachments/assets/3056a3fb-97f8-4ea4-a936-60d324b7fedc)
+
+# Largeur de la bordure CSS
+
+## Largeur de la bordure CSS
+La propriété spécifie la largeur des quatre bordures.`border-width`
+
+La largeur peut être définie comme une taille spécifique (en px, pt, cm, em, etc.) ou en utilisant L’une des trois valeurs prédéfinies : Mince, Moyen ou Épais :
+
+
+    p.one {
+      border-style: solid;
+      border-width: 5px;
+    }
+
+    p.two {
+      border-style: solid;
+      border-width: medium;
+    }
+
+    p.three {
+      border-style: dotted;
+      border-width: 2px;
+    }
+
+    p.four {
+      border-style: dotted;
+      border-width: thick;
+    }
+
+
+
+![image](https://github.com/user-attachments/assets/563fbdb5-1cd2-4d06-90a4-8bb16ee65f23)
+
+ 
+## Largeurs latérales spécifiques
+La propriété peut avoir de une à quatre valeurs (pour la bordure supérieure, la bordure droite, bordure inférieure et la bordure gauche) :border-width
+
+    p.one {
+      border-style: solid;
+      border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+    }
+
+    p.two {
+      border-style: solid;
+      border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+    }
+
+    p.three {
+      border-style: solid;
+      border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+    }
+
+
+![image](https://github.com/user-attachments/assets/38a513ef-2b7b-4f05-9593-8f6c6e145888)
