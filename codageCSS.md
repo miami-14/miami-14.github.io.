@@ -23,7 +23,7 @@ Avec notre éditeur en ligne, vous pouvez modifier le CSS et cliquer sur un bout
 ## Le sélecteur d’élément CSS
 Le sélecteur d’éléments sélectionne les éléments HTML en fonction du nom de l’élément.
 
-Ici, tous les éléments <p> de la page seront aligné au centre, avec une couleur
+Ici, tous les éléments `<p>` de la page seront aligné au centre, avec une couleur
 de texte rouge :
 
     p {
@@ -36,9 +36,9 @@ Le sélecteur id utilise l’attribut id d’un élément HTML pour sélectionne
 
 L’id d’un élément est unique au sein d’une page, donc le sélecteur d’id est habituel Sélectionnez un élément unique !
 
-Pour sélectionner un élément avec un id spécifique, écrivez un caractère dièse (#), suivi de ID de l’élément.
+Pour sélectionner un élément avec un id spécifique, écrivez un caractère dièse `(#)`, suivi de ID de l’élément.
 
-La règle CSS ci-dessous sera appliquée à l’élément HTML avec id="para1 » :
+La règle CSS ci-dessous sera appliquée à l’élément HTML avec id="`para1` » :
 
     #para1 {
       text-align: center;
@@ -48,7 +48,7 @@ La règle CSS ci-dessous sera appliquée à l’élément HTML avec id="para1 »
 ## Le sélecteur de classe CSS
 Le sélecteur de classe sélectionne les éléments HTML avec un attribut de classe spécifique.
 
-Pour sélectionner des éléments avec une classe spécifique, écrivez un point (.), suivi de l’icône nom de la classe.
+Pour sélectionner des éléments avec une classe spécifique, écrivez un point `(.)`, suivi de l’icône nom de la classe.
 
 Dans cet exemple, tous les éléments HTML avec class="center » seront rouges et alignés au centre :
 
@@ -59,7 +59,7 @@ Dans cet exemple, tous les éléments HTML avec class="center » seront rouges e
 
 Vous pouvez également spécifier que seuls des éléments HTML spécifiques doivent être affectés par une classe.
 
-Dans cet exemple, seuls les éléments <p> avec class="center » seront rouge et aligné au centre :
+Dans cet exemple, seuls les éléments `<p>` avec class="`center` » seront rouge et aligné au centre :
 
     p.center {
       text-align: center;
