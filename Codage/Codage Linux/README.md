@@ -1,3 +1,17 @@
+# Informations 
+
+- [Les paquets](#Les-paquets)
+
+- [Le réseau ](#Le-réseau)
+
+- [Le réseau ](#Le-réseau)
+
+- [Bases d'administration](#Bases-d'administration)
+
+- [Se déplacer dans les dossiers ](#Se-déplacer-dans-les-dossiers )
+
+- [Lister les fichiers et répertoires](#Lister-les-fichiers-et-répertoires)
+-----------------------------------------------------------------------------------------------  
 # Codage Linux 
 
 ## Les paquets
@@ -93,6 +107,7 @@
 ### Affiche les informations du paquet 
 `dpkg -I paquet.deb` 
 
+------------------------------------------------------------------------------------------------
 
 ## Le réseau 
 
@@ -130,6 +145,7 @@
 ### Configuration de la carte Wifi 
 `iwconfig` 
 
+------------------------------------------------------------------------------------------------
 
 ## Bases d'administration 
 
@@ -182,6 +198,7 @@
 ### Récapitulatif de command 
 `command -help`
 
+------------------------------------------------------------------------------------------------
 
 ## Se déplacer dans les dossiers 
 
@@ -203,6 +220,7 @@
 ### Se déplacer vers le dossier/usr/apt 
 `cd/usr/apt`  
 
+------------------------------------------------------------------------------------------------
 
 ## Lister les fichiers et répertoires 
 
