@@ -12,6 +12,7 @@
 - [CSS interne](#CSS-interne)
 - [CSS en ligne](#CSS-en-ligne)
 - [Plusieurs feuilles de style](#Plusieurs-feuilles-de-style)
+  
 - [Couleurs CSS](#Couleurs-CSS)
 - [Couleur d’arrière-plan CSS](#Couleur-d’arrière-plan-CSS)
 - [Couleur du texte CSS](#Couleur-du-texte-CSS)
@@ -22,13 +23,15 @@
 - [Couleur d’arrière-plan CSS](#Couleur-d’arrière-plan-CSS)
 - [Autres éléments](#Autres-éléments)
 - [Opacité / Transparence](#Opacité-/-Transparence)
+  
 - [Bordures CSS](#Bordures-CSS)
 - [Style de bordure CSS](#Style-de-bordure-CSS )
 - [Largeur de la bordure CSS](#Largeur-de-la-bordure-CSS)
 - [Largeurs latérales spécifiques](#Largeurs-latérales-spécifiques)
-- [](#)
-- [](#)
-
+- [Couleur de la bordure CSS](#Couleur-de-la-bordure-CSS)
+- [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
+- [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
+- [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
 
 # codage CSS
 
@@ -510,3 +513,136 @@ La propriété peut avoir de une à quatre valeurs (pour la bordure supérieure,
 
 
 ![image](https://github.com/user-attachments/assets/38a513ef-2b7b-4f05-9593-8f6c6e145888)
+
+
+# Couleur de la bordure CSS
+La propriété est utilisée pour définir la couleur des quatre bordures.border-color
+
+La couleur peut être définie par :
+
+- Nom - spécifiez un nom de couleur, comme « rouge »
+- HEX - spécifiez une valeur HEX, comme « #ff0000 »
+- RGB - spécifiez une valeur RVB, comme « rgb(255,0,0) »
+- HSL : spécifiez une valeur HSL, comme « hsl(0, 100%, 50%) »
+transparent
+
+        p.one {
+      border-style: solid;
+      border-color: red;
+        }
+
+        p.two {
+      border-style: solid;
+      border-color: green;
+        }
+
+        p.three {
+      border-style: dotted;
+      border-color: blue;
+        }
+![image](https://github.com/user-attachments/assets/1465b9b5-172e-4d1b-9083-aec0b24c941c)
+
+## Bordure CSS - Propriété abrégée
+
+Comme vous l’avez vu à la page précédente, il existe de nombreuses propriétés à prendre en compte lorsqu’il s’agit de frontières.
+
+Pour raccourcir le code, il est également possible de spécifier toutes les propriétés de bordure individuelles dans une propriété.
+
+La propriété est une propriété abrégée pour les propriétés de bordure individuelles suivantes :`border`
+
+- `border-width`
+- `border-style` (obligatoire)
+- `border-color`
+
+        p {
+      border: 5px solid red;
+        }
+Résultat:
+![image](https://github.com/user-attachments/assets/3fddbe6a-08ed-4d12-bcb2-d5dcd3ba60bd)
+
+Vous pouvez également spécifier toutes les propriétés de bordure individuelles pour un seul côté :
+
+    p {
+      border-left: 6px solid red;
+    }
+
+Résultat:
+![image](https://github.com/user-attachments/assets/221cc7ed-512c-4693-92aa-4d0b59cf35dc)
+
+## Bordure inférieure
+
+    p {
+      border-bottom: 6px solid red;
+    }
+Résultat:
+![image](https://github.com/user-attachments/assets/1ce202ad-d392-4372-a3a7-1c4948cfc1c6)
+
+## Bordures arrondies CSS
+La propriété est utilisée pour ajouter des bordures arrondies à un élément :`border-radius`
+
+![image](https://github.com/user-attachments/assets/b389c960-70b5-410e-b8b2-ed52b5e02b28)
+
+    p {
+      border: 2px solid red;
+      border-radius: 5px;
+    }
+# Marges CSS
+
+
+## Marges CSS
+Les propriétés CSS sont utilisées pour créer de l’espace autour des éléments, en dehors de toute frontière définie.`margin`
+
+Avec CSS, vous avez un contrôle total sur les marges. Il y a des propriétés pour définir la marge de chaque côté d’un élément (en haut, à droite, en bas et à gauche).
+
+## Marge - Côtés individuels
+CSS a des propriétés pour spécifier la marge pour chaque côté d’un élément :
+
+- `margin-top`
+- `margin-right`
+- `margin-bottom`
+- `margin-left`
+
+Toutes les propriétés de marge peuvent avoir les valeurs suivantes :
+
+- auto - le navigateur calcule la marge
+- Longueur - spécifie une marge en px, pt, cm, etc.
+- % - spécifie une marge en % de la largeur de l’élément contenant
+- inherit - spécifie que la marge doit être héritée de l’élément parent
+  
+Pourboire: Les valeurs négatives sont autorisées.
+
+Définissez des marges différentes pour les quatre côtés d’un élément <p> :
+
+    p {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+    }
+
+ou Si la propriété a quatre valeurs :margin
+
+- marge : 25px 50px 75px 100px ;
+    - La marge supérieure est de 25px
+    - La marge de droite est de 50px
+    - La marge inférieure est de 75px
+    -  La marge de gauche est de 100px
+ 
+Utilisez la propriété abrégée margin avec quatre valeurs :
+
+    p {
+      margin: 25px 50px 75px 100px;
+    }
+
+ou Si la propriété a trois valeurs :margin
+
+- marge : 25px 50px 75px ;
+    - La marge supérieure est de 25px
+    - Les marges droite et gauche sont de 50px
+    - La marge inférieure est de 75px
+
+Utilisez la propriété abrégée margin avec trois valeurs :
+
+    p {
+      margin: 25px 50px 75px;
+    }
