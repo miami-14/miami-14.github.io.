@@ -1,3 +1,20 @@
+
+- taille pour le caratère 
+- Style de caratère 
+- Citation du texte
+- Citation du code
+- Modèles de couleurs pris en charge
+- Lien 
+- Liens de section 
+- Liens relatifs
+- Images
+- Listes
+- Listes de tâches
+- Notes
+- Alertes 
+
+
+
 # taille pour le caratère 
 Pour créer un titre, ajoutez un à six symboles avant le texte de votre titre. Le nombre que vous utilisez déterminera le niveau hiérarchique et la taille de la police de caractères de l’en-tête.
 ```
