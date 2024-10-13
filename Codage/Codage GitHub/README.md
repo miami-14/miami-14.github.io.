@@ -1,5 +1,5 @@
 
-- taille pour le caratère 
+- 
 - Style de caratère 
 - Citation du texte
 - Citation du code
@@ -13,9 +13,17 @@
 - Notes
 - Alertes 
 
+## Table des matières
+
+- [taille pour le caratère](#taille-pour-le-caratère)
+- [Chapitre 1](#chapitre-1)
+- [Conclusion](#conclusion)
 
 
-# taille pour le caratère 
+
+
+
+# taille pour le caratère
 Pour créer un titre, ajoutez un à six symboles avant le texte de votre titre. Le nombre que vous utilisez déterminera le niveau hiérarchique et la taille de la police de caractères de l’en-tête.
 ```
 # bonjour ( grand ) 
