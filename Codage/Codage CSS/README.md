@@ -203,6 +203,7 @@ la section `<head>` d’une page HTML :
     </body>
     </html>
 
+![image](https://github.com/user-attachments/assets/e24430a1-9ab9-462c-b7fa-4bcf78bad3ce)
 
 
 Une feuille de style externe peut être écrite dans n’importe quel éditeur de texte et doit être enregistrée avec une extension .css.
@@ -219,6 +220,8 @@ Voici à quoi ressemble le fichier `« mystyle.css »` :
       color: navy;
       margin-left: 20px;
     }
+![image](https://github.com/user-attachments/assets/b397e54e-5c91-4748-a7c6-f616523e1dfd)
+
 
 ## CSS interne
 Une feuille de style interne peut être utilisée si une seule page HTML a un style unique.
@@ -248,6 +251,9 @@ Les styles internes sont définis dans l’élément `<style>` dans la section <
     </body>
     </html>
 
+![image](https://github.com/user-attachments/assets/2347deae-4300-4265-95f3-1b384978d974)
+
+
 ## CSS en ligne
 Un style en ligne peut être utilisé pour appliquer un style unique à un seul élément.
 
@@ -264,6 +270,10 @@ Les styles en ligne sont définis dans l’attribut `« style »` de la élémen
     </body>
     </html>
 
+![image](https://github.com/user-attachments/assets/19d8e454-8f0a-44b6-b330-ddd6bfca3dd3)
+
+
+
 ## Plusieurs feuilles de style
 Si certaines propriétés ont été définies pour le même sélecteur (élément) dans différentes feuilles de style, La valeur de la dernière feuille de style lue sera utilisée.
 Supposons qu’une feuille de style externe ait le style suivant pour l’élément `<h1>`:
@@ -274,6 +284,8 @@ Supposons qu’une feuille de style externe ait le style suivant pour l’élém
         }
 
 
+![Capture d'écran 2024-10-13 224712](https://github.com/user-attachments/assets/d5fa244e-e98c-4540-86a3-3811e9029928)
+
 
 Ensuite, supposons qu’une feuille de style interne ait également le style suivant pour l’élément `<h1>` :
 
@@ -281,6 +293,8 @@ Ensuite, supposons qu’une feuille de style interne ait également le style sui
     h1 {
       color: orange;   
     }
+
+![Capture d'écran 2024-10-13 224712](https://github.com/user-attachments/assets/cd34a3ee-6151-4759-a978-ff191ba2a489)
 
 
 Si le style interne est défini après le lien vers la feuille de style externe, les éléments `<h1>` seront « orange » :
@@ -294,6 +308,9 @@ Si le style interne est défini après le lien vers la feuille de style externe,
     </style>
     </head>
 
+![Capture d'écran 2024-10-13 224712](https://github.com/user-attachments/assets/97cf257c-caa1-446b-8a16-0542b12fd61b)
+
+
 Cependant, si le style interne est défini avant le lien vers la feuille de style externe, les éléments `<h1>` seront « marine » :
 
     <head>
@@ -304,6 +321,10 @@ Cependant, si le style interne est défini avant le lien vers la feuille de styl
     </style>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
+
+
+![image](https://github.com/user-attachments/assets/a74898ab-9884-414e-9a3e-af0c6d694ad7)
+
 
 ----------------------------------------------------------------------------------------------
 
@@ -463,7 +484,7 @@ La propriété spécifie l’opacité/transparence d’un élément. Il peut pre
 ![image](https://github.com/user-attachments/assets/970b5194-8737-4cad-8ce1-fcafaccfc0b6)
 
 
-
+-----------------------------------------------------------------------------------------------
 
 # Image d’arrière-plan CSS
 
@@ -497,7 +518,7 @@ L’image d’arrière-plan peut également être définie pour des éléments s
 ![image](https://github.com/user-attachments/assets/f35b9d08-05ad-42ca-980f-be4ce3201d5f)
 
 
-
+-----------------------------------------------------------------------------------------------
 
 # Répétition de l’image d’arrière-plan CSS
 
@@ -548,7 +569,7 @@ Positionnez l’image d’arrière-plan dans le coin supérieur droit :
 
 ![image](https://github.com/user-attachments/assets/5323d36a-e5c3-4c34-9e69-42e8db416a8f)
 
-
+-----------------------------------------------------------------------------------------------
   
 # Bordures CSS
 Les propriétés CSS border vous permettent de spécifier le style, largeur et couleur de la bordure d’un élément.
@@ -588,6 +609,8 @@ p.mix {`border-style: dotted dashed solid double;`}
 
 
 ![image](https://github.com/user-attachments/assets/3056a3fb-97f8-4ea4-a936-60d324b7fedc)
+
+-----------------------------------------------------------------------------------------------
 
 # Largeur de la bordure CSS
 
@@ -643,6 +666,7 @@ La propriété peut avoir de une à quatre valeurs (pour la bordure supérieure,
 
 ![image](https://github.com/user-attachments/assets/38a513ef-2b7b-4f05-9593-8f6c6e145888)
 
+-----------------------------------------------------------------------------------------------
 
 # Couleur de la bordure CSS
 La propriété est utilisée pour définir la couleur des quatre `bordures.border-color`
@@ -715,6 +739,9 @@ La propriété est utilisée pour ajouter des bordures arrondies à un élément
       border: 2px solid red;
       border-radius: 5px;
     }
+
+-----------------------------------------------------------------------------------------------
+
 # Marges CSS
 Toutes les propriétés de marge CSS
 
@@ -751,6 +778,9 @@ Définissez des marges différentes pour les quatre côtés d’un élément <p>
       margin-left: 80px;
     }
 
+![image](https://github.com/user-attachments/assets/8aed4a56-7126-4754-9eca-56254603e1bf)
+    
+
 ou Si la propriété a quatre valeurs :margin
 
 - marge : 25px 50px 75px 100px ;
@@ -765,6 +795,9 @@ Utilisez la propriété abrégée margin avec quatre valeurs :
       margin: 25px 50px 75px 100px;
     }
 
+![image](https://github.com/user-attachments/assets/2a0bd765-b40c-478b-93bf-3c0719294098)
+    
+
 ou Si la propriété a trois valeurs :margin
 
 - marge : 25px 50px 75px ;
@@ -778,6 +811,9 @@ Utilisez la propriété abrégée margin avec trois valeurs :
       margin: 25px 50px 75px;
     }
 
+![image](https://github.com/user-attachments/assets/6da27ebc-e7f2-44c1-9226-943cc191291c)
+
+
 ## La valeur auto
 Vous pouvez définir la propriété margin sur pour centrer horizontalement l’élément dans son conteneur.`auto`
 
@@ -788,6 +824,9 @@ L’élément occupera alors la largeur spécifiée et l’espace restant seront
     margin: auto;
     border: 1px solid red;
     }
+
+![image](https://github.com/user-attachments/assets/df8b3b2f-b4f1-4356-a06d-439bedfaa19f)
+
 
 ## Réduction de la marge
 Les marges supérieure et inférieure des éléments sont parfois réduites en une seule marge égale à la plus grande des deux marges.
@@ -801,6 +840,9 @@ Cela ne se produit pas sur les marges de gauche et de droite ! Uniquement des ma
     h2 {
     margin: 20px 0 0 0;
     }
+
+![image](https://github.com/user-attachments/assets/135dbb05-ce7f-4709-a46a-8565f73244d3)
+
 
 ## Remplissage CSS
 Le remplissage est utilisé pour créer de l’espace autour du contenu d’un élément, à l’intérieur de toutes les bordures définies.
@@ -894,6 +936,8 @@ Utilisez la propriété box-sizing pour maintenir la largeur à 300px, quel que 
 
 ![image](https://github.com/user-attachments/assets/9677134e-4b1e-4c33-addf-07fb20f96449)
 
+-----------------------------------------------------------------------------------------------
+
 # Tableaux CSS
 
 
@@ -935,6 +979,9 @@ Si vous souhaitez uniquement une bordure autour de la table, spécifiez uniqueme
     }
 
 ![image](https://github.com/user-attachments/assets/6f831d1e-988e-4092-a34d-db0efb165ad3)
+
+
+-----------------------------------------------------------------------------------------------
 
 # Taille du tableau CSS
 
