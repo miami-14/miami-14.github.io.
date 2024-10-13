@@ -549,7 +549,7 @@ transparent
         }
 ![image](https://github.com/user-attachments/assets/1465b9b5-172e-4d1b-9083-aec0b24c941c)
 
-## Bordure CSS - Propriété abrégée
+## Bordure CSS Propriété abrégée
 
 Comme vous l’avez vu à la page précédente, il existe de nombreuses propriétés à prendre en compte lorsqu’il s’agit de frontières.
 
@@ -601,7 +601,7 @@ Les propriétés CSS sont utilisées pour créer de l’espace autour des élém
 
 Avec CSS, vous avez un contrôle total sur les marges. Il y a des propriétés pour définir la marge de chaque côté d’un élément (en haut, à droite, en bas et à gauche).
 
-## Marge - Côtés individuels
+## Marge Côtés individuels
 CSS a des propriétés pour spécifier la marge pour chaque côté d’un élément :
 
 - `margin-top`
