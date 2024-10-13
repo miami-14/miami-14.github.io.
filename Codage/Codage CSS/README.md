@@ -1,3 +1,35 @@
+
+## Informations 
+
+- [Exemples dans chaque chapitre](#Exemples-dans-chaque-chapitre)
+- [Le sélecteur d’élément CSS ](#Le-sélecteur-d’élément-CSS)
+- [Le sélecteur d’id CSS](#Le-sélecteur-d’id-CSS)
+- [Le sélecteur de classe CSS](#Le-sélecteur-de-classe-CSS)
+- [Le sélecteur universel CSS](#Le-sélecteur-universel-CSS)
+- [Le sélecteur de regroupement CSS](#Le-sélecteur-de-regroupement-CSS)
+- [Comment ajouter du CSS](#Comment-ajouter-du-CSS)
+- [CSS externe](#CSS-externe)
+- [CSS interne](#CSS-interne)
+- [CSS en ligne](#CSS-en-ligne)
+- [Plusieurs feuilles de style](#Plusieurs-feuilles-de-style)
+- [Couleurs CSS](#Couleurs-CSS)
+- [Couleur d’arrière-plan CSS](#Couleur-d’arrière-plan-CSS)
+- [Couleur du texte CSS](#Couleur-du-texte-CSS)
+- [Couleur de la bordure](#Couleur-de-la-bordure)
+- [Valeurs de couleur](#Valeurs-de-couleur)
+- [Valeur HEX à 3 chiffres](#Valeur-HEX-à-3-chiffres)
+- [Arrière-plans CSS](#Arrière-plans-CSS)
+- [Couleur d’arrière-plan CSS](#Couleur-d’arrière-plan-CSS)
+- [Autres éléments](#Autres-éléments)
+- [Opacité / Transparence](#Opacité-/-Transparence)
+- [Bordures CSS](#Bordures-CSS)
+- [Style de bordure CSS](#Style-de-bordure-CSS )
+- [Largeur de la bordure CSS](#Largeur-de-la-bordure-CSS)
+- [Largeurs latérales spécifiques](#Largeurs-latérales-spécifiques)
+- [](#)
+- [](#)
+
+
 # codage CSS
 
 
