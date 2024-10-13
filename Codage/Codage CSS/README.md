@@ -9,19 +9,26 @@
   
 - [Couleurs CSS](#Couleurs-CSS)
 
-  
 - [Couleurs CSS HEX](#Couleurs-CSS-HEX)
-
   
 - [Arrière-plans CSS](#Arrière-plans-CSS)
 
 - [Image d’arrière-plan CSS](#Image-d’arrière-plan-CSS)
 
-- [](#)
+- [Répetition de l'image d'arrière-plan CSS ](#Répétition-de-l’image-d’arrière-plan-CSS)
 
-- [](#)
+- [Bordures CSS](#Bordures-CSS)
 
-- [](#)
+- [Largeur de la bordure CSS](#Largeur-de-la-bordure-CSS)
+
+- [Couleur de la bordure CSS](#Couleur-de-la-bordure-CSS)
+
+- [Marges CSS](#Marges-CSS)
+
+- [Tableaux CSS](#Tableaux-CSS)
+
+- [Taille du tableau CSS](#Taille-du-tableau-CSS)
+
 
 -----------------------------------------------------------------------------------------------
 # Tutoriel CSS
