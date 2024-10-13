@@ -32,6 +32,13 @@
 - [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
 - [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
 - [Bordure CSS - Propriété abrégée](#Bordure-CSS-Propriété-abrégée)
+- [Bordure inférieure](#Bordure-inférieure)
+- [Bordures arrondies CSS](#Bordures-arrondies-CSS)
+- [Marges CSS](#Marges-CSS)
+- [Marge - Côtés individuels](#Marge-Côtés-individuels)
+
+
+
 
 # codage CSS
 
