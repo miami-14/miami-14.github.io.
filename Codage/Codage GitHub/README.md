@@ -1,24 +1,21 @@
 
-- 
-- Style de caratère 
-- Citation du texte
-- Citation du code
-- Modèles de couleurs pris en charge
-- Lien 
-- Liens de section 
-- Liens relatifs
-- Images
-- Listes
-- Listes de tâches
-- Notes
-- Alertes 
+ 
 
-## Table des matières
+## Informations 
 
 - [taille pour le caratère](#taille-pour-le-caratère)
-- [Chapitre 1](#chapitre-1)
-- [Conclusion](#conclusion)
-
+- [Style de caratère ](#Style-de-caratère )
+- [Citation du texte](#Citation-du-texte)
+- [Citation du code](#Citation-du-code)
+- [Modèles de couleurs pris en charge](#Modèles-de-couleurs-pris-en-charge)
+- [Lien ](#Lien )
+- [Liens de section ](#Liens-de-section )
+- [Liens relatifs](#LLiens-relatifs)
+- [Images ](#Images )
+- [ Listes](#Listes )
+- [Listes de tâches ](#Listes-de-tâches )
+- [Notes ](#Notes )
+- [Alertes ](#Alertes )
 
 
 
