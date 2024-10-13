@@ -1,3 +1,28 @@
+## Informations 
+
+- [Comment créer HMTL dans Visual Studio Code](#Comment-créer-HMTL-dans-Visual-Studio-Code)
+
+- [ Le `< ! DOCTYPE>` Déclaration](#Le-`<-!-DOCTYPE>`-Déclaration )
+
+- [En-têtes HTML](#En-têtes-HTML)
+
+- [Paragraphes HTML](#Paragraphes-HTML)
+
+- [Liens HTML](#Liens-HTML)
+
+- [HTML Images](#HTML-Images)
+  
+- [Tableaux HTML](#Tableaux-HTML)
+
+- [Sauté un paragraphe](#Sauté-un-paragraphe)
+
+- [ L'attribut alt ](#L'attribut-alt)
+
+- [L'attribut style ](#L'attribut-style)
+
+- [L'attribut lang ](#L'attribut-lang)
+
+------------------------------------------------------------------------------------------------
 # Comment créer HMTL dans Visual Studio Code 
 
 
@@ -29,6 +54,8 @@
 
 * ⚠️Si tu veux trier fais `format document` ⚠️
 
+
+------------------------------------------------------------------------------------------------
 # Le codage HTML 
 
 ## Le `< ! DOCTYPE>` Déclaration 
