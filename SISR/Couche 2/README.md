@@ -7,7 +7,7 @@
 - [La couche Liaison de données et ses sous­couches](#La-couche-Liaison-de-données-et-ses-sous­couches)
 - [Protiocole](#Protiocole)
 - [L’adressage Ethernet](#L-adressage-Ethernet)
-- [Dissection d’une trame Ethernet](#Dissection-d’une-trame-Ethernet)
+- [Dissection d une trame Ethernet](#Dissection-d-une-trame-Ethernet)
 
 
 
@@ -288,7 +288,7 @@ Adresse Physique :
 
 ------------------------------------------------------------------------------------------------
 
-# Dissection d’une trame Ethernet
+# Dissection d une trame Ethernet
 
 ## Les composants d’une trame
 Pour comprendre le fonctionnement d’Ethernet, il est indipensable de connaître les éléments qui composent une trame Ethernet. La trame la plus rencontré actullement est Ethernet II, car elle est utilisée par les protocoles de niveau supérieur IP.
