@@ -54,8 +54,9 @@ Il y a d'autre protocoles, plus ou moins utilisés aujourd’hui, existent sur c
 
 
 > [!NOTE]
-- La couche LLC=> Logical Link Control
-- La couche MAC=> Media Access Control
+        - La couche LLC=> Logical Link Control
+
+ - La couche MAC=> Media Access Control
 
 
 ## 2- Mac 
@@ -66,7 +67,7 @@ différents médias.
 La manière dont ces différents médias fonctionnent peut être différente (synchrone, asynchrone, média partagé...)
 et utiliser différents formats pour l’adressage des équipements connectés.
 
- > [!NOTE]
+> [!NOTE]
          Si il y a pas la couche MAC, les protocoles de niveaux supérieurs devraient gérer chacun de ces médias en s’adaptant aux
          différentes règles qui les régissent.
 
@@ -112,8 +113,10 @@ Même si Token Ring est considéré comme obsolète aujourd’hui, son principe 
 toujours valable.
 
 > [!NOTE]
-- MAC => Media Access Control
-- CSMA/CA => Carrier Sense Multiple Access/Collision Detection
+        - MAC => Media Access Control
+
+  - CSMA/CA => Carrier Sense Multiple Access/Collision Detection
+
 
 ## 3-  LLC
 La sous­couche `LLC` sert d’interface pour la couche supérieure, la couche Réseau.
@@ -147,11 +150,15 @@ Historiquement, `LLC`pouvait également fournir des services de contrôle de flu
 erreurs. Aujourd’hui, la majorité des réseaux utilisent les protocoles de `couche 4 ` pour assurer
 les transmissions ce qui ne laisse à `LLC` qu’un rôle de multiplexage.
 
-> [!NOTE]
-- LLC  =>Logical Link Control
-- Couche 4 => la couche Transport
-- Couche 1 => La couche Inférieur
-- Couche 3 => la couche supérieure
+>[!NOTE]
+
+         - LLC  =>Logical Link Control
+
+        - Couche 4 => la couche Transport
+       
+        - Couche 1 => La couche Inférieur
+       
+        - Couche 3 => la couche supérieure
 
 # Protiocole 
 
@@ -190,13 +197,16 @@ correspond ce qui permettrait de reprogrammer le chipset de ladite carte.
 Une adresse MAC a un format précis, elle est composée de 48 bits soit 6 octets et est divisée en deux parties
 qui sont dénommées respectivement OUI  et NIC.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 L’adresse MAC utilise la représentation hexadécimale, chaque caractère vaut 4 bits.
 
-> [!NOTE]
-- OUI=> Organizationally Unique Identifier
-- NIC=> Network Interface Identifier
-- BIA=> Burned In Address
+>[!NOTE]
+
+        - OUI=> Organizationally Unique Identifier
+
+        - NIC=> Network Interface Identifier
+        
+        - BIA=> Burned In Address
 
 Cette illustration nous montre une adresse MAC et son organisation :
 
@@ -227,8 +237,8 @@ NIC est la seconde partie de l’adresse MAC et il y a trois derniers octets. Ce
 constructeur qui s’engage à n’assigner une adresse qu’une seule fois.
 
 > [!NOTE]
-Il est également intéressant qu’un équipement réseau peut posséder plusieurs adresses MAC.
-Par exemple le cas des switches réseau.
+        Il est également intéressant qu’un équipement réseau peut posséder plusieurs adresses MAC.
+        Par exemple le cas des switches réseau.
 
 Les adresses MAC peuvent différentes, selon les
 constructeurs et les systèmes.
