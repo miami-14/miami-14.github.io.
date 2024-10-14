@@ -301,18 +301,18 @@ On peut remarqué, la trame est divisée en plusieurs parties ayant toutes une t
 
 Dans le détail, voici les différentes parties de la trame, à l’exception de l’Interpacket Gap qui est la distance entre deux trames en octets :
 
-### Préambule
+### - Préambule
 
 Cette information est codée sur 7 octets (56 bits) et est définie sur la couche 1 pour Ethernet.
 Les 56 bits sont une suite parfaite de 1 et de 0 dont l’objectif est de signaler une nouvelle trame entrante et de permettre au récepteur de se synchroniser parfaitement avec l’émetteur.
 
 
-### SFD (Start Frame Delimiter)
+### - SFD (Start Frame Delimiter)
 
 Codée sur 1 octet (8 bits), cette information définie sur la couche 1 pour Ethernet et permet de démarquer la fin du champ Préambule et le début de la trame Ethernet. La valeur des bits du SFD est fixe (10101011).
 
 
-### MAC Destination
+### - MAC Destination
 
 Après le SFD, les informations définies sur la couche 2 pour Ethernet arrivent. Le champ MAC a une destination qui est simplement l’adresse de niveau 2 de l’interface à qui est destinée la trame et c’est principalement grâce à cette information que les équipements intermédiaires de niveau 2 savent comment switcher la trame 3correctement.
 
@@ -322,7 +322,7 @@ Après le SFD, les informations définies sur la couche 2 pour Ethernet arrivent
 Le champ MAC Source est l’adresse de niveau 2 de la station qui a émis la trame Ethernet.
 
 
-### EtherType
+### - EtherType
 
 L’EtherType sert à définir quel est le protocole de couche supérieure qui est utilisé. Dans le processus d’encapsulation, l’information a transité par les couches supérieures avant d’arriver sur la couche 2 où est défini l’EtherType. Il est donc possible de savoir quel est le protocole de niveau 3 utilisé.
 
@@ -335,14 +335,14 @@ Voici quelques exemples de valeurs EtherType à retenir :
 - l 0x8906 indique FCoE.
 
 
-### Payload
+### - Payload
 
 Ce qui est dénommé Payload est à la fois l’information dite "utile" et les en­têtes des couches supérieures.
 
 La longueur est variable, au maximum 1 500 octets. Cette valeur représente la taille maximum d’un paquet qui peut
 être transmis sans être fragmenté. Cette valeur est appelée MTU (Maximum Transmission Unit).
 
-### FCS (Frame Control Sequence)
+### - FCS (Frame Control Sequence)
 C’est cette portion d’information qui sert à la détection d’erreur. La station émettrice calcule un chiffre sur 4 octets relatif au contenu de la trame.La station de destination reçoit la trame, elle effectue le même calcul et détermine si le FCS est équivalent. Si le FCS n’est pas le même, cela signifie que la trame est corrompue et elle n’est pas prise en compte.
 
 Il faut ici insister sur le fait qu’il s’agit toujours de détection d’erreur et non de correction d’erreur.
