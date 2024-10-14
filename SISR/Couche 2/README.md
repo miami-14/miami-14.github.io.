@@ -1,5 +1,23 @@
 # Couche 2 
 
+
+
+## Informations 
+
+- [La couche Liaison de données et ses sous­couches](#La-couche-Liaison-de-données-et-ses-sous­couches)
+- [Protiocole](#Protiocole)
+- [L’adressage Ethernet](#L’adressage-Ethernet)
+- [Dissection d’une trame Ethernet](#Dissection-d’une-trame-Ethernet)
+
+
+
+
+
+
+
+
+
+
 # La couche Liaison de données et ses sous­couches
 
 
