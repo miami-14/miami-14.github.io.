@@ -182,7 +182,7 @@ pendant encore un très long moment.
 
 ------------------------------------------------------------------------------------------------
 
-# L’adressage Ethernet
+# L adressage Ethernet
 
 ## 1- Le format des adresses
 
