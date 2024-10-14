@@ -365,7 +365,8 @@ On est capable de spécifier une valeur de MTU allant jusqu’à 9 000, on parle
 
 Une trame Unicast est une trame qui est émise par une station et destinée à une seule autre station.
 
-(image ) 
+![image](https://github.com/user-attachments/assets/2abe1230-f059-4af5-9bb6-9c6396d33b37)
+
 
 
 Dans ce type de trame, l’adresse de destination contenue dans le champ MAC Destination est l’adresse d’une station distante, ce qui suppose que la station émettrice soit en possession de cette information.
@@ -382,7 +383,8 @@ Il est important de savoir que aucune trame ne peut avoir cette adresse Broadcas
 
 Cette trame est destinée à toutes les stations :
 
-(image ) 
+![image](https://github.com/user-attachments/assets/bde6cf50-ffee-438d-8775-326675c04cc7)
+
 
 
 ## La trame Multicast
@@ -393,7 +395,8 @@ Les trames Multicast a une adresse MAC de destination spéciale dont la plage es
 
 Une partie de l’adresse MAC est calculée à partir des 23 bits de l’adresse Multicast de niveau 3.
 
-(image ) 
+![image](https://github.com/user-attachments/assets/32f99318-1919-4cc9-bf7c-1539ebab16d1)
+
 
 ------------------------------------------------------------------------------------------------
 
