@@ -402,11 +402,11 @@ Une partie de l’adresse MAC est calculée à partir des 23 bits de l’adresse
 
 # Le protocole ARP 
 
-Le protocole ARP (Address Resolution Protocol) est un protocole crucial dans les réseaux IPv4, utilisé pour associer une adresse IP (adresse logique de niveau 3) à une adresse MAC (adresse physique de niveau 2). Cette correspondance est essentielle pour permettre aux appareils de communiquer entre eux sur un réseau local (LAN).
+`Le protocole ARP` (Address Resolution Protocol) est un protocole crucial dans les réseaux IPv4, utilisé pour associer une adresse IP (adresse logique de niveau 3) à une adresse MAC (adresse physique de niveau 2). Cette correspondance est essentielle pour permettre aux appareils de communiquer entre eux sur un réseau local (LAN).
 
 
 
-## Le Fonctionnement d'ARP :
+## 1- Le Fonctionnement d'ARP :
 
 
 ### - Objectif :
@@ -459,9 +459,157 @@ Le protocole ARP est essentiel pour permettre aux machines sur un réseau local 
 
 ![image](https://github.com/user-attachments/assets/8135ae2b-4b0a-4a1c-ba32-457a83b88834)
 
+Sur l'image montre un scénario de communication réseau entre différentes machines (PC01, PC02, PC03) dans un réseau local, en mettant l'accent sur le rôle du protocole ARP (Address Resolution Protocol) lors de l'envoi d'une commande `Ping`.
 
 
-## Le domaine de Broadcast
+1. Problème de communication entre PC01 et PC02 :
+   
+- PC01 (10.0.0.51) souhaite communiquer avec PC02 (10.0.0.52), mais ne connaît pas encore l'adresse MAC de PC02.
+
+
+- PC01 effectue une commande ARP pour demander l'adresse MAC de PC02. La commande ARP est utilisée pour traduire une adresse IP (ici 10.0.0.52) en une adresse MAC (ici 000c.2906.9343)
+
+
+
+2. Absence d'entrée ARP au début :
+   
+- La table ARP de PC01 n'a pas d'entrée pour l'adresse IP 10.0.0.52, ce qui est montré par la commande `arp -a` indiquant qu'aucune adresse MAC n'est encore associée à cette IP.
+
+
+
+3. Requête ARP (Who has 10.0.0.52 ?) :
+   
+- PC01 envoie une requête ARP en diffusion (broadcast) sur le réseau local. La requête demande "Who has 10.0.0.52?" (Qui a l'adresse IP 10.0.0.52 ?).
+
+- Cette requête est envoyée en broadcast (adresse MAC de destination FFFF.FFFF.FFFF) afin que tous les hôtes connectés au switch SW-01 puissent la recevoir. PC02 et PC03 reçoivent cette trame.
+
+
+4. Réponse de PC02 :
+   
+- PC02 (adresse IP 10.0.0.52) reconnaît que l'adresse demandée lui appartient et répond avec son adresse MAC 000c.2906.9343. Cette réponse est envoyée directement à PC01 (unicast).
+
+- Une fois la réponse reçue, PC01 met à jour sa table ARP avec l'adresse MAC de PC02, ce qui est illustré par la nouvelle entrée dans la table ARP (commande arp -a affichant 10.0.0.52 associé à 000c.2906.9343).
+
+5. Communication future :
+   
+- Une fois que PC01 connaît l'adresse MAC de PC02, il peut envoyer directement des trames Ethernet à PC02 en utilisant cette adresse MAC. Les futures communications ne nécessiteront plus de requête ARP tant que l'entrée est présente dans la table ARP.
+
+### Autres :
+
+- PC03 est également connecté au réseau, mais il n'est pas concerné par la requête ARP car son adresse IP (10.0.0.53) ne correspond pas à celle demandée dans la requête (10.0.0.52).
+
+- RT-01 (routeur) est également visible dans le schéma, connecté à l'internet, mais il n'est pas impliqué directement dans la résolution ARP locale entre PC01 et PC02.
+
+
+### Pour conclure :
+
+Ce processus montre comment une machine sur un réseau local, ici PC01, utilise le protocole ARP pour découvrir l'adresse MAC d'une autre machine (PC02) afin de pouvoir communiquer avec elle en envoyant une commande Ping. Une fois l'adresse MAC découverte, la communication entre les deux machines peut se faire directement via Ethernet.
+
+------------------------------------------------------------------------------------------------
+
+## 2-Le domaine de Broadcast
+
+
+Un domaine de Broadcast représente l'étendue d'un réseau où une trame broadcast peut être reçue. Cela inclut tous les dispositifs connectés à un même switch et l'interface interne d'un routeur. Dans le scénario précédent, le domaine de Broadcast couvre les stations PC01, PC02, PC03, le switch et l'interface interne du routeur RT-01.
+
+- Lorsqu'une station envoie une trame en broadcast, celle-ci est reçue par toutes les stations du même domaine de Broadcast.
+
+
+### L'importance du Broadcast :
+
+Le broadcast est crucial pour certains protocoles comme ARP (Address Resolution Protocol), utilisé pour découvrir l'adresse MAC d'une machine à partir de son adresse IP. Sans broadcast, la communication initiale entre deux machines sur un réseau local serait impossible dans un réseau Ethernet IPv4.
+
+
+### Inconvénient du Broadcast :
+
+Cependant, un grand nombre de trames broadcast peut ralentir le réseau, car chaque machine doit traiter chaque trame broadcast, même si elle n'est pas concernée. Cela peut entraîner une dégradation des performances.
+
+
+
+### Réduire les domaines de Broadcast :
+Il existe deux solutions principales pour limiter la taille des domaines de Broadcast et ainsi améliorer les performances du réseau :
+
+1- La création de VLANs (Virtual LANs) :
+- Un VLAN permet de diviser un réseau physique en plusieurs réseaux logiques. Chaque VLAN agit comme un domaine de Broadcast séparé, ce qui limite la portée des trames broadcast à un groupe spécifique de stations.
+
+2- Utilisation d'équipements de niveau 3 (comme des routeurs) :
+- Les routeurs, qui fonctionnent au niveau 3 (couche réseau), permettent de segmenter les réseaux en plusieurs parties distinctes. Par défaut, ils ne transmettent pas les trames broadcast entre les différents réseaux qu'ils connectent. Cela crée plusieurs domaines de Broadcast, chacun limité à une partie du réseau.
+
+
+### Schéma explicatif :
+Le schéma évoqué montre une topologie simple où il y a deux domaines de Broadcast, un de chaque côté du routeur. Cela signifie que les trames broadcast envoyées dans un domaine ne traversent pas le routeur et ne sont donc pas propagées de l'autre côté.
+
+### Conclusion :
+Le domaine de Broadcast joue un rôle essentiel dans le fonctionnement des réseaux locaux, mais il est important de le contrôler pour éviter les saturations de réseau. Les VLANs et les routeurs sont des solutions efficaces pour segmenter les réseaux et limiter la portée des trames broadcast, améliorant ainsi la performance globale du réseau.
+
+
+
+![image](https://github.com/user-attachments/assets/b3a8da90-6c0f-407e-8ccd-07ed3517c69c)
+
+Il faut se rappeler que ARP utilise justement des trames Broadcast pour résoudre les adresses.
+
+
+
+## 3- ARP et les réseaux distants
+
+
+### Rôle d'ARP dans un domaine de Broadcast :
+
+
+Le protocole ARP (Address Resolution Protocol) permet de résoudre une adresse IP en adresse MAC, mais uniquement pour les dispositifs situés dans le même domaine de Broadcast. ARP fonctionne en envoyant une trame broadcast pour demander l'adresse MAC associée à une adresse IP cible. Cette trame est reçue par toutes les stations du domaine, mais seulement la station avec l'adresse IP demandée répond.
+
+
+### Limitation d'ARP :
+
+ARP ne peut pas résoudre les adresses MAC des machines qui ne se trouvent pas dans son propre domaine de Broadcast. Il ne fonctionne donc que pour les équipements situés sur le même réseau local.
+
+
+### Communication avec des réseaux distants :
+
+Lorsqu'une machine souhaite communiquer avec une autre machine située en dehors de son domaine de Broadcast, elle doit passer par un routeur. Le routeur est un équipement de niveau 3 (couche réseau) dont le rôle est d'interconnecter différents réseaux.
+
+
+
+### ARP et les communications inter-domaine :
+
+ARP joue un rôle crucial dans les communications entre réseaux, car il permet de connaître l'adresse MAC du routeur qui fait office de passerelle vers d'autres réseaux. Ainsi, lorsque la machine doit envoyer des paquets vers un réseau externe, ARP est utilisé pour résoudre l'adresse MAC du routeur afin d'envoyer les données vers la bonne destination.
+
+
+### Pour Conclusion :
+
+Bien qu'ARP ne puisse résoudre que les adresses dans son propre domaine de Broadcast, il reste indispensable pour permettre à une machine de communiquer avec des dispositifs situés hors de son réseau local. En interrogeant l'adresse MAC du routeur, ARP permet de diriger les paquets vers les réseaux distants, facilitant ainsi les communications inter-domaine.
+
+
+### 4. Travaux pratiques : tables MAC et ARP
+
+Le scénario pratique qui suit utilise Cisco Packet Tracer. Tout comme le scénario précédemment décrit, il utilise un switch et trois stations :
+
+![image](https://github.com/user-attachments/assets/2a1af54d-4632-431f-bf32-05d975b3d882)
+
+                Topologie Ethernet simple
+
+L’objectif grâce au mode simulation, le trajet du paquet lors des différentes phases qui ont été
+décrites jusqu’ici.
+
+Chaque station est configurée avec une adresse IP simple et connectée au premier port disponible, selon le schéma qui suit :
+
+
+- l PC0 : adresse IP 192.168.1.1, connecté au port F0/1.
+- l PC1 : adresse IP 192.168.1.2, connecté au port F0/2.
+- l PC2 : adresse IP 192.168.1.3, connecté au port F0/3.
+
+En mode simulation :
+
+-Affichez la table MAC actuellement présente sur le switch et constatez que cette table est vide.
+
+- Utilisez la commande show mac-address-table sur le switch :
+
+
+
+
+
+
+
 
 
 
