@@ -579,57 +579,7 @@ ARP joue un rôle crucial dans les communications entre réseaux, car il permet 
 Bien qu'ARP ne puisse résoudre que les adresses dans son propre domaine de Broadcast, il reste indispensable pour permettre à une machine de communiquer avec des dispositifs situés hors de son réseau local. En interrogeant l'adresse MAC du routeur, ARP permet de diriger les paquets vers les réseaux distants, facilitant ainsi les communications inter-domaine.
 
 
-### 4. Travaux pratiques : tables MAC et ARP
 
-Le scénario pratique qui suit utilise Cisco Packet Tracer. Tout comme le scénario précédemment décrit, il utilise un switch et trois stations :
-
-![image](https://github.com/user-attachments/assets/2a1af54d-4632-431f-bf32-05d975b3d882)
-
-                Topologie Ethernet simple
-
-L’objectif grâce au mode simulation, le trajet du paquet lors des différentes phases qui ont été
-décrites jusqu’ici.
-
-Chaque station est configurée avec une adresse IP simple et connectée au premier port disponible, selon le schéma qui suit :
-
-
-- l PC0 : adresse IP 192.168.1.1, connecté au port F0/1.
-- l PC1 : adresse IP 192.168.1.2, connecté au port F0/2.
-- l PC2 : adresse IP 192.168.1.3, connecté au port F0/3.
-
-En mode simulation :
-
-- Affichez la table MAC actuellement présente sur le switch et constatez que cette table est vide.
-
-- Utilisez la commande show mac-address-table sur le switch :
-
-
-(image en cours) 
-
-- Affichez la table ARP de PC0, PC1 et PC2 pour constater que cette table est vide.
-
-- Utilisez la commande arp -a sur PC0 et PC1 :
-
-(image en cours) 
-
-- Relevez les adresses MAC de PC0, PC1 et PC2 (les adresses peuvent être différentes de celles affichées).
-  
-- Utilisez la commande ipconfig /all :
-
-(image en cours ) 
-
-- Créez du trafic depuis la station PC0 vers la station PC1.
-  
-- Utilisez la commande ping 192.168.1.2 depuis la station PC0 :
-
-(image en cours) 
-
-➡️ À ce stade en mode simulation, aucune réponse ne parvient à PC0. Ce comportement est normal, il permet d’observer en mode pas à pas le trafic.
-
-- Observez le trafic généré depuis PC0.
-- Faites un double clic sur le paquet correspondant au paquet ARP du panneau de simulation :
-
-![image](https://github.com/user-attachments/assets/fd9aaec2-e009-449b-ac6e-a2b38e3ba13b)
 
 
 
