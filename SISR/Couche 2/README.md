@@ -402,29 +402,63 @@ Une partie de l’adresse MAC est calculée à partir des 23 bits de l’adresse
 
 # Le protocole ARP 
 
-Les informations capitales au bon fonctionnement des réseaux Ethernet modernes sont les adresses MAC qui donnent les indications nécessaires pour le transit des informations.
+Le protocole ARP (Address Resolution Protocol) est un protocole crucial dans les réseaux IPv4, utilisé pour associer une adresse IP (adresse logique de niveau 3) à une adresse MAC (adresse physique de niveau 2). Cette correspondance est essentielle pour permettre aux appareils de communiquer entre eux sur un réseau local (LAN).
 
-Bien entendu chaque machine connaît sa propre adresse MAC et elle est donc en mesure de l’inscrire dans le champ approprié de l’en­tête Ethernet. Mais comment une machine peut connaître l’adresse MAC de destination ? Cette adresse ne lui est pourtant pas directement accessible.
 
-## ARP
-Dans un réseau IPv4, le protocole ARP (Address Resolution Protocol) permet de trouver l'adresse MAC d'une machine distante en fonction de son adresse IP. Cette opération est appelée "résolution ARP". ARP convertit une adresse IP (adresse logique de niveau 3) en adresse MAC (adresse physique de niveau 2). L'adresse IP peut être attribuée par l'administrateur ou l'utilisateur, et ARP utilise cette adresse IP pour identifier l'adresse MAC correspondante du destinataire afin de permettre la communication.
+
+## Le Fonctionnement d'ARP :
+
+
+### - Objectif :
+L'adresse IP permet d'identifier les machines sur un réseau à un niveau logique.
+L'adresse MAC (Media Access Control) identifie physiquement un appareil sur le réseau local.
+ARP traduit l'adresse IP d'un périphérique en son adresse MAC pour permettre l'envoi de données.
+
+
+### Processus de résolution ARP :
+
+
+1- Requête ARP (ARP Request) :
+
+- Lorsque PC01 souhaite communiquer avec PC02 et ne connaît pas son adresse MAC, il                envoie une requête ARP en broadcast (diffusion) à tout le réseau.
+
+- Cette trame a l'adresse MAC de destination fixée à FF:FF:FF:FF:FF
+, ce qui signifie qu'elle est diffusée à tous les appareils du réseau local.
+
+- Le champ "source" de la trame contient l'adresse IP et l'adresse MAC de PC01.
+
+
+2- Réponse ARP (ARP Reply) :
+
+- Tous les appareils sur le réseau reçoivent cette requête, mais seul le périphérique avec l'adresse IP correspondante (ici PC02) y répond.
+
+- PC02 envoie alors une réponse ARP unicast (directement) à PC01 avec son adresse MAC.
+
+
+3- Mise à jour des tables ARP :
+
+- Une fois que PC01 reçoit la réponse, il enregistre l'adresse MAC de PC02 dans sa table ARP, une table locale où sont stockées les correspondances IP-MAC.
+
+- De même, PC02 peut enregistrer l'adresse MAC de PC01 dans sa table ARP après avoir traité la requête initiale.
+
+
+4- Communication future :
+
+- Une fois la résolution ARP effectuée, les futures communications entre PC01 et PC02 se feront directement via leurs adresses MAC, sans qu'une nouvelle requête ARP soit nécessaire tant que l'information est présente dans la table ARP.
+
+
+### Cas spéciaux :
+
+- Expiration : Les entrées dans la table ARP ont une durée de vie limitée (timeout). Si une adresse n'est plus utilisée pendant un certain temps, elle est supprimée, et une nouvelle requête ARP devra être émise en cas de communication future.
+
+- Gratuitous ARP : Un périphérique peut envoyer une requête ARP pour sa propre adresse IP afin d'informer le réseau de sa présence (utilisé souvent après une mise à jour IP ou un redémarrage).
+
+
+### Pour conclure : 
+Le protocole ARP est essentiel pour permettre aux machines sur un réseau local d'identifier et de communiquer avec les bonnes adresses MAC. Sans ARP, il serait impossible pour un ordinateur d'envoyer des données à une autre machine uniquement sur la base de son adresse IP.
 
 ![image](https://github.com/user-attachments/assets/8135ae2b-4b0a-4a1c-ba32-457a83b88834)
 
-La station PC01 souhaite communiquer avec la station PC02, mais aucune communication n'a encore eu lieu entre elles. PC01 et PC02 ne connaissent donc pas encore leurs adresses MAC respectives. Le switch qui les connecte ne possède également aucune information dans sa table de correspondance, car il remplit cette table uniquement après avoir reçu une trame d'un périphérique. Lorsqu'une trame arrive, le switch associe l'adresse MAC source de la trame au port par lequel elle est entrée.
-
-Pour résoudre l’adresse MAC de PC02, le PC01 va faire appel au protocole ARP. ARP utilise une trame Broadcast de niveau 2 (point 3 dans le schéma). Ce processus est une requête ARP. L’objectif de ce type de trame est triple :
-
-        - Permettre à la station A de construire une trame entière et valide.
-        - Demander au switch de distribuer cette trame à toutes les stations (broadcast).
-        - Demander à la station B de bien vouloir communiquer son adresse de niveau 2 en                 réponse.
-
-
-PC01 envoie une requête ARP en broadcast avec l'adresse MAC de destination FFFF.FFFF.FFFF, provoquant une inondation du réseau par le switch. Le switch enregistre l'adresse MAC source de PC01 dans sa table. La requête est reçue par toutes les stations, y compris PC02 et PC03. PC03 ignore la requête car l'adresse IP ne correspond pas, tandis que PC02 la reconnaît et répond. Avant de répondre, PC02 enregistre l'adresse MAC de PC01 dans sa propre table ARP. La réponse d'ARP de PC02 contient les adresses IP et MAC de PC01 et PC02, permettant à PC01 de poursuivre la communication.
-
-![image](https://github.com/user-attachments/assets/8135ae2b-4b0a-4a1c-ba32-457a83b88834)
-
-La réponse ARP de PC02 est envoyée à PC01 via le switch. Le switch en profite pour apprendre l'adresse MAC de PC02 et met à jour sa table. Connaissant déjà l'adresse MAC de PC01, le switch envoie la réponse uniquement au port connecté à PC01, permettant une communication plus efficace (micro-segmentation). Une fois la réponse reçue, PC01 connaît l'adresse MAC de PC02. Les communications futures entre PC01 et PC02 se feront directement, avec les bonnes adresses MAC, et le switch acheminera les trames uniquement sur les ports nécessaires, optimisant ainsi les échanges.
 
 
 ## Le domaine de Broadcast
