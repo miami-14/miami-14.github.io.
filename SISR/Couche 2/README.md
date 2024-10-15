@@ -605,31 +605,32 @@ En mode simulation :
 - Utilisez la commande show mac-address-table sur le switch :
 
 
-(image ) 
+(image en cours) 
 
 - Affichez la table ARP de PC0, PC1 et PC2 pour constater que cette table est vide.
 
 - Utilisez la commande arp -a sur PC0 et PC1 :
 
-(image ) 
+(image en cours) 
 
 - Relevez les adresses MAC de PC0, PC1 et PC2 (les adresses peuvent être différentes de celles affichées).
   
 - Utilisez la commande ipconfig /all :
 
-(image ) 
+(image en cours ) 
 
 - Créez du trafic depuis la station PC0 vers la station PC1.
   
 - Utilisez la commande ping 192.168.1.2 depuis la station PC0 :
 
-(image ) 
+(image en cours) 
 
 ➡️ À ce stade en mode simulation, aucune réponse ne parvient à PC0. Ce comportement est normal, il permet d’observer en mode pas à pas le trafic.
 
 - Observez le trafic généré depuis PC0.
 - Faites un double clic sur le paquet correspondant au paquet ARP du panneau de simulation :
 
+![image](https://github.com/user-attachments/assets/fd9aaec2-e009-449b-ac6e-a2b38e3ba13b)
 
 
 
