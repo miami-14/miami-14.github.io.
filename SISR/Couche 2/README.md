@@ -9,8 +9,8 @@
 - [L’adressage Ethernet](#L-adressage-Ethernet)
 - [Dissection d une trame Ethernet](#Dissection-d-une-trame-Ethernet)
 - [Le protocole ARP](#Le-protocole-ARP)
-
-
+- [](#)
+- [](#)
 
 
 
@@ -600,15 +600,35 @@ Chaque station est configurée avec une adresse IP simple et connectée au premi
 
 En mode simulation :
 
--Affichez la table MAC actuellement présente sur le switch et constatez que cette table est vide.
+- Affichez la table MAC actuellement présente sur le switch et constatez que cette table est vide.
 
 - Utilisez la commande show mac-address-table sur le switch :
 
 
+(image ) 
 
+- Affichez la table ARP de PC0, PC1 et PC2 pour constater que cette table est vide.
 
+- Utilisez la commande arp -a sur PC0 et PC1 :
 
+(image ) 
 
+- Relevez les adresses MAC de PC0, PC1 et PC2 (les adresses peuvent être différentes de celles affichées).
+  
+- Utilisez la commande ipconfig /all :
+
+(image ) 
+
+- Créez du trafic depuis la station PC0 vers la station PC1.
+  
+- Utilisez la commande ping 192.168.1.2 depuis la station PC0 :
+
+(image ) 
+
+➡️ À ce stade en mode simulation, aucune réponse ne parvient à PC0. Ce comportement est normal, il permet d’observer en mode pas à pas le trafic.
+
+- Observez le trafic généré depuis PC0.
+- Faites un double clic sur le paquet correspondant au paquet ARP du panneau de simulation :
 
 
 
