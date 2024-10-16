@@ -16,9 +16,10 @@
 - [Listes de tâches ](#Listes-de-tâches )
 - [Notes ](#Notes )
 - [Alertes ](#Alertes )
+- [Création d’une table](#Création-d-une-table )
+- [Mise en forme du contenu dans votre table](#Mise-en-forme-du-contenu-dans-votre-table)
 
-
-
+Mise en forme du contenu dans votre table
 
 # taille pour le caratère
 Pour créer un titre, ajoutez un à six symboles avant le texte de votre titre. Le nombre que vous utilisez déterminera le niveau hiérarchique et la taille de la police de caractères de l’en-tête.
@@ -295,4 +296,65 @@ Voici les alertes affichées :
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+
+# Création d’une table 
+
+Vous pouvez créer des tables avec des barres verticales `|` et des traits d’union `-`. Les tirets servent à créer l'en-tête de chaque colonne, tandis que les barres verticales séparent chaque colonne. Vous devez ajouter une ligne vide avant votre table pour qu’elle s’affiche correctement.
+
+    | First Header  | Second Header |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
+
+![image](https://github.com/user-attachments/assets/d632d5e1-11a1-421e-b4df-4af74fe8a2b5)
+
+
+Les barres verticales situées à chaque extrémité de la table sont facultatives.
+
+La largeur des cellules peut varier et ces dernières n’ont pas besoin d’être parfaitement alignées dans les colonnes. Il doit y avoir au moins trois traits d’union dans chaque colonne de la ligne d’en-tête.
+
+    | Command | Description |
+    | --- | --- |
+    | git status | List all new or modified files |
+    | git diff | Show file differences that haven't been staged |
+
+
+![image](https://github.com/user-attachments/assets/dfc5c3bc-a5a4-4e0d-8b85-200390bf26f2)
+
+
+
+# Mise en forme du contenu dans votre table
+
+Vous pouvez utiliser une mise en forme comme des liens, des blocs de code inclus et des styles de texte dans votre table :
+
+    | Command | Description |
+    | --- | --- |
+    | `git status` | List all *new or modified* files |
+    | `git diff` | Show file differences that **haven't been** staged |
+
+
+![image](https://github.com/user-attachments/assets/6d766ecd-c402-4d70-a2eb-0b07ee6ead83)
+
+
+Vous pouvez aligner le texte à gauche, à droite ou au centre d’une colonne en incluant des deux-points `:` à gauche, à droite ou des deux côtés des traits d’union dans la ligne d’en-tête
+
+    | Left-aligned | Center-aligned | Right-aligned |
+    | :---         |     :---:      |          ---: |
+    | git status   | git status     | git status    |
+    | git diff     | git diff       | git diff      |
+
+
+![image](https://github.com/user-attachments/assets/1d122eb9-0b18-4c87-ad21-25b253001c25)
+
+
+Pour inclure une barre verticale `|` en tant que contenu dans votre cellule, utilisez un caractère `\` avant la barre verticale :
+
+    | Name     | Character |
+    | ---      | ---       |
+    | Backtick | `         |
+    | Pipe     | \|        |
+
+
+![image](https://github.com/user-attachments/assets/cfaa690f-b379-4881-9102-fe1745c433d7)
 
