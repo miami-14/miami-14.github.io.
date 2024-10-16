@@ -48,7 +48,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ------------------
 
-- Fonctions principales de la couche Liaison de données :
+### Fonctions principales de la couche Liaison de données :
  
 
 
