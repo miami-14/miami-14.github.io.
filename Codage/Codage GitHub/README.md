@@ -298,7 +298,7 @@ Voici les alertes affichées :
 > Advises about risks or negative outcomes of certain actions.
 
 
-# Création d’une table 
+# Création d une table 
 
 Vous pouvez créer des tables avec des barres verticales `|` et des traits d’union `-`. Les tirets servent à créer l'en-tête de chaque colonne, tandis que les barres verticales séparent chaque colonne. Vous devez ajouter une ligne vide avant votre table pour qu’elle s’affiche correctement.
 
