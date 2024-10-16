@@ -46,7 +46,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 `La couche Physique` est la première couche du `modèle OSI`  (****Open Systems Interconnection****), qui est un modèle de référence en sept couches pour la communication entre systèmes informatiques. Cette couche est responsable de la transmission physique des données sous forme de signaux électriques, optiques ou radio entre les dispositifs d’un réseau. 
 - ****Par exemple**** Ethernet, Wi-fi, Bluetooh, fibre optique. 
 
-------------------
+
 
 ### Fonctions principales de la couche Liaison de données :
  
@@ -62,13 +62,12 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 |Débit de transmission|La couche Physique spécifie la vitesse à laquelle les données peuvent être envoyées (bits par seconde).| 
  
 
-  
+--------------------------------------  
 
 ### 2 - La couche Liaison de données
 
 La couche Liaison de données est la deuxième couche du modèle OSI. Son rôle principal est d’assurer un transfert de données fiable entre deux nœuds adjacents dans un réseau, en détectant et en corrigeant les erreurs qui pourraient survenir lors de la transmission au niveau de la couche Physique.
 
--------------------------
 
 ### Fonctions principales de la couche Liaison de données :
  
@@ -106,13 +105,12 @@ La couche Liaison de données est la deuxième couche du modèle OSI. Son rôle 
 - Dans un réseau Wi-Fi, la couche Liaison de données s'occupe de la gestion des collisions et de l’accès partagé au médium sans fil.
 
 
-
+---------------------------
 
 ### 3 - La couche Réseau
 
 La couche Réseau est la troisième couche du modèle OSI, et son rôle principal est de gérer le routage et le transfert des données entre différents réseaux, en assurant que les paquets de données atteignent leur destination finale, même s’ils doivent traverser plusieurs réseaux intermédiaires.
 
--------------------------
 
 ### Fonctions principales de la couche Réseau :
 
@@ -148,6 +146,8 @@ La couche Réseau est la troisième couche du modèle OSI, et son rôle principa
   
 - La couche Réseau, quant à elle, gère les paquets de données et s’occupe de leur transport entre différents réseaux, souvent à grande échelle, comme sur l’Internet.
 
+
+--------------------------------
 
 ### 4 - La couche Transport
 
