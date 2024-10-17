@@ -6,10 +6,13 @@
    - [3-comment utiliser OSI ?](#3-comment-utiliser-OSI)
 
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
-      -[2-OSI,vue d ensemble](#)
-      -[Les couches du modèle TCP/IP](#Les-couches-du-modèle-TCP/IP)
-      -[Les couches du modèle TCP/IP](#Les-couches-du-modèle-TCP/IP)
+      -[1-L’IETF](#1-L-IETF)
+      -[Les-couches-du-modèle-TCP/IP](#2-Les-couches-du-modèle-TCP/IP
+)
 
+
+
+      
 # Le modèle OSI
 
 
@@ -374,9 +377,9 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 # Le modèle TCP/IP
 
 
-## 1. L’IETF
+## 1-L IETF
 
-
+ 
 
 
 ### 1. La hiérarchie
@@ -388,7 +391,7 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 
 
 
-## 2. Les couches du modèle TCP/IP
+## 2-Les couches du modèle TCP/IP
 
 
 ### 1. La couche Accès réseau
