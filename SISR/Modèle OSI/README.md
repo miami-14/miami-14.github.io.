@@ -2,7 +2,7 @@
 
 - [Le modèle OSI](#Le-modèle-OSI)
    - [1- Les origines du modèle OSI](#1-Les-origines-du-modèle-OSI)
-   - [2-OSI, vue d’ensemble](#2-OSI,-vue-d-ensemble)
+   - [2-OSI, vue d’ensemble](#2--OSI,-vue-d-ensemble)
    - [comment utiliser OSI ?](#comment-utiliser-OSI-?)
 
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
