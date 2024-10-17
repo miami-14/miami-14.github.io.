@@ -13,7 +13,7 @@
 # Le modèle OSI
 
 
-## 1- Les origines du modèle OSI
+## 1-Les origines du modèle OSI
 
 `Le modèle OSI` (****Open Systems Interconnection****), proposé par l'ISO (****International Organization for Standardization****) en 1984, est un modèle de référence à sept couches conçu pour structurer l'interconnexion de systèmes ouverts. Bien que les protocoles spécifiques de l'OSI soient aujourd'hui considérés comme obsolètes, notamment avec la prépondérance d'Ethernet et IP, ce modèle reste un cadre de référence fondamental pour de nombreux standards et un langage commun pour les professionnels du réseau.
 
