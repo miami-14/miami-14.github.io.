@@ -5,8 +5,8 @@
    - [ OSI, vue d’ensemble](#OSI,-vue-d-ensemble)
    - [comment utiliser OSI ?](#comment-utiliser-OSI-?)
 
-
-
+- [Le modèle TCP/IP](#Le-modèle-TCP/IP)
+      -[Les couches du modèle TCP/IP](#Les-couches-du-modèle-TCP/IP)
 
 
 
@@ -367,3 +367,43 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 
 - `Récursivité coûteuse` : L’utilisation de la récursivité peut parfois entraîner une surcharge en termes de mémoire ou de temps d’exécution si le nombre de sous-problèmes est trop élevé. Il est parfois nécessaire de transformer la récursivité en une approche itérative pour optimiser l’algorithme.
 
+
+
+
+
+# Le modèle TCP/IP
+
+
+## 1. L’IETF
+
+
+
+
+### 1. La hiérarchie
+
+
+
+-------------------
+### 2. Les RFC
+
+
+
+## 2. Les couches du modèle TCP/IP
+
+
+### 1. La couche Accès réseau
+
+
+
+-------------------
+### 2. La couche Internet
+
+
+
+------------------
+### 3. La couche Transport
+
+
+
+------------------
+### 4. La couche Application
