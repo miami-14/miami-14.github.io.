@@ -170,6 +170,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ![image](https://github.com/user-attachments/assets/01a36943-0f63-4a76-a5f2-927a2a1e0056)
 
+--------------------
 ### 5 - La couche Session
 
 `La couche Session` est la cinquième couche du modèle OSI (Open Systems Interconnection) et elle est chargée de gérer les sessions entre les applications qui communiquent sur le réseau. Une "session" est essentiellement une connexion logique établie entre deux dispositifs ou applications pour permettre l'échange de données.
@@ -189,7 +190,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 |-----|------| 
 |Ce protocole, utilisé dans des réseaux locaux, fonctionne à la couche Session en permettant à des applications d'établir une session de communication et de s'authentifier.| Les appels de procédure à distance, utilisés pour exécuter des fonctions sur des systèmes distants, s'appuient sur la couche Session pour gérer les connexions.| 
 
-
+------------------------
 
 ### 6 - La couche Présentation
 
@@ -211,7 +212,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 |Ces formats de fichiers d'images sont interprétés à la couche Présentation. Les données binaires d’une image sont traduites en données compréhensibles pour les applications.| Les protocoles de sécurisation des communications sur Internet (comme HTTPS) fonctionnent en grande partie à la couche Présentation pour chiffrer et déchiffrer les données échangées entre un client et un serveur.|
 
 
-
+-----------------------------
 
 ### 7 - La couche Application 
 
@@ -233,19 +234,91 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 |Utilisé pour le transfert de pages web. C’est le protocole sur lequel repose la navigation web.|Utilisé pour transférer des fichiers entre des systèmes via un réseau.|Protocole utilisé pour l'envoi d’e-mails.|Utilisé pour la résolution de noms de domaine en adresses IP.|Protocoles pour récupérer des e-mails depuis un serveur.|Utilisés pour établir des connexions distantes à un ordinateur et exécuter des commandes à distance.|
 
 
-
+------------------------
 
 
 ## 3 - comment utiliser OSI ?
 
 
+Le modèle OSI (Open Systems Interconnection) est principalement un cadre conceptuel utilisé pour comprendre comment les différents protocoles de communication interagissent dans un réseau informatique. Bien que le modèle OSI ne soit pas utilisé directement dans la configuration des réseaux, il fournit une base théorique pour organiser et décomposer les processus de communication en couches distinctes. En pratique, ce modèle est surtout utile pour diagnostiquer, analyser, et concevoir des systèmes et des protocoles réseaux.
+
+
 ### 1 - L’approche down/top
 
+L'approche Top-down, ou descendante, consiste à aborder un système en commençant par les niveaux les plus élevés de sa structure, en le décomposant progressivement en sous-systèmes et en composants de plus en plus détaillés. Cette méthode va du plus général au plus spécifique.
+
+### Caractéristiques
+
+|Nom|Son role|
+|----|-----|
+|Décomposition hiérarchique|On commence par un objectif global ou une vue d'ensemble, puis on divise le système en sous-parties plus petites et plus gérables.|
+|Abstraction élevée au départ| La conception globale du système est la première étape, puis les détails sont raffinés au fur et à mesure.|
+|Contrôle centralisé| Souvent utilisée dans des environnements où la gestion centrale est nécessaire. Les décisions stratégiques sont prises au sommet, puis transmises vers les niveaux inférieurs pour être exécutées.|
+|Clarté des objectifs|Avant de s'attaquer aux détails, les objectifs globaux du projet sont définis.|
 
 
+### Exemple d'utilisation 
+
+|Développement logiciel |Réseaux informatiques|
+|-----|-----| 
+| Dans un projet de développement, l'architecture générale du système est définie avant d’entrer dans le détail des modules spécifiques ou des fonctions individuelles. Par exemple, on commence par concevoir le framework global d'une application avant de développer les modules spécifiques.|Lors de la conception d'un réseau, on peut commencer par une vision d'ensemble du réseau (comme un plan pour une infrastructure de campus) puis subdiviser le réseau en sous-réseaux, choisir les équipements de réseau, configurer les routeurs, commutateurs, etc.|
+
+
+### Avantages 
+
+-Offre une vue d'ensemble claire du système.
+
+-Réduit les risques d'erreurs majeures en se concentrant sur la structure avant les détails.
+
+-Facilite la planification à long terme, car le but global est toujours en vue.
+
+
+### Inconvénients
+
+- Peut être moins flexible dans un environnement où les besoins évoluent fréquemment.
+
+- Nécessite une vision claire dès le départ, ce qui peut être difficile dans des systèmes complexes et incertains.
+
+
+-----------------
 
 
 ### 2 - L’approche top/down
+
+L'approche top-down (ou descendante) est une méthodologie qui consiste à analyser, concevoir ou résoudre un problème en commençant par les concepts les plus généraux pour aller progressivement vers des détails plus spécifiques. Elle est utilisée dans de nombreux domaines, tels que l'ingénierie, le développement logiciel, la gestion de projets, et même la gestion d'entreprises. Cette approche commence par une vision globale ou un objectif final, et divise ensuite ce grand ensemble en sous-parties gérables jusqu'à arriver aux composants individuels ou aux tâches spécifiques.
+
+
+
+### Caractéristiques de l’approche top-down
+
+|Nom|Son rôle| 
+|----|-----| 
+|Définition d’un objectif global|Le processus commence par une vue d’ensemble du système ou du problème à résoudre. Il est essentiel d’avoir une idée claire de l’objectif final avant de commencer la décomposition.|
+|Décomposition hiérarchique|Le système ou problème est décomposé en sous-systèmes ou sous-problèmes. Ces parties sont ensuite subdivisées jusqu’à atteindre un niveau de détail qui permet de les aborder individuellement.|
+|Planification structurée|Cette approche permet de garder une vision d'ensemble tout au long du processus, ce qui facilite la coordination et la planification des étapes.|
+|Focus sur la coordination| Comme la décomposition vient de la vision globale, les sous-parties sont étroitement liées à l’objectif final, ce qui réduit le risque que des sous-parties développées indépendamment manquent de cohérence.|
+
+
+### Exemple d'utilisation dans divers domaines 
+
+
+|Développement logiciel|Conception de réseau|Gestion de projets|Stratégie d'entreprise|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
