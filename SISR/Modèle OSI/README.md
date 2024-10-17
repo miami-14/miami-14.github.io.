@@ -5,10 +5,10 @@
    - [2-OSI vue d’ensemble](#2-OSI-vue-d-ensemble)
    - [3-comment utiliser OSI ?](#3-comment-utiliser-OSI)
 
+
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
-      -[1-L’IETF](#1-L-IETF)
-      -[Les-couches-du-modèle-TCP/IP](#2-Les-couches-du-modèle-TCP/IP
-)
+   - [1-L’IETF](#1-L-IETF)
+   - [2-Les-couches-du-modèle-TCP/IP](#2-Les-couches-du-modèle-TCP/IP)
 
 
 
