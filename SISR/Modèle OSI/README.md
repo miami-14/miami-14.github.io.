@@ -1,7 +1,7 @@
 ## Informations 
 
 - [Le modèle OSI](#Le-modèle-OSI)
-   - [Les origines du modèle OSI](#Les-origines-du-modèle-OSI)
+   - [1- Les origines du modèle OSI](#1-Les-origines-du-modèle-OSI)
    - [ OSI, vue d’ensemble](#OSI,-vue-d-ensemble)
    - [comment utiliser OSI ?](#comment-utiliser-OSI-?)
 
