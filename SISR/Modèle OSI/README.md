@@ -3,7 +3,7 @@
 - [Le modèle OSI](#Le-modèle-OSI)
    - [1- Les origines du modèle OSI](#1-Les-origines-du-modèle-OSI)
    - [2-OSI vue d’ensemble](#2-OSI-vue-d-ensemble)
-   - [comment utiliser OSI ?](#comment-utiliser-OSI-?)
+   - [3-comment utiliser OSI ?](#3-comment-utiliser-OSI-?)
 
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
       -[2-OSI,vue d ensemble](#)
@@ -237,7 +237,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 ------------------------
 
 
-## 3 - comment utiliser OSI ?
+## 3-comment utiliser OSI ?
 
 
 Le modèle OSI (Open Systems Interconnection) est principalement un cadre conceptuel utilisé pour comprendre comment les différents protocoles de communication interagissent dans un réseau informatique. Bien que le modèle OSI ne soit pas utilisé directement dans la configuration des réseaux, il fournit une base théorique pour organiser et décomposer les processus de communication en couches distinctes. En pratique, ce modèle est surtout utile pour diagnostiquer, analyser, et concevoir des systèmes et des protocoles réseaux.
