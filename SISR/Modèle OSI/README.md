@@ -10,7 +10,7 @@
    - [1-L’IETF](#1-L-IETF)
    - [2-Les-couches-du-modèle-TCP/IP](#2-Les-couches-du-modèle-TCP/IP)
 
-
+-[L’encapsulation et la décapsulation](#L-encapsulation-et-la-décapsulation).
 
       
 # Le modèle OSI
@@ -410,3 +410,21 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 
 ------------------
 ### 4. La couche Application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# L encapsulation et la décapsulation
