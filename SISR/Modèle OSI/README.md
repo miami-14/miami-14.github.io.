@@ -2,13 +2,13 @@
 
 - [Le modèle OSI](#Le-modèle-OSI)
    - [1- Les origines du modèle OSI](#1-Les-origines-du-modèle-OSI)
-   - [ OSI, vue d’ensemble](#OSI,-vue-d-ensemble)
+   - [2-OSI, vue d’ensemble](#2-OSI,-vue-d-ensemble)
    - [comment utiliser OSI ?](#comment-utiliser-OSI-?)
 
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
+      -[2-OSI,vue d ensemble](#)
       -[Les couches du modèle TCP/IP](#Les-couches-du-modèle-TCP/IP)
-
-
+      -[Les couches du modèle TCP/IP](#Les-couches-du-modèle-TCP/IP)
 
 # Le modèle OSI
 
@@ -25,7 +25,7 @@
 Il est important de noter que le modèle OSI n'est pas conçu pour être une spécification technique ou une base d'évaluation des implémentations réelles. Il s'agit plutôt d'un cadre conceptuel permettant aux équipes d’experts de travailler sur des normes indépendamment pour chaque couche, favorisant ainsi une approche productive et standardisée du développement des systèmes d'interconnexion.
 
 
-## 2. OSI, vue d ensemble
+## 2-OSI, vue d ensemble
 
 `Le modèle OSI` est composé de sept couches. La liste suivante indique à la fois le nom des couches en français et en anglais :
 
