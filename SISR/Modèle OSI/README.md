@@ -406,38 +406,38 @@ IESG (Internet Engineering Steering Group)
 
 IAB (Internet Architecture Board)
 
-| **Rôle** | **Composition** | **Responsabilités** | 
+|****Rôle****|****Composition****|****Responsabilités****| 
 |---|---|---|
 | Le Conseil d'architecture de l'Internet (IAB) est responsable de la supervision globale de l'architecture de l'Internet et de la gestion technique de l'IETF. Il agit comme un organe consultatif et de supervision stratégique, assurant que les décisions prises à court terme s'alignent avec la vision à long terme de l'Internet. | L'IAB est composé de membres nommés, qui sont des experts techniques et des personnalités influentes de la communauté Internet. | - Superviser l'évolution de l'architecture Internet. <br> - Nommer les membres de l'IESG. <br> - Examiner et approuver certaines décisions critiques, comme la création ou la suppression de groupes de travail. |
 
 Groupes de travail (Working Groups)
 
-| **Rôle** | **Composition** | **Responsabilités** | 
+|****Rôle****|****Composition****|****Responsabilités****| 
 |---|---|---|
 |Les groupes de travail sont le cœur de l'IETF et sont chargés de la production des spécifications techniques, telles que les RFC (Request for Comments). Chaque groupe de travail est spécialisé dans un domaine ou un protocole spécifique et travaille de manière collaborative pour résoudre des problèmes techniques, développer de nouveaux standards ou améliorer des protocoles existants.|Les groupes de travail sont ouverts à toute personne intéressée par les sujets traités. Ils sont coordonnés par un ou plusieurs présidents de groupe de travail (chairs), qui sont nommés par l'IESG et assurent la gestion des discussions et de l'avancement des travaux.|Les décisions sont prises par consensus, et les discussions se déroulent principalement par le biais de listes de diffusion, bien que des réunions physiques aient lieu lors des événements IETF.|
 
 
 NomCom (Nominations Committee)
 
-| **Rôle** | **Composition ** | **Fonctionnement ** | 
+|****Rôle****|****Composition****|****Fonctionnement****| 
 |---|---|---|
 |Le Comité de nomination (NomCom) est chargé de sélectionner les membres de l'IAB et de l'IESG. C'est un organe indépendant qui assure que les personnes sélectionnées pour ces rôles sont compétentes et respectées au sein de la communauté IETF.| Le NomCom est composé de membres tirés au sort parmi les participants actifs de l'IETF, pour garantir une certaine impartialité et représentativité.|Le processus de nomination est généralement basé sur la transparence, et les membres du NomCom consultent la communauté pour recueillir des retours sur les candidats avant de prendre une décision finale.|
 
 Internet Society (ISOC)
 
-| **Rôle** | **Relation avec l'IETF** |
+|****Rôle****|****Relation avec l'IETF****|
 |---|---|
 |L'Internet Society (ISOC) est l'organisation mère qui soutient l'IETF sur le plan logistique et financier. L'ISOC ne joue pas un rôle direct dans les décisions techniques, mais elle fournit l'infrastructure nécessaire pour que l'IETF puisse fonctionner. Elle est également responsable de la promotion d'un Internet ouvert et accessible pour tous.|L'ISOC gère les aspects financiers, juridiques et administratifs de l'IETF, mais elle reste en dehors des processus techniques et des décisions liées aux protocoles.|
 
 RFC Editor
 
-| **Rôle** | **Fonctionnement** | 
+|****Rôle****|****Fonctionnement****| 
 |---|---|
 | Le RFC Editor est responsable de la publication des RFC (Request for Comments), les documents techniques produits par l'IETF. Ce rôle est crucial pour s'assurer que les spécifications sont publiées de manière claire, standardisée et accessible à tous.|Bien que le contenu technique des RFC soit validé par l'IETF, l'éditeur de RFC garantit la cohérence et la qualité rédactionnelle de ces documents.|
 
 IAOC et IETF Trust
 
-| **Rôle** |
+|****Rôle****|
 |---|
 |Le Comité de supervision des affaires de l'IETF (IAOC) et le IETF Trust sont des entités responsables de la gestion des aspects financiers et juridiques. L'IAOC gère les contrats, les services, et veille à ce que l'IETF dispose des ressources nécessaires pour fonctionner. Le IETF Trust détient les droits de propriété intellectuelle et les marques associées à l'IETF, garantissant que les documents et protocoles développés restent accessibles à tous.|
 
@@ -449,7 +449,7 @@ Les RFC (Request for Comments) sont des documents techniques et de recherche uti
 
 Fonctionnement :
 
-|Nom|rôle|
+|****Nom****|****rôle****|
 |---|---|
 |Proposition|Les RFC sont généralement rédigées par des membres de la communauté Internet, souvent dans le cadre de l'IETF (Internet Engineering Task Force). Les documents passent par plusieurs étapes de révision et de validation avant d’être acceptés comme standard.|
 |Numérotation|Chaque RFC reçoit un numéro unique et est disponible publiquement. Par exemple, RFC 791 décrit IPv4.|
@@ -457,7 +457,7 @@ Fonctionnement :
 
 Catégories de RFC : 
 
-|Nom|rôle|
+|****Nom****|****rôle****|
 |---|---|
 |Standards Track|Documents définissant des normes officielles comme les protocoles de base de l'Internet.|
 |Informational |Informations générales ou des descriptions techniques sans qu'elles ne soient des standards officiels.|
@@ -477,35 +477,62 @@ Cours sur Couche 2
 
 ### 1. La couche Accès réseau
 
-
+`La couche d'accès réseau` fait partie du modèle OSI (Open Systems Interconnection) qui assure la transmission des données physiques sur le réseau. Elle définit comment les données sont physiquement envoyées à travers les supports (câbles, ondes radio, etc.). Cette couche s'occupe des interfaces matérielles, des méthodes de modulation, de la gestion des connexions et des protocoles d'accès au support, comme Ethernet ou Wi-Fi. Elle assure que les bits sont transmis correctement d'un appareil à un autre.
 
 -------------------
 ### 2. La couche Internet
 
+`La couche Internet` (ou couche réseau) est une partie du modèle TCP/IP. Elle gère le routage des paquets de données à travers différents réseaux jusqu'à leur destination. Cette couche utilise principalement le protocole IP (Internet Protocol) pour définir l'adresse des hôtes et déterminer le meilleur chemin à suivre pour les données. Elle s'occupe aussi de la fragmentation des paquets en cas de besoin. Elle joue un rôle crucial dans la communication entre différents réseaux, comme Internet.
 
+- Les protocoles principaux incluent l'IP, ICMP, et ARP.
+
+![Capture d'écran 2024-10-20 180153](https://github.com/user-attachments/assets/c1e8bcbe-a0dd-4ae7-8c34-e8ebcbb0e159)
 
 ------------------
 ### 3. La couche Transport
 
+`La couche Transport` du modèle TCP/IP garantit la livraison fiable des données entre deux systèmes. Elle gère la segmentation des données, le contrôle de flux, et la détection d'erreurs. Deux protocoles principaux opèrent à ce niveau :
 
+- TCP (Transmission Control Protocol) : fournit une connexion fiable et garantit que les données arrivent dans le bon ordre et sans perte.
+
+- UDP (User Datagram Protocol) : plus léger, il n'assure pas la fiabilité ni l'ordre des paquets, mais est plus rapide pour des applications comme le streaming.
+
+Elle s'assure que les données sont envoyées et reçues correctement entre les applications.
 
 ------------------
 ### 4. La couche Application
 
+`La couche Application` est la couche la plus élevée du modèle TCP/IP et est responsable de l'interaction directe avec les applications et les utilisateurs. Elle fournit les protocoles nécessaires pour les services de réseau comme le web, le courrier électronique et le transfert de fichiers.
+
+Les principaux protocoles incluent
+
+|Nom|Rôle|
+|---|---|
+|HTTP (pour le web)|HTTP est un protocole de communication client­serveur permettant les échanges destinés au WWW (World Wide Web : littéralement la toile [d’araignée] mondiale) également appelé Web. La plupart du temps, l’application qui utilise ce protocole est le navigateur Internet mais d’autres applications peuvent très bien l’utiliser.|
+|HTTPS (pour le web)|HTTPS est la version sécurisée de HTTP et s’appuie pour ce faire sur les protocoles SSL ou TLS. SSL (Secure Socket Layer) est un protocole de sécurisation des échanges développé par Netscape. TLS (Transport Layer Security) en est la version normalisée par l’IETF. Outre la confidentialité des données, SSL ou TLS doivent permettre l’authentification du serveur. Pour mémoire, l’identification répond à la question « Qui es­tu ? », l’authentification répond à la question « Est­ce bien lui ? ».|
+|SMTP (pour l'email)|Littéralement, protocole simple de transfert de courrier. L’objet de ce protocole est l’envoi de courrier électronique vers les serveurs de messagerie électronique. Une session SMTP spécifie dans l’ordre l’expéditeur, le destinataire puis le corps du message.|
+|FTP (pour le transfert de fichiers)| L’objet de FTP est l’échange de fichiers entre ordinateurs du réseau. FTP fonctionne en mode client­serveur, le serveur répond aux requêtes du client.|
+|TELNET|Teletype fait référence au téléscripteur, appareil permettant l’émission et la réception de messages transportés par les lignes filaires du réseau international Télex. L’acronyme universellement accepté de teletype est TTY. C’est le photocopieur qui a fait tomber en désuétude le téléscripteur et donc le réseau Télex. Le protocole TELNET reproduit la fonction du téléscripteur, à savoir le transport de messages sous leur forme basique de caractères, au travers du réseau TCP/IP. TELNET fonctionne également en mode client­serveur. L’acronyme désignant une session TELNET est VTY (Virtual Teletype).|
+|POP|Littéralement, protocole du bureau de poste. SMTP ne permet pas de récupérer un message déposé dans la boîte aux lettres d’un serveur de messagerie. Cette fonction est prise en charge par le protocole POP qui en est à sa version 3.|
+|DNS|Littéralement système de noms de domaine. DNS a pour objet d’associer un nom intelligible et donc mémorisable par les hommes, à une adresse IP qui, elle, n’est mémorisable facilement que par les machines. L’activité correspondante est appelée résolution de nom de domaine. Résoudre un nom de domaine tel www.eni.fr, c’est trouver l’adresse IP qui lui est associée.|
+|TFTP|Littéralement, protocole simplifié de transfert de fichiers. TFTP s’appuie sur UDP, protocole de transport « non fiable ». Les fonctionnalités dont ne dispose pas TFTP par rapport à FTP en rétrécissent l’usage à la mise à jour de logiciels embarqués sur les matériels réseau (routeurs, commutateurs...).|
 
 
-
-
-
-
-
-
-
-
-
-
+Cette couche permet aux applications d'interagir avec les autres couches sous-jacentes afin de faciliter la communication entre les appareils sur un réseau.
 
 
 
 
 # L encapsulation et la décapsulation
+
+
+L'encapsulation et la décapsulation sont des processus fondamentaux dans les communications en réseau.
+
+|Encapsulation |Décapsulation|
+|---|---|
+|Chaque couche du modèle TCP/IP ajoute des informations spécifiques sous forme d'en-têtes (ou de trailers) aux données avant de les transmettre à la couche suivante. Ce processus enrobe les données dans un format compréhensible pour chaque couche (exemple : application → transport → réseau → accès réseau).|À la réception, les couches du modèle retirent progressivement ces en-têtes (processus inverse de l'encapsulation) pour extraire les données originales.|
+
+Cela garantit une transmission correcte des données entre l'émetteur et le récepteur.
+
+![image](https://github.com/user-attachments/assets/e9ab53d5-a123-47ec-a540-0ad6bb93bfc4)
+
