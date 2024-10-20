@@ -155,7 +155,7 @@ Par exemple:
 p style="color:red;">This is a red paragraph.</p> 
 
 
-## L'attribut lang 
+## L attribut lang 
 
 Vous devez toujours inclure l’attribut à l’intérieur de la balise, pour déclarer le langue de la page Web. Ceci est destiné à aider les moteurs de recherche et les navigateurs. `lang<html>`
 
