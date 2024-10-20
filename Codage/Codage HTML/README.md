@@ -18,9 +18,9 @@
 
 - [ L'attribut alt ](#L'attribut-alt)
 
-- [L'attribut style ](#L'attribut-style)
+- [L'attribut style ](#L-attribut-style)
 
-- [L'attribut lang ](#L'attribut-lang)
+- [L'attribut lang ](#L-attribut-lang)
 
 ------------------------------------------------------------------------------------------------
 # Comment créer HMTL dans Visual Studio Code 
@@ -139,7 +139,7 @@ Par exemple:
 
 
 
-## L'attribut alt 
+## L attribut alt 
 
 Cela donne un nom a l'image que vous avez choisi 
 
@@ -147,7 +147,7 @@ Par exemple:
 <img src="img_girl.jpg" `alt=`"Girl with a jacket">
 
 
-## L'attribut style 
+## L attribut style 
 
 L’attribut est utilisé pour ajouter des styles à un élément, tel que la couleur, la police, la taille, etc.`style`
 
