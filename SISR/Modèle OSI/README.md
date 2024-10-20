@@ -8,7 +8,7 @@
 
 - [Le modèle TCP/IP](#Le-modèle-TCP/IP)
    - [1-L’IETF](#1-L-IETF)
-   - [2-Les-couches-du-modèle-TCP/IP](#2-Les-couches-du-modèle-TCP/IP)
+   - [2-Les-couches-du-modèle-TCP-IP](#2-Les-couches-du-modèle-TCP-IP)
 
 -[L’encapsulation et la décapsulation](#L-encapsulation-et-la-décapsulation).
 
@@ -467,7 +467,7 @@ Catégories de RFC :
 
 
 
-## 2-Les couches du modèle TCP/IP
+## 2-Les couches du modèle TCP IP
 Cours sur Couche 2
 
 <a href="https://github.com/miami-14/miami-14.github.io./tree/main/SISR/Couche%202" target="_blank">Couche 2 Folder</a>
