@@ -55,7 +55,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
  
 
 
-| Nom | Son rôle | 
+| ****Nom**** | ****Son rôle**** | 
 |-----|-----| 
 |Transmission de bits|c'est la transmission de bits (0 et 1) entre deux appareils connectés. Ces bits sont transmis sous forme de signaux.|
 |Médium de transmission|La couche Physique définit les types de supports physiques utilisés pour la communication ( câble en cuivre, fibre optique, ondes radio )|    
@@ -75,7 +75,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 ### Fonctions principales de la couche Liaison de données :
  
 
-| Nom | Son rôle| 
+| ****Nom**** | ****Son rôle****| 
 |-----|---------| 
 | Encadrement (framing| La couche Liaison segmente les données en blocs appelés trames (ou frames) avant leur envoi. Chaque trame contient les données à transmettre ainsi que des informations de contrôle pour permettre la gestion et la vérification de la transmission.| 
 |Adressage physique (MAC)|  Elle assure l'identification des dispositifs sur le réseau à l'aide des adresses physiques MAC (Media Access Control). Chaque appareil sur un réseau possède une adresse MAC unique qui permet de les identifier à ce niveau.| 
@@ -88,7 +88,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Sous-couches de la couche Liaison de données est divisé en deux :
 
-|Sous-couche LLC (Logical Link Control) | Sous-couche MAC (Media Access Control)
+|****Sous-couche LLC (Logical Link Control)**** | ****Sous-couche MAC (Media Access Control)****|
 |-------|------| 
 |Gère le contrôle de flux, la détection d’erreurs et l’encapsulation des données venant des couches supérieures.| Gère l'accès au médium de transmission, c'est-à-dire qui peut transmettre et à quel moment, et contrôle l’envoi et la réception des trames.|
 |Elle fournit des services à la couche Réseau, indépendamment du type de technologie de la couche Physique.|Responsable de l'adressage MAC.|
@@ -117,7 +117,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Fonctions principales de la couche Réseau :
 
-| Nom | Son rôle| 
+| ****Nom**** | ****Son rôle****| 
 |-----|-------| 
 |Routage | La fonction la plus importante de cette couche est de déterminer le meilleur chemin pour transmettre les paquets de données d'un nœud à un autre. Cela inclut la gestion des routes entre les réseaux locaux et distants, en utilisant des algorithmes de routage (ex: OSPF, BGP, RIP).| 
 |Adressage logique (IP)|  Contrairement à la couche Liaison qui utilise des adresses MAC, la couche Réseau utilise des adresses IP (Internet Protocol) pour identifier de manière unique chaque dispositif sur un réseau global, ce qui permet la communication au-delà des réseaux locaux.| 
@@ -128,7 +128,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Protocoles associés à la couche Réseau :
 
-| Nom | Son rôle | 
+| ****Nom**** | ****Son rôle**** | 
 |-----|-------| 
 |IP (Internet Protocol)| C'est le protocole fondamental de cette couche, qui se divise en deux versions majeures :IPv4 : La version la plus utilisée, avec des adresses de 32 bits./IPv6 : Une version plus récente, avec des adresses de 128 bits, qui résout le problème de pénurie d'adresses IPv4.  | 
 | ICMP (Internet Control Message Protocol)| Utilisé pour envoyer des messages d'erreurs et des informations de diagnostic, comme les commandes ping ou traceroute.|
@@ -156,10 +156,10 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 `La couche Transport` est la quatrième couche du modèle OSI (Open Systems Interconnection) et joue un rôle crucial dans la communication entre des systèmes distants sur un réseau. Elle se situe entre la couche Réseau (couche 3) et la couche Session (couche 5) et est responsable de la gestion de la transmission de données de bout en bout entre deux machines.
 
-| Nom | Son rôle | 
+| ****Nom**** | ****Son rôle**** | 
 |-----|-------| 
 | Segmentation et réassemblage |La couche Transport segmente les données en paquets (ou segments) de taille appropriée pour être envoyés sur le réseau. Ensuite, elle réassemble ces segments une fois arrivés à destination.|
-| Contrôle de flux |Elle régule le flux de données pour éviter de surcharger le récepteur en envoyant trop de données à la fois. Le protocole TCP, par exemple, utilise des mécanismes comme le contrôle de congestion. |
+|Contrôle de flux |Elle régule le flux de données pour éviter de surcharger le récepteur en envoyant trop de données à la fois. Le protocole TCP, par exemple, utilise des mécanismes comme le contrôle de congestion. |
 | Contrôle d’erreurs |La couche Transport assure que les données sont envoyées sans erreur et dans le bon ordre. Elle effectue la vérification des erreurs et peut demander la retransmission des segments corrompus ou manquants. | 
 | Multiplexage et dé-multiplexage | Elle permet à plusieurs applications sur un même hôte d’utiliser le réseau simultanément en distinguant les connexions grâce à des ports. Chaque application utilise un port spécifique pour communiquer via TCP ou UDP.|
 | Connexion orientée ou non | Selon le protocole utilisé (par exemple, TCP ou UDP), la couche Transport peut établir une connexion fiable et orientée connexion (comme TCP), ou offrir un service de communication non orienté connexion, moins fiable mais plus rapide (comme UDP).| 
@@ -167,7 +167,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Les deux principaux protocoles de la couche Transport
 
-| TCP (Transmission Control Protocol) |UDP (User Datagram Protocol)| 
+| ****TCP (Transmission Control Protocol)**** |****UDP (User Datagram Protocol)****| 
 |-----|-------| 
 | C'est un protocole orienté connexion qui garantit la livraison des paquets dans l'ordre et sans erreur. Il est utilisé pour des applications nécessitant une grande fiabilité, comme le web (HTTP), le courrier électronique (SMTP), ou le transfert de fichiers (FTP).| C'est un protocole non orienté connexion, plus léger et plus rapide que TCP, mais sans garantie de livraison ou d'ordre. Il est utilisé dans des applications où la vitesse est prioritaire sur la fiabilité, comme la diffusion en continu (streaming), les jeux en ligne ou les appels VoIP.| 
 
@@ -180,7 +180,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Les principales fonctions de la couche Session 
 
-| Nom | Son rôle| 
+|****Nom****|****Son rôle****| 
 |----|------|
 |Gestion des dialogues (ou dialogues de communication)|  La couche Session organise et synchronise le dialogue entre deux applications. Elle établit, maintient et termine les sessions de communication. Cela signifie qu'elle garantit que les deux parties peuvent échanger des données de manière ordonnée.|
 |Contrôle de la synchronisation | Elle permet l'ajout de points de synchronisation (ou de "checkpoints") dans la communication, ce qui facilite la reprise des échanges en cas de panne ou d'interruption. Par exemple, si une session est interrompue, la couche Session peut décider de redémarrer à partir du dernier point de contrôle, plutôt que de recommencer depuis le début.| 
@@ -189,7 +189,8 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 |Rétablissement après erreur| Si une session est interrompue de façon inattendue, la couche Session peut être responsable de reprendre la communication à partir de là où elle s'était arrêtée.|
 
 ### Exemples d’utilisation de la couche Session :
-| Protocole NetBIOS |RPC (Remote Procedure Call)| 
+
+|****Protocole NetBIOS**** |****RPC(Remote Procedure Call)****| 
 |-----|------| 
 |Ce protocole, utilisé dans des réseaux locaux, fonctionne à la couche Session en permettant à des applications d'établir une session de communication et de s'authentifier.| Les appels de procédure à distance, utilisés pour exécuter des fonctions sur des systèmes distants, s'appuient sur la couche Session pour gérer les connexions.| 
 
@@ -201,18 +202,20 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Les fonctions principales de la couche Présentation
 
-| Nom | Son rôle |
+| ****Nom**** | ****Son rôle**** | 
 |------|-----| 
-|Traduction des formats de données| Les systèmes différents peuvent utiliser des formats de données distincts. La couche Présentation traduit les formats utilisés par les applications en un format standardisé pour que les données puissent être échangées de manière compréhensible. Par exemple, elle peut convertir des données du format ASCII vers EBCDIC.| 
-|Cryptage et décryptage| Si des données doivent être échangées de manière sécurisée, la couche Présentation prend en charge le chiffrement avant la transmission et le déchiffrement à la réception. C’est à ce niveau que les algorithmes de cryptage (comme SSL/TLS) sont souvent implémentés.|
-|Compression des données|Pour améliorer l'efficacité de la transmission, cette couche peut compresser les données avant qu'elles ne soient envoyées sur le réseau et les décompresser à la réception. Cela permet d'optimiser la bande passante et d'accélérer la transmission.|  
-|Gestion des formats multimédia| La couche Présentation s'occupe également de la gestion des formats multimédia, tels que les images, les vidéos et le son. Elle s'assure que les fichiers multimédias envoyés dans un certain format sont correctement interprétés et affichés par la machine réceptrice.|
+| Traduction des formats de données | Les systèmes différents peuvent utiliser des formats de données distincts. La couche Présentation traduit les formats utilisés par les applications en un format standardisé pour que les données puissent être échangées de manière compréhensible. Par exemple, elle peut convertir des données du format ASCII vers EBCDIC. | 
+| Cryptage et décryptage | Si des données doivent être échangées de manière sécurisée, la couche Présentation prend en charge le chiffrement avant la transmission et le déchiffrement à la réception. C’est à ce niveau que les algorithmes de cryptage (comme SSL/TLS) sont souvent implémentés. |
+| Compression des données | Pour améliorer l'efficacité de la transmission, cette couche peut compresser les données avant qu'elles ne soient envoyées sur le réseau et les décompresser à la réception. Cela permet d'optimiser la bande passante et d'accélérer la transmission. |  
+| Gestion des formats multimédia | La couche Présentation s'occupe également de la gestion des formats multimédia, tels que les images, les vidéos et le son. Elle s'assure que les fichiers multimédias envoyés dans un certain format sont correctement interprétés et affichés par la machine réceptrice. |
+
 
 ### Exemples d'utilisation de la couche Présentation :
 
-|JPEG, GIF, PNG| SSL/TLS|
+| ****JPEG, GIF, PNG**** | ****SSL/TLS**** | 
 |----|-----| 
-|Ces formats de fichiers d'images sont interprétés à la couche Présentation. Les données binaires d’une image sont traduites en données compréhensibles pour les applications.| Les protocoles de sécurisation des communications sur Internet (comme HTTPS) fonctionnent en grande partie à la couche Présentation pour chiffrer et déchiffrer les données échangées entre un client et un serveur.|
+| Ces formats de fichiers d'images sont interprétés à la couche Présentation. Les données binaires d’une image sont traduites en données compréhensibles pour les applications. | Les protocoles de sécurisation des communications sur Internet (comme HTTPS) fonctionnent en grande partie à la couche Présentation pour chiffrer et déchiffrer les données échangées entre un client et un serveur. |
+
 
 
 -----------------------------
@@ -223,6 +226,8 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Fonctions principales de la couche Application
 
+| ****Nom**** | ****Son rôle**** | 
+|------|-----|
 |Interfaces utilisateur et services de réseau| La couche Application fournit des interfaces permettant aux utilisateurs ou aux applications d'accéder aux services du réseau. Par exemple, lorsqu'un utilisateur consulte une page web via un navigateur, la couche Application fournit l’interface qui permet à cette interaction d'avoir lieu.|
 |Accès aux services réseau| Elle permet à des applications de demander des services réseau comme l'envoi d'un fichier, la navigation sur le web, ou l'envoi d'un e-mail. Elle interprète les requêtes des applications et les traduit en opérations réseau, en s'appuyant sur les couches inférieures pour la transmission des données.| 
 |Gestion des transactions|Dans les systèmes distribués ou les bases de données en réseau, la couche Application peut gérer les transactions et coordonner l'accès à des ressources partagées, garantissant que les actions sont bien effectuées de manière ordonnée.|
@@ -232,9 +237,10 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 
 ### Exemples de protocoles à la couche Application
 
-|HTTP (Hypertext Transfer Protocol)| FTP (File Transfer Protocol)|SMTP (Simple Mail Transfer Protocol)|DNS (Domain Name System)|POP3/IMAP|Telnet/SSH|
-|-----|------|
-|Utilisé pour le transfert de pages web. C’est le protocole sur lequel repose la navigation web.|Utilisé pour transférer des fichiers entre des systèmes via un réseau.|Protocole utilisé pour l'envoi d’e-mails.|Utilisé pour la résolution de noms de domaine en adresses IP.|Protocoles pour récupérer des e-mails depuis un serveur.|Utilisés pour établir des connexions distantes à un ordinateur et exécuter des commandes à distance.|
+| ****HTTP (Hypertext Transfer Protocol)**** | ****FTP (File Transfer Protocol)**** | ****SMTP (Simple Mail Transfer Protocol)**** | ****DNS (Domain Name System)**** | ****POP3/IMAP**** | ****Telnet/SSH**** |
+|-----|------|------|------|------|------|
+| Utilisé pour le transfert de pages web. C’est le protocole sur lequel repose la navigation web. | Utilisé pour transférer des fichiers entre des systèmes via un réseau. | Protocole utilisé pour l'envoi d’e-mails. | Utilisé pour la résolution de noms de domaine en adresses IP. | Protocoles pour récupérer des e-mails depuis un serveur. | Utilisés pour établir des connexions distantes à un ordinateur et exécuter des commandes à distance. |
+
 
 
 ------------------------
@@ -243,7 +249,7 @@ Les professionnels du réseau sont principalement concernés par les quatre couc
 ## 3-comment utiliser OSI
 
 
-Le modèle OSI (Open Systems Interconnection) est principalement un cadre conceptuel utilisé pour comprendre comment les différents protocoles de communication interagissent dans un réseau informatique. Bien que le modèle OSI ne soit pas utilisé directement dans la configuration des réseaux, il fournit une base théorique pour organiser et décomposer les processus de communication en couches distinctes. En pratique, ce modèle est surtout utile pour diagnostiquer, analyser, et concevoir des systèmes et des protocoles réseaux.
+`Le modèle OSI` (****Open Systems Interconnection****) est principalement un cadre conceptuel utilisé pour comprendre comment les différents protocoles de communication interagissent dans un réseau informatique. Bien que le modèle OSI ne soit pas utilisé directement dans la configuration des réseaux, il fournit une base théorique pour organiser et décomposer les processus de communication en couches distinctes. En pratique, ce modèle est surtout utile pour diagnostiquer, analyser, et concevoir des systèmes et des protocoles réseaux.
 
 
 ### 1 - L’approche down/top
@@ -252,7 +258,7 @@ L'approche Top-down, ou descendante, consiste à aborder un système en commenç
 
 ### Caractéristiques
 
-|Nom|Son role|
+|****Nom****|****Son role****|
 |----|-----|
 |Décomposition hiérarchique|On commence par un objectif global ou une vue d'ensemble, puis on divise le système en sous-parties plus petites et plus gérables.|
 |Abstraction élevée au départ| La conception globale du système est la première étape, puis les détails sont raffinés au fur et à mesure.|
@@ -262,9 +268,10 @@ L'approche Top-down, ou descendante, consiste à aborder un système en commenç
 
 ### Exemple d'utilisation 
 
-|Développement logiciel |Réseaux informatiques|
+| ****Développement logiciel**** | ****Réseaux informatiques**** |
 |-----|-----| 
-| Dans un projet de développement, l'architecture générale du système est définie avant d’entrer dans le détail des modules spécifiques ou des fonctions individuelles. Par exemple, on commence par concevoir le framework global d'une application avant de développer les modules spécifiques.|Lors de la conception d'un réseau, on peut commencer par une vision d'ensemble du réseau (comme un plan pour une infrastructure de campus) puis subdiviser le réseau en sous-réseaux, choisir les équipements de réseau, configurer les routeurs, commutateurs, etc.|
+| Dans un projet de développement, l'architecture générale du système est définie avant d’entrer dans le détail des modules spécifiques ou des fonctions individuelles. Par exemple, on commence par concevoir le framework global d'une application avant de développer les modules spécifiques. | Lors de la conception d'un réseau, on peut commencer par une vision d'ensemble du réseau (comme un plan pour une infrastructure de campus) puis subdiviser le réseau en sous-réseaux, choisir les équipements de réseau, configurer les routeurs, commutateurs, etc. |
+
 
 
 ### Avantages 
@@ -294,20 +301,22 @@ L'approche top-down (ou descendante) est une méthodologie qui consiste à analy
 
 ### Caractéristiques de l’approche top-down
 
-|Nom|Son rôle| 
+| ****Nom**** | ****Son rôle**** | 
 |----|-----| 
-|Définition d’un objectif global|Le processus commence par une vue d’ensemble du système ou du problème à résoudre. Il est essentiel d’avoir une idée claire de l’objectif final avant de commencer la décomposition.|
-|Décomposition hiérarchique|Le système ou problème est décomposé en sous-systèmes ou sous-problèmes. Ces parties sont ensuite subdivisées jusqu’à atteindre un niveau de détail qui permet de les aborder individuellement.|
-|Planification structurée|Cette approche permet de garder une vision d'ensemble tout au long du processus, ce qui facilite la coordination et la planification des étapes.|
-|Focus sur la coordination| Comme la décomposition vient de la vision globale, les sous-parties sont étroitement liées à l’objectif final, ce qui réduit le risque que des sous-parties développées indépendamment manquent de cohérence.|
+| Définition d’un objectif global | Le processus commence par une vue d’ensemble du système ou du problème à résoudre. Il est essentiel d’avoir une idée claire de l’objectif final avant de commencer la décomposition. |
+| Décomposition hiérarchique | Le système ou problème est décomposé en sous-systèmes ou sous-problèmes. Ces parties sont ensuite subdivisées jusqu’à atteindre un niveau de détail qui permet de les aborder individuellement. |
+| Planification structurée | Cette approche permet de garder une vision d'ensemble tout au long du processus, ce qui facilite la coordination et la planification des étapes. |
+| Focus sur la coordination | Comme la décomposition vient de la vision globale, les sous-parties sont étroitement liées à l’objectif final, ce qui réduit le risque que des sous-parties développées indépendamment manquent de cohérence. |
+
 
 
 ### Exemple d'utilisation dans divers domaines 
 
 
-|Développement logiciel|Conception de réseau|Gestion de projets|Stratégie d'entreprise|
-|----|----|
-|Dans le développement logiciel, une approche top-down consiste à concevoir d'abord l'architecture globale du programme ou du système. Par exemple, on peut commencer par définir que le logiciel aura une interface utilisateur, une base de données, et des services d’arrière-plan. Ensuite, chaque composant est développé de manière plus détaillée (création des interfaces, gestion des données, etc.).|Lors de la conception d’un réseau, l’approche top-down commence par définir l’architecture globale du réseau (nombre de sites, types de connexion, niveaux de sécurité, etc.). Ensuite, on décompose chaque segment du réseau en fonction des exigences spécifiques (LAN, WAN, configurations des routeurs et switches, etc.).|Dans la gestion de projets, l’approche top-down implique de commencer par les objectifs globaux du projet et de les diviser en phases ou étapes, puis en sous-tâches plus spécifiques. Par exemple, dans un projet de construction, vous commencez par planifier les grandes étapes (design, construction, finalisation), puis vous subdivisez chaque étape en tâches spécifiques comme l’achat des matériaux, la gestion du personnel, etc.|Dans une entreprise, une approche top-down pourrait être utilisée pour fixer des objectifs stratégiques globaux (par exemple, augmenter les revenus de 20 % sur 5 ans), puis diviser cet objectif en sous-objectifs pour chaque département (marketing, ventes, développement produit, etc.). Chaque département fixe ensuite ses propres objectifs basés sur l’objectif global de l’entreprise.|
+| ****Développement logiciel**** | ****Conception de réseau**** | ****Gestion de projets**** | ****Stratégie d'entreprise**** |
+|----|----|----|----|
+| Dans le développement logiciel, une approche top-down consiste à concevoir d'abord l'architecture globale du programme ou du système. Par exemple, on peut commencer par définir que le logiciel aura une interface utilisateur, une base de données, et des services d’arrière-plan. Ensuite, chaque composant est développé de manière plus détaillée (création des interfaces, gestion des données, etc.). | Lors de la conception d’un réseau, l’approche top-down commence par définir l’architecture globale du réseau (nombre de sites, types de connexion, niveaux de sécurité, etc.). Ensuite, on décompose chaque segment du réseau en fonction des exigences spécifiques (LAN, WAN, configurations des routeurs et switches, etc.). | Dans la gestion de projets, l’approche top-down implique de commencer par les objectifs globaux du projet et de les diviser en phases ou étapes, puis en sous-tâches plus spécifiques. Par exemple, dans un projet de construction, vous commencez par planifier les grandes étapes (design, construction, finalisation), puis vous subdivisez chaque étape en tâches spécifiques comme l’achat des matériaux, la gestion du personnel, etc. | Dans une entreprise, une approche top-down pourrait être utilisée pour fixer des objectifs stratégiques globaux (par exemple, augmenter les revenus de 20 % sur 5 ans), puis diviser cet objectif en sous-objectifs pour chaque département (marketing, ventes, développement produit, etc.). Chaque département fixe ensuite ses propres objectifs basés sur l’objectif global de l’entreprise. |
+
 
 
 
@@ -340,16 +349,18 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 
 ### Principe de l'approche "Divide and Conquer"
 
-|Nom|Son rôle|
+| ****Nom**** |****Son rôle****|
 |----|----|
 |Division| Le problème global est divisé en plusieurs sous-problèmes plus petits et similaires au problème initial, mais plus faciles à résoudre.|
 |Conquête (Résolution)|Chaque sous-problème est résolu indépendamment. Si un sous-problème est suffisamment simple, il est résolu directement. Sinon, il est encore subdivisé.|
 |Combinaison | Les solutions des sous-problèmes sont ensuite combinées pour former la solution finale du problème initial.|
 
 ### Exemples d'utilisation de l'approche "Divide and Conquer"
-|Tri rapide (Quicksort) |Tri fusion (Mergesort)|Algorithme de recherche binaire|
-|----|-----|
-|Un exemple classique. Pour trier une liste, on choisit un élément pivot, on divise la liste en deux sous-listes (les éléments inférieurs au pivot et les éléments supérieurs), on trie récursivement les sous-listes, puis on les combine.|L'algorithme divise un tableau en deux moitiés, trie chaque moitié de manière récursive, puis fusionne les deux moitiés triées pour former le tableau trié complet.|Dans un tableau trié, on divise l'espace de recherche en deux à chaque étape, en comparant l'élément central avec l'élément recherché, puis on continue dans la moitié qui peut contenir l'élément cible.|
+
+| ****Tri rapide (Quicksort)**** | ****Tri fusion (Mergesort)**** | ****Algorithme de recherche binaire**** |
+|----|----|----|
+| Un exemple classique. Pour trier une liste, on choisit un élément pivot, on divise la liste en deux sous-listes (les éléments inférieurs au pivot et les éléments supérieurs), on trie récursivement les sous-listes, puis on les combine. | L'algorithme divise un tableau en deux moitiés, trie chaque moitié de manière récursive, puis fusionne les deux moitiés triées pour former le tableau trié complet. | Dans un tableau trié, on divise l'espace de recherche en deux à chaque étape, en comparant l'élément central avec l'élément recherché, puis on continue dans la moitié qui peut contenir l'élément cible. |
+
 
 ### Avantages de l'approche "Divide and Conquer"
 
@@ -375,23 +386,93 @@ L'approche "Divide and Conquer" (ou "Diviser pour régner") est une méthode alg
 
 
 # Le modèle TCP/IP
+`Le modèle TCP/IP` (****Transmission Control Protocol/Internet Protocol****) est un ensemble de protocoles de communication utilisés pour interconnecter des dispositifs en réseau, notamment sur Internet. Il définit comment les données doivent être formatées, transmises, acheminées et reçues à destination. Le modèle TCP/IP est structuré en quatre couches, chacune ayant des responsabilités spécifiques pour gérer différents aspects des communications réseau.
 
 
 ## 1-L IETF
-
+L'IETF (Internet Engineering Task Force) est une organisation ouverte et internationale qui développe et promeut des normes pour assurer le bon fonctionnement et l'évolution de l'Internet. Fondée en 1986, l'IETF est à l'origine de la plupart des protocoles qui régissent le fonctionnement de l'Internet, y compris des protocoles fondamentaux comme TCP/IP, HTTP, SMTP et DNS.
  
 
 
 ### 1. La hiérarchie
 
+IESG (Internet Engineering Steering Group)
 
+
+|****Rôle ****|****Composition**** |****Responsabilités**** | 
+|---|---|---|
+|Le groupe de direction de l'ingénierie Internet (IESG) est chargé de la supervision technique et du contrôle de la qualité des processus de normalisation. Il joue un rôle clé dans la validation des normes Internet et approuve les documents (tels que les RFC) proposés par les groupes de travail de l'IETF.|L'IESG est composé de directeurs de zone, chacun étant responsable d'un domaine technique spécifique (par exemple, routage, sécurité, transport, etc.). Ces directeurs sont élus parmi la communauté de l'IETF.|En plus d'approuver les documents produits par les groupes de travail, l'IESG s'assure que les travaux avancent de manière cohérente et que les nouvelles normes répondent aux exigences techniques.| 
+
+
+IAB (Internet Architecture Board)
+
+| **Rôle** | **Composition** | **Responsabilités** | 
+|---|---|---|
+| Le Conseil d'architecture de l'Internet (IAB) est responsable de la supervision globale de l'architecture de l'Internet et de la gestion technique de l'IETF. Il agit comme un organe consultatif et de supervision stratégique, assurant que les décisions prises à court terme s'alignent avec la vision à long terme de l'Internet. | L'IAB est composé de membres nommés, qui sont des experts techniques et des personnalités influentes de la communauté Internet. | - Superviser l'évolution de l'architecture Internet. <br> - Nommer les membres de l'IESG. <br> - Examiner et approuver certaines décisions critiques, comme la création ou la suppression de groupes de travail. |
+
+Groupes de travail (Working Groups)
+
+| **Rôle** | **Composition** | **Responsabilités** | 
+|---|---|---|
+|Les groupes de travail sont le cœur de l'IETF et sont chargés de la production des spécifications techniques, telles que les RFC (Request for Comments). Chaque groupe de travail est spécialisé dans un domaine ou un protocole spécifique et travaille de manière collaborative pour résoudre des problèmes techniques, développer de nouveaux standards ou améliorer des protocoles existants.|Les groupes de travail sont ouverts à toute personne intéressée par les sujets traités. Ils sont coordonnés par un ou plusieurs présidents de groupe de travail (chairs), qui sont nommés par l'IESG et assurent la gestion des discussions et de l'avancement des travaux.|Les décisions sont prises par consensus, et les discussions se déroulent principalement par le biais de listes de diffusion, bien que des réunions physiques aient lieu lors des événements IETF.|
+
+
+NomCom (Nominations Committee)
+
+| **Rôle** | **Composition ** | **Fonctionnement ** | 
+|---|---|---|
+|Le Comité de nomination (NomCom) est chargé de sélectionner les membres de l'IAB et de l'IESG. C'est un organe indépendant qui assure que les personnes sélectionnées pour ces rôles sont compétentes et respectées au sein de la communauté IETF.| Le NomCom est composé de membres tirés au sort parmi les participants actifs de l'IETF, pour garantir une certaine impartialité et représentativité.|Le processus de nomination est généralement basé sur la transparence, et les membres du NomCom consultent la communauté pour recueillir des retours sur les candidats avant de prendre une décision finale.|
+
+Internet Society (ISOC)
+
+| **Rôle** | **Relation avec l'IETF** |
+|---|---|
+|L'Internet Society (ISOC) est l'organisation mère qui soutient l'IETF sur le plan logistique et financier. L'ISOC ne joue pas un rôle direct dans les décisions techniques, mais elle fournit l'infrastructure nécessaire pour que l'IETF puisse fonctionner. Elle est également responsable de la promotion d'un Internet ouvert et accessible pour tous.|L'ISOC gère les aspects financiers, juridiques et administratifs de l'IETF, mais elle reste en dehors des processus techniques et des décisions liées aux protocoles.|
+
+RFC Editor
+
+| **Rôle** | **Fonctionnement** | 
+|---|---|
+| Le RFC Editor est responsable de la publication des RFC (Request for Comments), les documents techniques produits par l'IETF. Ce rôle est crucial pour s'assurer que les spécifications sont publiées de manière claire, standardisée et accessible à tous.|Bien que le contenu technique des RFC soit validé par l'IETF, l'éditeur de RFC garantit la cohérence et la qualité rédactionnelle de ces documents.|
+
+IAOC et IETF Trust
+
+| **Rôle** |
+|---|
+|Le Comité de supervision des affaires de l'IETF (IAOC) et le IETF Trust sont des entités responsables de la gestion des aspects financiers et juridiques. L'IAOC gère les contrats, les services, et veille à ce que l'IETF dispose des ressources nécessaires pour fonctionner. Le IETF Trust détient les droits de propriété intellectuelle et les marques associées à l'IETF, garantissant que les documents et protocoles développés restent accessibles à tous.|
+
+![image](https://github.com/user-attachments/assets/1ed4fe94-ef10-4009-b6ec-a0fcc196d594)
 
 -------------------
 ### 2. Les RFC
+Les RFC (Request for Comments) sont des documents techniques et de recherche utilisés pour décrire les normes, les protocoles, et les technologies liés à l'Internet. Créés par des experts et des ingénieurs, ils constituent une base fondamentale pour le développement et la gestion de l'Internet.
+
+Fonctionnement :
+
+|Nom|rôle|
+|---|---|
+|Proposition|Les RFC sont généralement rédigées par des membres de la communauté Internet, souvent dans le cadre de l'IETF (Internet Engineering Task Force). Les documents passent par plusieurs étapes de révision et de validation avant d’être acceptés comme standard.|
+|Numérotation|Chaque RFC reçoit un numéro unique et est disponible publiquement. Par exemple, RFC 791 décrit IPv4.|
+
+
+Catégories de RFC : 
+
+|Nom|rôle|
+|---|---|
+|Standards Track|Documents définissant des normes officielles comme les protocoles de base de l'Internet.|
+|Informational |Informations générales ou des descriptions techniques sans qu'elles ne soient des standards officiels.|
+|Experimental|Propositions de technologies en phase d’expérimentation, non encore approuvées comme standard.|
+|Best Current Practice (BCP)|Des recommandations pratiques pour les opérations de l'Internet.|
+
 
 
 
 ## 2-Les couches du modèle TCP/IP
+Cours sur Couche 2
+
+<a href="https://github.com/miami-14/miami-14.github.io./tree/main/SISR/Couche%202" target="_blank">Couche 2 Folder</a>
+
+![image](https://github.com/user-attachments/assets/b3f44e65-e33b-4eef-86b7-2e9f2c88bc38)
 
 
 ### 1. La couche Accès réseau
