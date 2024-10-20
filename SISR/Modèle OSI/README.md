@@ -470,7 +470,7 @@ Catégories de RFC :
 ## 2-Les couches du modèle TCP IP
 Cours sur Couche 2
 
-<a href="https://github.com/miami-14/miami-14.github.io./tree/main/SISR/Couche%202" target="_blank">Couche 2 Folder</a>
+<a href="https://github.com/miami-14/miami-14.github.io./tree/main/SISR/Couche%202" target="_blank">Cours Couche 2 </a>
 
 ![image](https://github.com/user-attachments/assets/b3f44e65-e33b-4eef-86b7-2e9f2c88bc38)
 
