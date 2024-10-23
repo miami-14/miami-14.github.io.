@@ -100,7 +100,7 @@ Décimal pointé: ****245.210.221.52****
 
 ---------------------------------
 
-Exercice 3: 
+    Exercice 3: Donnez les classes d'adresses pour les adresses suivantes :
 
 Les masques de sous-réseaux par défaut dépendent de la classe de l'adresse IP. Voici les classes d'adresses IP et leurs masques de sous-réseaux par défaut :
 
@@ -131,15 +131,16 @@ Les masques de sous-réseaux par défaut dépendent de la classe de l'adresse IP
 
 --------------------------------------------
 
-    Exercice n°5 : Pour déterminer la partie réseau et la partie hôte des adresses IP données, nous devons utiliser les masques de sous-réseaux par défaut associés à chaque classe d'adresse IP. Voici les classes d'adresses IP et leurs masques :
+    Exercice n°5 : Donnez les masques de sous-réseaux par défaut des adresses suivantes :
+
+    Pour déterminer la partie réseau et la partie hôte des adresses IP données, nous devons         utiliser les masques de sous-réseaux par défaut associés à chaque classe d'adresse IP.         Voici les classes d'adresses IP et leurs masques :
 
 
 - Classe A : Masque 255.0.0.0 (ou /8) : 1er octet pour le réseau, 3 octets pour l'hôte.
 - Classe B : Masque 255.255.0.0 (ou /16) : 2 premiers octets pour le réseau, 2 octets pour l'hôte.
 - Classe C : Masque 255.255.255.0 (ou /24) : 3 premiers octets pour le réseau, 1 octet pour l'hôte.
 
-      En se basant sur les masques de sous-réseaux par défaut, donnez la partie réseau et la partie
-      hôte des adresses IP suivantes :
+      En se basant sur les masques de sous-réseaux par défaut, donnez la partie réseau et la          partie hôte des adresses IP suivantes :
 
 - 168.234.150.19 (Classe B):
 Partie réseau : 168.234
@@ -167,8 +168,9 @@ Partie hôte : 69
 
 -----------------------------------
 
+        Exercice n°6 : Indiquez si les adresses suivantes sont valides ou pas pour un hôte             TCP/IP. Le masque est celui associé par défaut à la classe d'adresse.
 
-            Pour déterminer si une adresse IP est valide pour un hôte TCP/IP, il est nécessaire de vérifier si l'adresse respecte les règles suivantes :
+            Pour déterminer si une adresse IP est valide pour un hôte TCP/IP, il est nécessaire             de vérifier si l'adresse respecte les règles suivantes :
 
 - L'adresse IP ne doit pas être une adresse de réseau (le dernier octet est 0) ou une adresse de diffusion (le dernier octet est 255).
 
@@ -176,8 +178,8 @@ Partie hôte : 69
 
 - Chaque octet doit être compris entre 0 et 255.
 
-          Exercice n°6 : Indiquez si les adresses suivantes sont valides ou pas pour un hôte TCP/IP. Le masque est
-          celui associé par défaut à la classe d'adresse.
+ 
+         Voici l'analyse des adresses données :         
 
 - 1)245.123.133.102 (Classe E):
 Validité : Non valide (Classe E est réservée pour des usages futurs)
@@ -199,5 +201,170 @@ Validité : Valide (Pas d'adresse de réseau ni de diffusion)
 
 --------------------------------------
 
-    Exercice 7 : Passez les adresses IP suivantes de la notation CIDR à la notation décimale pointée :
+    Exercice 7 : Passez les adresses IP suivantes de la notation CIDR à la notation décimale         pointée :
+
+Pour convertir les adresses IP de la notation CIDR à la notation décimale pointée, nous devons déterminer le masque de sous-réseau correspondant au nombre de bits réseau donné après le /. Ensuite, nous convertissons ce masque en notation décimale pointée.
+
+    Voici le processus de conversion :
+
+/12 signifie que les 12 premiers bits sont pour le réseau.
+/30 signifie que les 30 premiers bits sont pour le réseau, et ainsi de suite.
+
+
+    Conversion des adresses CIDR en notation décimale pointée :
+
+25.45.12.200/12 :
+- Masque CIDR : /12 correspond à 255.240.0.0 (12 bits de 1)
+- Adresse IP avec masque : 25.45.12.200/255.240.0.0
+
+75.230.130.24/30 :
+- Masque CIDR : /30 correspond à 255.255.255.252 (30 bits de 1)
+- Adresse IP avec masque : 75.230.130.24/255.255.255.252
+
+120.250.65.99/14 :
+- Masque CIDR : /14 correspond à 255.252.0.0 (14 bits de 1)
+- Adresse IP avec masque : 120.250.65.99/255.252.0.0
+
+136.45.78.199/13 :
+- Masque CIDR : /13 correspond à 255.248.0.0 (13 bits de 1)
+- Adresse IP avec masque : 136.45.78.199/255.248.0.0
+
+180.64.15.220/20 :
+- Masque CIDR : /20 correspond à 255.255.240.0 (20 bits de 1)
+- Adresse IP avec masque : 180.64.15.220/255.255.240.0
+
+191.198.24.1/22 :
+- Masque CIDR : /22 correspond à 255.255.252.0 (22 bits de 1)
+- Adresse IP avec masque : 191.198.24.1/255.255.252.0
+
+
+--------------------------------------------------
+
+
+    Exercice 1 :
+
+Une station a pour adresse IP = 192.168.100.32
+Son masque de sous-réseau est 255.255.255.0
+
+            - 1) A quelle classe appartient cette adresse ?
+L'adresse 192.168.100.32 commence par 192, ce qui la place dans la classe C (classe C : 192.0.0.0 à 223.255.255.255). Classe : C
+
+
+            - 2) Quel est le numéro de réseau (NetId) ?
+Le NetId correspond à la partie réseau de l'adresse, déterminée par le masque de sous-réseau. Dans ce cas, le masque de sous-réseau est 255.255.255.0, ce qui signifie que les 3 premiers octets (24 bits) représentent la partie réseau.
+NetId : 192.168.100
+
+
+            - 3) Quelle est l’adresse de réseau ?
+L'adresse de réseau est obtenue en appliquant un ET logique entre l'adresse IP et le masque de sous-réseau. Pour ce cas, cela revient à conserver les trois premiers octets, et à mettre à 0 le dernier octet de l'adresse IP (car le masque pour le dernier octet est 0).
+Adresse de réseau : 192.168.100.0
+
+
+            - 4) Quel est le numéro de machine dans ce réseau (HostId) ?
+Le HostId représente la partie hôte de l'adresse IP. Avec un masque de sous-réseau de 255.255.255.0, le dernier octet (8 bits) est la partie dédiée aux hôtes. Dans ce cas, le dernier octet de l'adresse IP est 32.
+HostId : 32
+
+
+            - 5) Combien d’adresses IP sont utilisables dans ce cas pour un Hôte TCP/IP ?
+Le masque de sous-réseau est 255.255.255.0, ce qui laisse 8 bits pour la partie hôte. Le nombre total d'adresses possibles pour les hôtes est donné par 2 Puissance 8 =256 Cependant, deux adresses sont réservées :
+
+- L'adresse de réseau (dans ce cas, 192.168.100.0).
+
+- L'adresse de diffusion (dans ce cas, 192.168.100.255).
+
+Donc, le nombre d'adresses utilisables pour les hôtes est 256 - 2= 254 
+
+Nombre d'adresses IP utilisables : 254
+
+
+        - 6) Quelle est l’adresse de diffusion dans ce réseau ?
+L'adresse de diffusion est l'adresse qui correspond à tous les bits de la partie hôte mis à 1. Avec un masque de 255.255.255.0, la partie hôte est représentée par le dernier octet, et si tous les bits sont à 1, cela donne 255.
+
+- Adresse de diffusion : 192.168.100.255
+
+Résumé des réponses :
+- Classe : C
+- NetId : 192.168.100
+- Adresse de réseau : 192.168.100.0
+- HostId : 32
+- Adresses IP utilisables : 254
+- Adresse de diffusion : 192.168.100.255
+
+
+----------------------------------------------
+
+    Exercice 2 :
+
+Une station a pour adresse IP = 152.120.35.30
+Son masque de sous-réseau est 255.255.240.0
+
+        - 1) A quelle classe appartient cette adresse ?
+L'adresse 152.120.35.30 commence par 152, ce qui la place dans la classe B (classe B : 128.0.0.0 à 191.255.255.255). Classe : B
+
+            - 2) Quel est le numéro de sous-réseau (NetId) ?
+Le NetId est obtenu en appliquant le masque de sous-réseau à l'adresse IP. Le masque 255.255.240.0 signifie que les 20 premiers bits sont pour la partie réseau. Le masque sépare les bits de la manière suivante :
+
+- Les deux premiers octets (152.120) sont pour la partie réseau (fixe pour la classe B).
+- Le masque utilise les 4 premiers bits du troisième octet pour le sous-réseau. Les 4 derniers bits du troisième octet, ainsi que le dernier octet, sont pour la partie hôte.
+
+        Pour trouver le NetId, on effectue un ET logique entre l'adresse IP et le masque :
+
+- Adresse IP : 152.120.35.30 (en binaire : 10011000.01111000.00100011.00011110)
+- Masque : 255.255.240.0 (en binaire : 11111111.11111111.11110000.00000000)
+
+        Effectuons l'ET logique entre l'adresse et le masque :
+
+- Résultat en binaire : 10011000.01111000.00100000.00000000
+
+        Ce qui correspond à 152.120.32.0 en décimal.
+
+- Numéro de sous-réseau (NetId) : 152.120.32
+
+
+        - 3) Quelle est l’adresse de sous-réseau ?
+L'adresse de sous-réseau correspond au résultat de l'ET logique entre l'adresse IP et le masque de sous-réseau. C'est le même résultat que le NetId.
+
+-Adresse de sous-réseau : 152.120.32.0
+
+        - 4) Quel est le numéro de machine dans ce sous-réseau (HostId) ?
+Le HostId représente la partie hôte de l'adresse IP. Avec le masque ****255.255.240.0****, les 12 derniers bits sont réservés pour les hôtes. Il faut donc extraire ces bits de l'adresse IP pour obtenir le numéro de la machine.
+
+- Adresse IP en binaire : 10011000.01111000.00100011.00011110
+
+- Les 12 derniers bits (000111.00011110) correspondent au HostId, qui donne 3.30 en décimal.
+
+- HostId : 3.30
+
+  
+        - 5) Combien peut-il y avoir de sous-réseaux ?
+  Dans une adresse de classe B, le masque par défaut est 255.255.0.0 (ou /16). Ici, le masque utilisé est 255.255.240.0 (ou /20). La différence entre /16 et /20 est de 4 bits supplémentaires utilisés pour les sous-réseaux.
+
+Le nombre de sous-réseaux possibles est donné par 2puissance 4 = 16
+
+- Nombre de sous-réseau possible : 16
+
+  
+        6) Quelle est l’adresse de diffusion dans ce sous-réseau ?
+L'adresse de diffusion est obtenue en mettant tous les bits de la partie hôte à 1. Dans ce cas, avec un masque 255.255.240.0, les 12 derniers bits sont réservés pour la partie hôte.
+
+    Si on met tous ces bits à 1, l'adresse de diffusion devient :
+
+- Adresse réseau : 152.120.32.0
+- Partie hôte maximale : 0.15.255 (car les 12 bits de la partie hôte sont tous à 1)
+
+        Donc, l'adresse de diffusion est 152.120.47.255.
+
+- Adresse de diffusion : 152.120.47.255
+
+        Résumé des réponses :
+- Classe : B
+- NetId : 152.120.32
+- Adresse de sous-réseau : 152.120.32.0
+- HostId : 3.30
+- Nombre de sous-réseaux possibles : 16
+- Adresse de diffusion : 152.120.47.255
+
+
+
+
 
