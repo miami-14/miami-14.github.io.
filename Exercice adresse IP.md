@@ -483,7 +483,9 @@ Les adresses de classe B ont un masque par défaut de 255.255.0.0, où les deux 
 
 
 
-        Exercice 3 :Un réseau de classe B est découpé en plusieurs sous-réseaux et on obtient             un masque final valant 255.255.252.0. En combien de sous-réseaux le réseau de départ             a-t-il été découpé ?
+        Exercice 3 :Un réseau de classe B est découpé
+          en plusieurs sous-réseaux et on obtient un masque final valant                         255.255.252.0. En combien de sous-réseaux le réseau de départ
+          a-t-il été découpé ?
 
 - []a) 32
 - [x]b) 64
