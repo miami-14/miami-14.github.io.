@@ -115,7 +115,8 @@ Les masques de sous-réseaux par défaut dépendent de la classe de l'adresse IP
 - Classe E (réservée pour la recherche) : 240.0.0.0 à 255.255.255.255.
 
 
-      Voici les masques de sous-réseaux par défaut pour les adresses données :
+      Voici les masques de sous-réseaux par défaut
+      pour les adresses données :
 
 - 124.95.45.1 (Classe A) : 255.0.0.0
 
@@ -131,16 +132,22 @@ Les masques de sous-réseaux par défaut dépendent de la classe de l'adresse IP
 
 --------------------------------------------
 
-    Exercice n°5 : Donnez les masques de sous-réseaux par défaut des adresses suivantes :
+    Exercice n°5 : Donnez les masques de sous-réseaux par défaut des adresses
+    suivantes :
 
-    Pour déterminer la partie réseau et la partie hôte des adresses IP données, nous devons         utiliser les masques de sous-réseaux par défaut associés à chaque classe d'adresse IP.         Voici les classes d'adresses IP et leurs masques :
+    Pour déterminer la partie réseau et la partie hôte des adresses IP 
+    données, nous devons utiliser les masques de sous-réseaux par défaut 
+    associés à chaque classe d'adresse IP. Voici les classes d'adresses IP
+    et leurs masques :
 
 
 - Classe A : Masque 255.0.0.0 (ou /8) : 1er octet pour le réseau, 3 octets pour l'hôte.
 - Classe B : Masque 255.255.0.0 (ou /16) : 2 premiers octets pour le réseau, 2 octets pour l'hôte.
 - Classe C : Masque 255.255.255.0 (ou /24) : 3 premiers octets pour le réseau, 1 octet pour l'hôte.
 
-      En se basant sur les masques de sous-réseaux par défaut, donnez la partie réseau et la          partie hôte des adresses IP suivantes :
+      En se basant sur les masques de sous-réseaux par défaut,
+      donnez la partie réseau et la partie hôte des adresses IP
+      suivantes :
 
 - 168.234.150.19 (Classe B):
 Partie réseau : 168.234
@@ -168,9 +175,12 @@ Partie hôte : 69
 
 -----------------------------------
 
-        Exercice n°6 : Indiquez si les adresses suivantes sont valides ou pas pour un hôte             TCP/IP. Le masque est celui associé par défaut à la classe d'adresse.
+        Exercice n°6 : Indiquez si les adresses suivantes sont valides ou 
+        pas pour un hôte TCP/IP. Le masque est celui associé par défaut à 
+        la classe d'adresse.
 
-            Pour déterminer si une adresse IP est valide pour un hôte TCP/IP, il est nécessaire             de vérifier si l'adresse respecte les règles suivantes :
+        Pour déterminer si une adresse IP est valide pour un hôte TCP/IP,
+        il est nécessaire de vérifier si l'adresse respecte les règles suivantes :
 
 - L'adresse IP ne doit pas être une adresse de réseau (le dernier octet est 0) ou une adresse de diffusion (le dernier octet est 255).
 
@@ -282,7 +292,7 @@ L'adresse de diffusion est l'adresse qui correspond à tous les bits de la parti
 
 - Adresse de diffusion : 192.168.100.255
 
-Résumé des réponses :
+        Résumé des réponses :
 - Classe : C
 - NetId : 192.168.100
 - Adresse de réseau : 192.168.100.0
@@ -364,7 +374,156 @@ L'adresse de diffusion est obtenue en mettant tous les bits de la partie hôte �
 - Nombre de sous-réseaux possibles : 16
 - Adresse de diffusion : 152.120.47.255
 
+-----------------------------------------------------
+
+    1) Soit l'adresse 192.16.5.133/29.
+    
+Combien de bits sont utilisés pour identifier la partie réseau ?
+
+Combien de bits sont utilisés pour identifier la partie hôte ?
+
+    2) Soit l'adresse 172.16.5.10/28.
+    
+Quel est le masque réseau correspondant ?
+
+
+    3) On attribue le réseau 132.45.0.0/16. Il faut redécouper ce réseau en 8
+    sous-réseaux.
+
+a. Combien de bits supplémentaires sont nécessaires pour définir huit sous-
+réseaux ?
+
+b. Quel est le masque réseau qui permet la création de huit sous-réseaux ?
+
+c. Quelle est l'adresse réseau de chacun des huit sous-réseaux ainsi définis ?
+
+d. Quelle est la plage des adresses utilisables du sous-réseau numéro 3 ?
+
+e. Quelle est l'adresse de diffusion du sous-réseau numéro 4 ?
+
+---------------------------------------------------------
+
+    Exercice 1 : A quelle classe appartient l'adresse 180.30.17.20 ? Justifiez.
+
+L'adresse 180.30.17.20 appartient à la classe B.
+Car Les adresses IP sont divisées en plusieurs classes, basées sur la plage des valeurs du premier octet (le premier nombre de l'adresse).
+
+    Classes d'adresses IP :
+
+Classe A : 1.0.0.0 à 126.255.255.255 (premier octet entre 1 et 126).
+Classe B : 128.0.0.0 à 191.255.255.255 (premier octet entre 128 et 191).
+Classe C : 192.0.0.0 à 223.255.255.255 (premier octet entre 192 et 223).
+
+    Analyse de l'adresse 180.30.17.20 :
+
+Le premier octet de l'adresse est 180.
+Le nombre 180 se situe dans la plage de 128 à 191, ce qui correspond à la classe B.
+Donc, 180.30.17.20 est une adresse de classe B.
+
+Les adresses de classe B ont un masque par défaut de 255.255.0.0, où les deux premiers octets représentent la partie réseau, et les deux derniers octets sont réservés pour la partie hôte.
+
+
+    Exercice 2 :Pour chaque adresse, entourez la partie demandée :
+
+1• PARTIE RESEAU : 1.102.45.177 
+-Classe A car le premier octet est 1 
+-La partie réseau est le premier octet : 1.
+-Partie réseau : 1
+
+2• PARTIE HOTE : 196.22.177.13 
+-Le premier octet est 196, donc c'est une classe C.
+-La partie hôte est le dernier octet : 13.
+-Partie hôte : 13
+
+
+3• PARTIE RESEAU : 133.156.55.102
+-Le premier octet est 196, donc c'est une classe B.
+-La partie réseau est les deux premiers octets : 133.156..
+-Partie réseau : 133.156
+
+
+4• PARTIE HOTE : 221.252.77.10
+-Le premier octet est 221, donc c'est une classe C.
+-La partie hôte est le dernier octet : 10.
+-Partie hôte : 10
+
+
+5• PARTIE RESEAU : 123.12.45.77
+-Le premier octet est 123, donc c'est une classe A..
+-LLa partie réseau est le premier octet : 123.
+-Partie réseau : 123
+
+
+6• PARTIE HOTE : 126.252.77.103
+-Le premier octet est 126, donc c'est une classe A.
+-La partie hôte est les trois derniers octets : 252.77.103.
+-Partie hôte : 252.77.103
+
+
+7• PARTIE RESEAU : 13.1.255.102
+-Le premier octet est 13, donc c'est une classe A.
+-La partie réseau est le premier octet : 13.
+-Partie réseau : 13
+
+8• PARTIE HOTE : 171.242.177.109
+-Le premier octet est 171, donc c'est une classe B.
+-La partie hôte est les deux derniers octets : 177.109.
+-Partie hôte : 177.109
+
+## Résumé :
+- Partie réseau : 1
+- Partie hôte : 13
+- Partie réseau : 133.156
+- Partie hôte : 10
+- Partie réseau : 123
+- Partie hôte : 252.77.103
+- Partie réseau : 13
+- Partie hôte : 177.109
 
 
 
 
+        Exercice 3 :Un réseau de classe B est découpé en plusieurs sous-réseaux et on obtient             un masque final valant 255.255.252.0. En combien de sous-réseaux le réseau de départ             a-t-il été découpé ?
+
+- []a) 32
+- [x]b) 64
+- []c) 128
+- []d) 256
+
+![image](https://github.com/user-attachments/assets/8c576786-f62c-43f0-bf08-317444a59d91)
+
+![Capture d'écran 2024-10-23 231039](https://github.com/user-attachments/assets/e39aeb36-5dc2-47ad-a631-bb5b2f3d25d7)
+
+
+    Exercice 4 :Un réseau a comme masque 255.255.255.224. Combien de machines peut-il y avoir         sur un tel réseau ? Justifiez.
+
+![image](https://github.com/user-attachments/assets/63ff0e21-4431-4afe-98cf-a0d8ba068c24)
+
+![image](https://github.com/user-attachments/assets/21d4c591-ed3f-4630-ab88-167616804dee)
+
+    Exercice 5 :Une machine a comme adresse IP 150.56.188.80 et se trouve dans un réseau dont         le masque est 255.255.240.0. Quelle est l'adresse du réseau ? Justifiez.
+
+![image](https://github.com/user-attachments/assets/21f23351-654c-4433-9518-055d8aba140e)
+
+![image](https://github.com/user-attachments/assets/2c94f79e-4aa8-4aa0-8e47-a7676b4dc04e)
+
+![image](https://github.com/user-attachments/assets/609e9605-4814-4173-8d18-b757c8321fa9)
+
+![image](https://github.com/user-attachments/assets/fb9a9a78-c21e-441f-bc33-cbdcee7f746b)
+
+  
+    
+    Exercice 6 :Découpez en 14 sous-réseaux le réseau 150.27.0.0 de
+    masque 255.255.0.0 Indiquez pour chaque sous-réseau la plage
+    des adresses attribuables à une machine ainsi que l’adresse de diffusion.  
+    Justifiez votre réponse.
+
+![image](https://github.com/user-attachments/assets/6afa978f-70a9-4ee2-9893-12b05f9b4adc)
+
+![image](https://github.com/user-attachments/assets/dc01220e-d89a-4eb8-b3e1-7fa923191049)
+
+![image](https://github.com/user-attachments/assets/635b4584-5479-4a42-bd79-22c57d9cc027)
+
+![image](https://github.com/user-attachments/assets/2ff38ee9-5cbf-4f32-b5d8-a7c1dc3eb897)
+
+![image](https://github.com/user-attachments/assets/7f6f4fdc-6ea5-41d8-9106-c4d4fd2ec15c)
